@@ -1,6 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
- * Copyright (C) 2015  Vladimir Golovnev <glassez@yandex.ru>
+ * Copyright (C) 2015-2025  Vladimir Golovnev <glassez@yandex.ru>
  * Copyright (C) 2010  Christophe Dumez <chris@qbittorrent.org>
  *
  * This program is free software; you can redistribute it and/or
@@ -27,15 +27,15 @@
  * exception statement from your version.
  */
 
-#ifndef TRANSFERLISTMODEL_H
-#define TRANSFERLISTMODEL_H
+#pragma once
 
 #include <QAbstractListModel>
 #include <QColor>
 #include <QHash>
+#include <QIcon>
 #include <QList>
 
-#include "base/bittorrent/torrenthandle.h"
+#include "base/bittorrent/torrent.h"
 
 namespace BitTorrent
 {
@@ -45,7 +45,7 @@ namespace BitTorrent
 class TransferListModel final : public QAbstractListModel
 {
     Q_OBJECT
-    Q_DISABLE_COPY(TransferListModel)
+    Q_DISABLE_COPY_MOVE(TransferListModel)
 
 public:
     enum Column
@@ -62,6 +62,7 @@ public:
         TR_UPSPEED,
         TR_ETA,
         TR_RATIO,
+        TR_POPULARITY,
         TR_CATEGORY,
         TR_TAGS,
         TR_ADD_DATE,
@@ -81,6 +82,12 @@ public:
         TR_SEEN_COMPLETE_DATE,
         TR_LAST_ACTIVITY,
         TR_AVAILABILITY,
+        TR_DOWNLOAD_PATH,
+        TR_INFOHASH_V1,
+        TR_INFOHASH_V2,
+        TR_REANNOUNCE,
+        TR_PRIVATE,
+        TR_CREATE_DATE,
 
         NB_COLUMNS
     };
@@ -100,33 +107,48 @@ public:
     QVariant headerData(int section, Qt::Orientation orientation, int role) const override;
     Qt::ItemFlags flags(const QModelIndex &index) const override;
 
-    BitTorrent::TorrentHandle *torrentHandle(const QModelIndex &index) const;
+    BitTorrent::Torrent *torrentHandle(const QModelIndex &index) const;
 
 private slots:
-    void addTorrent(BitTorrent::TorrentHandle *const torrent);
-    void handleTorrentAboutToBeRemoved(BitTorrent::TorrentHandle *const torrent);
-    void handleTorrentStatusUpdated(BitTorrent::TorrentHandle *const torrent);
-    void handleTorrentsUpdated(const QVector<BitTorrent::TorrentHandle *> &torrents);
+    void addTorrents(const QList<BitTorrent::Torrent *> &torrents);
+    void handleTorrentAboutToBeRemoved(BitTorrent::Torrent *torrent);
+    void handleTorrentStatusUpdated(BitTorrent::Torrent *torrent);
+    void handleTorrentsUpdated(const QList<BitTorrent::Torrent *> &torrents);
 
 private:
     void configure();
-    QString displayValue(const BitTorrent::TorrentHandle *torrent, int column) const;
-    QVariant internalValue(const BitTorrent::TorrentHandle *torrent, int column, bool alt = false) const;
+    void loadUIThemeResources();
+    QString displayValue(const BitTorrent::Torrent *torrent, int column) const;
+    QVariant internalValue(const BitTorrent::Torrent *torrent, int column, bool alt) const;
+    QIcon getIconByState(BitTorrent::TorrentState state) const;
 
-    QList<BitTorrent::TorrentHandle *> m_torrentList;  // maps row number to torrent handle
-    QHash<BitTorrent::TorrentHandle *, int> m_torrentMap;  // maps torrent handle to row number
+    QList<BitTorrent::Torrent *> m_torrentList;  // maps row number to torrent handle
+    QHash<BitTorrent::Torrent *, int> m_torrentMap;  // maps torrent handle to row number
     const QHash<BitTorrent::TorrentState, QString> m_statusStrings;
     // row text colors
-    const QHash<BitTorrent::TorrentState, QColor> m_stateThemeColors;
+    QHash<BitTorrent::TorrentState, QColor> m_stateThemeColors;
 
     enum class HideZeroValuesMode
     {
         Never,
-        Paused,
+        Stopped,
         Always
     };
 
     HideZeroValuesMode m_hideZeroValuesMode = HideZeroValuesMode::Never;
+    bool m_useTorrentStatesColors = false;
+
+    // cached icons
+    QIcon m_checkingIcon;
+    QIcon m_completedIcon;
+    QIcon m_downloadingIcon;
+    QIcon m_errorIcon;
+    QIcon m_movingIcon;
+    QIcon m_stoppedIcon;
+    QIcon m_queuedIcon;
+    QIcon m_stalledDLIcon;
+    QIcon m_stalledUPIcon;
+    QIcon m_uploadingIcon;
 };
 
-#endif // TRANSFERLISTMODEL_H
+Q_DECLARE_METATYPE(TransferListModel::Column)

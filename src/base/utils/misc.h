@@ -26,87 +26,63 @@
  * exception statement from your version.
  */
 
-#ifndef UTILS_MISC_H
-#define UTILS_MISC_H
+#pragma once
 
-#include <QtGlobal>
+#include <QtTypes>
 
-#ifdef Q_OS_WIN
-#include <memory>
-#include <Windows.h>
-#endif
+#include "base/pathfwd.h"
 
-#include <QString>
-
-enum class ShutdownDialogAction;
+class QString;
+class QStringView;
 
 /*  Miscellaneous functions that can be useful */
-
-namespace Utils
+namespace Utils::Misc
 {
-    namespace Misc
+    // use binary prefix standards from IEC 60027-2
+    // see http://en.wikipedia.org/wiki/Kilobyte
+    enum class SizeUnit
     {
-        // use binary prefix standards from IEC 60027-2
-        // see http://en.wikipedia.org/wiki/Kilobyte
-        enum class SizeUnit
-        {
-            Byte,       // 1024^0,
-            KibiByte,   // 1024^1,
-            MebiByte,   // 1024^2,
-            GibiByte,   // 1024^3,
-            TebiByte,   // 1024^4,
-            PebiByte,   // 1024^5,
-            ExbiByte    // 1024^6,
-            // int64 is used for sizes and thus the next units can not be handled
-            // ZebiByte,   // 1024^7,
-            // YobiByte,   // 1024^8
-        };
+        Byte,       // 1024^0,
+        KibiByte,   // 1024^1,
+        MebiByte,   // 1024^2,
+        GibiByte,   // 1024^3,
+        TebiByte,   // 1024^4,
+        PebiByte,   // 1024^5,
+        ExbiByte    // 1024^6,
+        // int64 is used for sizes and thus the next units can not be handled
+        // ZebiByte,   // 1024^7,
+        // YobiByte,   // 1024^8
+    };
 
-        QString parseHtmlLinks(const QString &rawText);
+    enum class TimeResolution
+    {
+        Seconds,
+        Minutes
+    };
 
-        void shutdownComputer(const ShutdownDialogAction &action);
+    QString parseHtmlLinks(const QString &rawText);
 
-        QString osName();
-        QString boostVersionString();
-        QString libtorrentVersionString();
-        QString opensslVersionString();
-        QString zlibVersionString();
+    QString osName();
+    QString boostVersionString();
+    QString libtorrentVersionString();
+    QString opensslVersionString();
+    QString zlibVersionString();
 
-        QString unitString(SizeUnit unit, bool isSpeed = false);
+    QString unitString(SizeUnit unit, bool isSpeed = false);
 
-        // return the best user friendly storage unit (B, KiB, MiB, GiB, TiB)
-        // value must be given in bytes
-        QString friendlyUnit(qint64 bytesValue, bool isSpeed = false);
-        int friendlyUnitPrecision(SizeUnit unit);
-        qint64 sizeInBytes(qreal size, SizeUnit unit);
+    // return the best user friendly storage unit (B, KiB, MiB, GiB, TiB)
+    // value must be given in bytes
+    QString friendlyUnit(qint64 bytes, bool isSpeed = false, int precision = -1);
+    QString friendlyUnitCompact(qint64 bytes);
+    int friendlyUnitPrecision(SizeUnit unit);
+    qint64 sizeInBytes(qreal size, SizeUnit unit);
 
-        bool isPreviewable(const QString &extension);
+    bool isPreviewable(const Path &filePath);
+    bool isTorrentLink(const QString &str);
 
-        // Take a number of seconds and return a user-friendly
-        // time duration like "1d 2h 10m".
-        QString userFriendlyDuration(qlonglong seconds, qlonglong maxCap = -1);
-        QString getUserIDString();
+    // Take a number of seconds and return a user-friendly
+    // time duration like "1d 2h 10m".
+    QString userFriendlyDuration(qlonglong seconds, qlonglong maxCap = -1, TimeResolution resolution = TimeResolution::Minutes);
 
-#ifdef Q_OS_WIN
-        QString windowsSystemPath();
-
-        template <typename T>
-        T loadWinAPI(const QString &source, const char *funcName)
-        {
-            QString path = windowsSystemPath();
-            if (!path.endsWith('\\'))
-                path += '\\';
-
-            path += source;
-
-            auto pathWchar = std::make_unique<wchar_t[]>(path.length() + 1);
-            path.toWCharArray(pathWchar.get());
-
-            return reinterpret_cast<T>(
-                ::GetProcAddress(::LoadLibraryW(pathWchar.get()), funcName));
-        }
-#endif // Q_OS_WIN
-    }
+    QString languageToLocalizedString(QStringView localeStr);
 }
-
-#endif // UTILS_MISC_H

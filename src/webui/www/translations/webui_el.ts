@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS language="el" version="2.1">
+<TS version="2.1" language="el">
 <context>
     <name>AboutDlg</name>
     <message>
@@ -23,16 +23,180 @@
         <translation>Παράλειψη ελέγχου hash</translation>
     </message>
     <message>
-        <source>Create subfolder</source>
-        <translation type="vanished">Δημιουργία υποφακέλου</translation>
-    </message>
-    <message>
         <source>Torrent Management Mode:</source>
         <translation>Λειτουργία Διαχείρισης Torrent:</translation>
     </message>
     <message>
-        <source>Keep top-level folder</source>
+        <source>Content layout:</source>
+        <translation>Διάταξη περιεχομένου:</translation>
+    </message>
+    <message>
+        <source>Original</source>
+        <translation>Πρωτότυπο</translation>
+    </message>
+    <message>
+        <source>Create subfolder</source>
+        <translation>Δημιουργία υποφακέλου</translation>
+    </message>
+    <message>
+        <source>Don't create subfolder</source>
+        <translation>Να μη δημιουργηθεί υποφάκελος</translation>
+    </message>
+    <message>
+        <source>Manual</source>
+        <translation>Χειροκίνητα</translation>
+    </message>
+    <message>
+        <source>Automatic</source>
+        <translation>Αυτόματα</translation>
+    </message>
+    <message>
+        <source>Metadata received</source>
+        <translation>Μεταδεδομένα ελήφθησαν</translation>
+    </message>
+    <message>
+        <source>Files checked</source>
+        <translation>Αρχεία ελέγχθηκαν</translation>
+    </message>
+    <message>
+        <source>Stop condition:</source>
+        <translation>Κατάσταση διακοπής:</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>Κανένα</translation>
+    </message>
+    <message>
+        <source>Add to top of queue</source>
+        <translation>Προσθήκη στην αρχή της ουράς</translation>
+    </message>
+    <message>
+        <source>Download in sequential order</source>
+        <translation>Λήψη σε διαδοχική σειρά</translation>
+    </message>
+    <message>
+        <source>Size:</source>
+        <translation>Μέγεθος:</translation>
+    </message>
+    <message>
+        <source>Save at</source>
+        <translation>Αποθήκευση σε</translation>
+    </message>
+    <message>
+        <source>Torrent information</source>
+        <translation>Πληροφορίες torrent</translation>
+    </message>
+    <message>
+        <source>Save path:</source>
+        <translation>Διαδρομή αποθήκευσης:</translation>
+    </message>
+    <message>
+        <source>Info hash v1:</source>
+        <translation>Info hash v1:</translation>
+    </message>
+    <message>
+        <source>Rename torrent</source>
+        <translation>Μετονομασία του torrent</translation>
+    </message>
+    <message>
+        <source>Add torrent</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Not available</source>
+        <translation>Μη διαθέσιμο</translation>
+    </message>
+    <message>
+        <source>Priority</source>
+        <translation>Προτεραιότητα</translation>
+    </message>
+    <message>
+        <source>High</source>
+        <translation>Υψηλή</translation>
+    </message>
+    <message>
+        <source>Torrent settings</source>
+        <translation>Ρυθμίσεις torrent</translation>
+    </message>
+    <message>
+        <source>Normal</source>
+        <translation>Κανονική</translation>
+    </message>
+    <message>
+        <source>Save files to location:</source>
+        <translation>Αποθήκευση αρχείων στην τοποθεσία:</translation>
+    </message>
+    <message>
+        <source>Set as default category</source>
+        <translation>Ορισμός ως προεπιλεγμένη κατηγορία</translation>
+    </message>
+    <message>
+        <source>Limit upload rate</source>
+        <translation>Περιορισμός ρυθμού αποστολής</translation>
+    </message>
+    <message>
+        <source>Filter files...</source>
+        <translation>Φίλτρο αρχείων...</translation>
+    </message>
+    <message>
+        <source>Add Torrent</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use another path for incomplete torrent</source>
+        <translation>Χρήση άλλης διαδρομής για ημιτελή torrents</translation>
+    </message>
+    <message>
+        <source>Date:</source>
+        <translation>Ημερομηνία:</translation>
+    </message>
+    <message>
+        <source>Save as .torrent file</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Όλα</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Δ/Υ</translation>
+    </message>
+    <message>
+        <source>Maximum</source>
+        <translation>Μέγιστη</translation>
+    </message>
+    <message>
+        <source>Do not download</source>
+        <translation>Να μην γίνει λήψη</translation>
+    </message>
+    <message>
+        <source>Download first and last pieces first</source>
+        <translation>Λήψη των πρώτων και των τελευταίων κομματιών πρώτα</translation>
+    </message>
+    <message>
+        <source>Comment:</source>
+        <translation>Σχόλιο:</translation>
+    </message>
+    <message>
+        <source>Unable to download torrent file</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Info hash v2:</source>
+        <translation>Info hash v2:</translation>
+    </message>
+    <message>
+        <source>Tags:</source>
+        <translation>Ετικέτες:</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Αρχεία</translation>
+    </message>
+    <message>
+        <source>Limit download rate</source>
+        <translation>Περιορισμός ρυθμού λήψης</translation>
     </message>
 </context>
 <context>
@@ -61,18 +225,6 @@
         <translation>Αφαίρεση αχρησιμοποίητων κατηγοριών</translation>
     </message>
     <message>
-        <source>Resume torrents</source>
-        <translation>Συνέχιση torrents</translation>
-    </message>
-    <message>
-        <source>Pause torrents</source>
-        <translation>Παύση torrents</translation>
-    </message>
-    <message>
-        <source>Delete torrents</source>
-        <translation>Διαγραφή torrents</translation>
-    </message>
-    <message>
         <source>New Category</source>
         <translation>Νέα κατηγορία</translation>
     </message>
@@ -80,16 +232,28 @@
         <source>Edit category...</source>
         <translation>Επεξεργασία κατηγορίας...</translation>
     </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation>Αφαίρεση torrents</translation>
+    </message>
+    <message>
+        <source>Add subcategory...</source>
+        <translation>Προσθήκη υποκατηγορίας...</translation>
+    </message>
+    <message>
+        <source>Start torrents</source>
+        <translation>Έναρξη torrents</translation>
+    </message>
+    <message>
+        <source>Stop torrents</source>
+        <translation>Παύση torrents</translation>
+    </message>
 </context>
 <context>
     <name>HttpServer</name>
     <message>
         <source>Exit qBittorrent</source>
         <translation>Έξοδος qBittorrent</translation>
-    </message>
-    <message>
-        <source>Only one link per line</source>
-        <translation>Μόνο ένας σύνδεσμος ανά γραμμή</translation>
     </message>
     <message>
         <source>Global upload rate limit must be greater than 0 or disabled.</source>
@@ -121,67 +285,23 @@
     </message>
     <message>
         <source>Maximum number of connections limit must be greater than 0 or disabled.</source>
-        <translation>Το όριο μέγιστου αριθμού συνδέσεων πρέπει να είναι μεγαλύτερο από 0 ή απενεργοποιημένο.</translation>
+        <translation>Το όριο του μέγιστου αριθμού συνδέσεων πρέπει να είναι μεγαλύτερο από 0 ή απενεργοποιημένο.</translation>
     </message>
     <message>
         <source>Maximum number of connections per torrent limit must be greater than 0 or disabled.</source>
-        <translation>Το όριο μέγιστου αριθμού συνδέσεων ανά torrent πρέπει να είναι μεγαλύτερο από 0 ή απενεργοποιημένο.</translation>
+        <translation>Το όριο του μέγιστου αριθμού συνδέσεων ανά torrent πρέπει να είναι μεγαλύτερο από 0 ή απενεργοποιημένο.</translation>
     </message>
     <message>
         <source>Maximum number of upload slots per torrent limit must be greater than 0 or disabled.</source>
-        <translation>Το όριο μέγιστου αριθμού θέσεων αποστολής ανά torrent πρέπει να είναι μεγαλύτερο από 0 ή απενεργοποιημένο.</translation>
+        <translation>Το όριο του μέγιστου αριθμού slots αποστολής ανά torrent πρέπει να είναι μεγαλύτερο από 0 ή απενεργοποιημένο.</translation>
     </message>
     <message>
         <source>Unable to save program preferences, qBittorrent is probably unreachable.</source>
-        <translation>Δεν είναι δυνατή η αποθήκευση των προτιμήσεων του προγράμματος, το qBittorrent είναι πιθανώς απρόσιτο.</translation>
-    </message>
-    <message>
-        <source>IRC: #qbittorrent on Freenode</source>
-        <translation>IRC: #qbittorrent στο Freenode</translation>
+        <translation>Δεν είναι δυνατή η αποθήκευση των προτιμήσεων του προγράμματος, το qBittorrent είναι πιθανώς μη διαθέσιμο.</translation>
     </message>
     <message>
         <source>Unknown</source>
         <translation>Άγνωστο</translation>
-    </message>
-    <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>Το κοινό όριο αναλογίας πρέπει να είναι μεταξύ 0 και 9998.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>Το χρονικό όριο διαμοιρασμού πρέπει να είναι μεταξύ 0 και 525600 λεπτών.</translation>
-    </message>
-    <message>
-        <source>The port used for incoming connections must be between 1 and 65535.</source>
-        <translation>Η θύρα που χρησιμοποιείται για εισερχόμενες συνδέσεις θα πρέπει να είναι μεταξύ 1 και 65535.</translation>
-    </message>
-    <message>
-        <source>The port used for the Web UI must be between 1 and 65535.</source>
-        <translation>Η θύρα που χρησιμοποιείται για το UI Ιστού θα πρέπει να είναι μεταξύ 1 και 65535.</translation>
-    </message>
-    <message>
-        <source>Unable to log in, qBittorrent is probably unreachable.</source>
-        <translation>Αδυναμία σύνδεσης, το qBittorrent είναι πιθανώς απρόσιτο.</translation>
-    </message>
-    <message>
-        <source>Invalid Username or Password.</source>
-        <translation>Μη έγκυρο Όνομα Χρήστη ή Κωδικός Πρόσβασης.</translation>
-    </message>
-    <message>
-        <source>Username</source>
-        <translation>Όνομα χρήστη</translation>
-    </message>
-    <message>
-        <source>Password</source>
-        <translation>Κωδικός Πρόσβασης</translation>
-    </message>
-    <message>
-        <source>Login</source>
-        <translation>Σύνδεση</translation>
-    </message>
-    <message>
-        <source>Original authors</source>
-        <translation>Αρχικοί δημιουργοί</translation>
     </message>
     <message>
         <source>Apply</source>
@@ -190,23 +310,6 @@
     <message>
         <source>Add</source>
         <translation>Προσθήκη</translation>
-    </message>
-    <message>
-        <source>Upload Torrents</source>
-        <comment>Upload torrent files to qBittorent using WebUI</comment>
-        <translation>Μεταφόρτωση Torrents</translation>
-    </message>
-    <message>
-        <source>Save files to location:</source>
-        <translation>Αποθήκευση αρχείων στην τοποθεσία:</translation>
-    </message>
-    <message>
-        <source>Cookie:</source>
-        <translation>Cookie:</translation>
-    </message>
-    <message>
-        <source>Type folder here</source>
-        <translation>Πληκτρολογήστε την πλήρες διαδρομή του φακέλου εδώ</translation>
     </message>
     <message>
         <source>More information</source>
@@ -218,24 +321,7 @@
     </message>
     <message>
         <source>Set location</source>
-        <translation>Ορισμός θέσης</translation>
-    </message>
-    <message>
-        <source>Limit upload rate</source>
-        <translation>Όριο ταχύτητας αποστολής...</translation>
-    </message>
-    <message>
-        <source>Limit download rate</source>
-        <translation>Όριο ταχύτητας λήψης...</translation>
-    </message>
-    <message>
-        <source>Rename torrent</source>
-        <translation>Μετονομασία του torrent</translation>
-    </message>
-    <message>
-        <source>Other...</source>
-        <comment>Save Files to: Watch Folder / Default Folder / Other...</comment>
-        <translation>Άλλο...</translation>
+        <translation>Ορισμός τοποθεσίας</translation>
     </message>
     <message>
         <source>Monday</source>
@@ -277,40 +363,24 @@
         <translation>Αποσύνδεση</translation>
     </message>
     <message>
-        <source>Download Torrents from their URLs or Magnet links</source>
-        <translation>Λήψη Torrents από τα URL ή τους συνδέσμους Magnet τους</translation>
-    </message>
-    <message>
-        <source>Upload local torrent</source>
-        <translation>Μεταφόρτωση τοπικού torrent</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete the selected torrents from the transfer list?</source>
-        <translation>Είστε σίγουρος ότι θέλετε να διαγράψετε τα επιλεγμένα torrent από την λίστα μεταφοράς?</translation>
-    </message>
-    <message>
         <source>Save</source>
         <translation>Αποθήκευση</translation>
     </message>
     <message>
         <source>qBittorrent client is not reachable</source>
-        <translation>Ο πελάτης qBittorrent δεν είναι προσβάσιμος</translation>
+        <translation>Ο qBittorrent client δεν είναι διαθέσιμος</translation>
     </message>
     <message>
         <source>Global number of upload slots limit must be greater than 0 or disabled.</source>
-        <translation type="unfinished" />
+        <translation>Το γενικό νούμερο του όριου των slots αποστολής πρέπει να είναι μεγαλύτερο από 0 ή απενεργοποιημένο.</translation>
     </message>
     <message>
         <source>Invalid category name:\nPlease do not use any special characters in the category name.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to create category</source>
-        <translation type="unfinished" />
+        <translation>Μη έγκυρο όνομα κατηγορίας:\nΠαρακαλώ μην χρησιμοποιείτε ειδικούς χαρακτήρες στο όνομα της κατηγορίας.</translation>
     </message>
     <message>
         <source>Upload rate threshold must be greater than 0.</source>
-        <translation type="unfinished" />
+        <translation>Το όριο ρυθμού αποστολής πρέπει να είναι μεγαλύτερο του 0.</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -322,50 +392,178 @@
     </message>
     <message>
         <source>Torrent inactivity timer must be greater than 0.</source>
-        <translation type="unfinished" />
+        <translation>Ο χρόνος αδράνειας του torrent πρέπει να είναι μεγαλύτερος του 0.</translation>
     </message>
     <message>
         <source>Saving Management</source>
-        <translation type="unfinished" />
+        <translation>Διαχείριση Αποθήκευσης</translation>
     </message>
     <message>
         <source>Download rate threshold must be greater than 0.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>qBittorrent has been shutdown</source>
-        <translation type="unfinished" />
+        <translation>Το όριο ρυθμού λήψης πρέπει να είναι μεγαλύτερο του 0.</translation>
     </message>
     <message>
         <source>Open documentation</source>
-        <translation type="unfinished" />
+        <translation>Άνοιγμα τεκμηρίωσης</translation>
     </message>
     <message>
         <source>Register to handle magnet links...</source>
-        <translation type="unfinished" />
+        <translation>Κάντε εγγραφή για διαχείριση συνδέσμων magnet...</translation>
     </message>
     <message>
         <source>Unable to add peers. Please ensure you are adhering to the IP:port format.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>JavaScript Required! You must enable JavaScript for the Web UI to work properly</source>
-        <translation type="unfinished" />
+        <translation>Αδυναμία προσθήκης peer. Παρακαλώ βεβαιωθείτε ότι χρησιμοποιείτε τη σωστή μορφή IP:θύρα.</translation>
     </message>
     <message>
         <source>Name cannot be empty</source>
-        <translation type="unfinished" />
+        <translation>Το όνομα δεν μπορεί να είναι κενό</translation>
     </message>
     <message>
         <source>Name is unchanged</source>
-        <translation type="unfinished" />
+        <translation>Το όνομα δεν άλλαξε</translation>
     </message>
     <message>
         <source>Failed to update name</source>
-        <translation type="unfinished" />
+        <translation>Αδυναμία ενημέρωσης ονόματος</translation>
     </message>
     <message>
         <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>The port used for incoming connections must be between 0 and 65535.</source>
+        <translation>Η θύρα που χρησιμοποιείται για εισερχόμενες συνδέσεις θα πρέπει να είναι μεταξύ 0 και 65535.</translation>
+    </message>
+    <message>
+        <source>Original author</source>
+        <translation>Αρχικός δημιουργός</translation>
+    </message>
+    <message>
+        <source>The port used for the WebUI must be between 1 and 65535.</source>
+        <translation>Η θύρα που χρησιμοποιείται για το Web UI πρέπει να είναι μεταξύ 1 και 65535.</translation>
+    </message>
+    <message>
+        <source>%1 has been shutdown</source>
+        <translation>Το %1 τερματίστηκε.</translation>
+    </message>
+    <message>
+        <source>JavaScript Required! You must enable JavaScript for the WebUI to work properly</source>
+        <translation>Απαιτείται JavaScript! Πρέπει να ενεργοποιήσετε τη JavaScript για να λειτουργήσει σωστά το Web UI</translation>
+    </message>
+    <message>
+        <source>External IP: N/A</source>
+        <translation>Εξωτερική IP: Δ/Υ</translation>
+    </message>
+    <message>
+        <source>Reverse proxy setup examples</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Could not contact qBittorrent</source>
+        <translation>Αδυναμία επικοινωνίας με qBittorrent</translation>
+    </message>
+    <message>
+        <source>Remember choice</source>
+        <translation>Απομνημόνευση επιλογής</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove these %1 torrents from the transfer list?</source>
+        <translation>Είστε σίγουροι πως θέλετε να διαγράψετε αυτά τα "%1" torrents από τη λίστα μεταφορών;</translation>
+    </message>
+    <message>
+        <source>Unable to delete torrents.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>URL</source>
+        <translation>URL</translation>
+    </message>
+    <message>
+        <source>External IP: %1%2</source>
+        <translation>Εξωτερική IP: %1%2</translation>
+    </message>
+    <message>
+        <source>Edit web seed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Are you sure you want to remove %1 from the transfer list?</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Unable to set Auto Torrent Management for the selected torrents.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Unable to stop torrents.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Unable to download file</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>External IPs: %1, %2</source>
+        <translation>Εξωτερικές IP: %1, %2</translation>
+    </message>
+    <message>
+        <source>Unable to recheck torrents.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>List of web seeds to add (one per line):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Unable to start torrents.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Add web seeds</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Unable to delete API key.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Peer turnover interval must be greater than or equal to 0.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Unable to parse response.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Unable to rotate API key.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Peer turnover must be between 0 and 100.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Outstanding memory when checking torrents must be greater than 0 and less than 1024.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Unable to load program preferences, qBittorrent is probably unreachable.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Peer turnover cutoff must be between 0 and 100.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Peer DSCP must be between 0 and 255.</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -396,16 +594,12 @@
         <translation>Επιλογές…</translation>
     </message>
     <message>
-        <source>Resume</source>
-        <translation>Συνέχιση</translation>
-    </message>
-    <message>
         <source>Top Toolbar</source>
-        <translation>Κορυφαία Γραμμή εργαλείων</translation>
+        <translation>Πάνω Γραμμή εργαλείων</translation>
     </message>
     <message>
         <source>Status Bar</source>
-        <translation>Γραμμή κατάστασης</translation>
+        <translation>Γραμμή Κατάστασης</translation>
     </message>
     <message>
         <source>Speed in Title Bar</source>
@@ -416,28 +610,12 @@
         <translation>Δωρεά!</translation>
     </message>
     <message>
-        <source>Resume All</source>
-        <translation>Συνέχιση Όλων</translation>
-    </message>
-    <message>
         <source>Statistics</source>
         <translation>Στατιστικά</translation>
     </message>
     <message>
         <source>About</source>
         <translation>Σχετικά</translation>
-    </message>
-    <message>
-        <source>Pause</source>
-        <translation>Παύση</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Διαγραφή</translation>
-    </message>
-    <message>
-        <source>Pause All</source>
-        <translation>Παύση Όλων</translation>
     </message>
     <message>
         <source>Add Torrent File...</source>
@@ -472,21 +650,16 @@
         <translation>Είστε σίγουροι ότι θέλετε να κλείσετε το qBittorrent?</translation>
     </message>
     <message>
-        <source>[D: %1, U: %2] qBittorrent %3</source>
-        <comment>D = Download; U = Upload; %3 is qBittorrent version</comment>
-        <translation>[Λ: %1, Α: %2] qBittorrent %3</translation>
-    </message>
-    <message>
         <source>Alternative speed limits</source>
         <translation>Εναλλακτικά όρια ταχύτητας</translation>
     </message>
     <message>
         <source>Search Engine</source>
-        <translation>Μηχανή αναζήτησης</translation>
+        <translation>Μηχανή Αναζήτησης</translation>
     </message>
     <message>
         <source>Filter torrent list...</source>
-        <translation type="unfinished" />
+        <translation>Φίλτρο λίστας torrent...</translation>
     </message>
     <message>
         <source>Search</source>
@@ -498,82 +671,158 @@
     </message>
     <message>
         <source>Move up in the queue</source>
-        <translation type="unfinished" />
+        <translation>Μετακίνηση προς τα πάνω στην ουρά</translation>
     </message>
     <message>
         <source>Move Up Queue</source>
-        <translation type="unfinished" />
+        <translation>Μετακίνηση Ουράς Πάνω</translation>
     </message>
     <message>
         <source>Bottom of Queue</source>
-        <translation type="unfinished" />
+        <translation>Τέλος της Ουράς</translation>
     </message>
     <message>
         <source>Move to the bottom of the queue</source>
-        <translation type="unfinished" />
+        <translation>Μετακίνηση στο τέλος της ουράς</translation>
     </message>
     <message>
         <source>Top of Queue</source>
-        <translation type="unfinished" />
+        <translation>Κορυφή της Ουράς</translation>
     </message>
     <message>
         <source>Move Down Queue</source>
-        <translation type="unfinished" />
+        <translation>Μετακίνηση Ουράς Κάτω</translation>
     </message>
     <message>
         <source>Move down in the queue</source>
-        <translation type="unfinished" />
+        <translation>Μετακίνηση προς τα κάτω στην ουρά</translation>
     </message>
     <message>
         <source>Move to the top of the queue</source>
-        <translation type="unfinished" />
+        <translation>Μετακίνηση στην κορυφή της ουράς</translation>
     </message>
     <message>
         <source>Your browser does not support this feature</source>
-        <translation type="unfinished" />
+        <translation>Ο περιηγητής σας δεν υποστηρίζει αυτό το χαρακτηριστικό</translation>
     </message>
     <message>
         <source>To use this feature, the WebUI needs to be accessed over HTTPS</source>
-        <translation type="unfinished" />
+        <translation>Για να χρησιμοποιήσετε αυτήν τη δυνατότητα, πρέπει να έχετε πρόσβαση στο WebUI μέσω HTTPS</translation>
     </message>
     <message>
         <source>Connection status: Firewalled</source>
-        <translation type="unfinished" />
+        <translation>Κατάσταση σύνδεσης: Με τείχος προστασίας</translation>
     </message>
     <message>
         <source>Connection status: Connected</source>
-        <translation type="unfinished" />
+        <translation>Κατάσταση σύνδεσης: Συνδεμένο</translation>
     </message>
     <message>
         <source>Alternative speed limits: Off</source>
-        <translation type="unfinished" />
+        <translation>Εναλλακτικά όρια ταχύτητας: Ανενεργό</translation>
     </message>
     <message>
         <source>Download speed icon</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Connection status</source>
-        <translation type="unfinished" />
+        <translation>Εικονίδιο ταχύτητας λήψης</translation>
     </message>
     <message>
         <source>Alternative speed limits: On</source>
-        <translation type="unfinished" />
+        <translation>Εναλλακτικά όρια ταχύτητας: Ενεργό</translation>
     </message>
     <message>
         <source>Upload speed icon</source>
-        <translation type="unfinished" />
+        <translation>Εικονίδιο ταχύτητας αποστολής</translation>
     </message>
     <message>
         <source>Connection status: Disconnected</source>
-        <translation type="unfinished" />
+        <translation>Κατάσταση σύνδεσης: Αποσυνδεμένο</translation>
     </message>
     <message>
         <source>RSS Reader</source>
-        <translation type="unfinished" />
+        <translation>Αναγνώστης RSS</translation>
     </message>
     <message>
         <source>RSS</source>
+        <translation>RSS</translation>
+    </message>
+    <message>
+        <source>Filters Sidebar</source>
+        <translation>Πλαϊνή γραμμή φίλτρων</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Ακύρωση</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Αφαίρεση</translation>
+    </message>
+    <message>
+        <source>Execution Log</source>
+        <translation>Καταγραφή Εκτέλεσης</translation>
+    </message>
+    <message>
+        <source>Log</source>
+        <translation>Αρχείο καταγραφής</translation>
+    </message>
+    <message>
+        <source>[D: %1, U: %2]</source>
+        <translation>[D: %1, U: %2]</translation>
+    </message>
+    <message>
+        <source>Filter by:</source>
+        <translation>Φίλτρο κατά:</translation>
+    </message>
+    <message>
+        <source>Save Path</source>
+        <translation>Διαδρομή Aποθήκευσης</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>Διακοπή</translation>
+    </message>
+    <message>
+        <source>Use regular expression</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Would you like to start all torrents?</source>
+        <translation>Θα θέλατε να εκκινήσετε όλα τα torrents;</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation>Εκκίνηση</translation>
+    </message>
+    <message>
+        <source>Manage Cookies...</source>
+        <translation>Διαχείριση Cookies...</translation>
+    </message>
+    <message>
+        <source>Unable to export torrent file</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Όνομα</translation>
+    </message>
+    <message>
+        <source>Would you like to stop all torrents?</source>
+        <translation>Θα θέλατε να διακόψετε όλα τα torrents;</translation>
+    </message>
+    <message>
+        <source>Start All</source>
+        <translation>Εκκίνηση Όλων</translation>
+    </message>
+    <message>
+        <source>Stop All</source>
+        <translation>Διακοπή Όλων</translation>
+    </message>
+    <message>
+        <source>Torrent Creator</source>
+        <translation>Δημιουργός torrent</translation>
+    </message>
+    <message>
+        <source>Filter feed items...</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -600,24 +849,12 @@
         <translation>BitTorrent</translation>
     </message>
     <message>
-        <source>Web UI</source>
-        <translation>Διεπαφή Χρήστη Ιστού</translation>
-    </message>
-    <message>
         <source>Language</source>
         <translation>Γλώσσα</translation>
     </message>
     <message>
-        <source>User Interface Language:</source>
-        <translation>Διεπαφή Χρήστη Γλώσσας:</translation>
-    </message>
-    <message>
         <source>Email notification upon download completion</source>
         <translation>Ειδοποίηση ηλεκτρονικού ταχυδρομείου με την ολοκλήρωση της λήψης</translation>
-    </message>
-    <message>
-        <source>Run external program on torrent completion</source>
-        <translation>Εκτέλεση εξωτερικού προγράμματος μετά την ολοκλήρωση ενός torrent</translation>
     </message>
     <message>
         <source>IP Filtering</source>
@@ -629,15 +866,11 @@
     </message>
     <message>
         <source>Torrent Queueing</source>
-        <translation>Torrent στην Ουρά</translation>
-    </message>
-    <message>
-        <source>Automatically add these trackers to new downloads:</source>
-        <translation>Αυτόματη προσθήκη αυτών των ιχνηλατών σε νέες λήψεις:</translation>
+        <translation>Torrent σε Ουρά</translation>
     </message>
     <message>
         <source>Web User Interface (Remote control)</source>
-        <translation>Διαδικτυακό Περιβάλλον Χρήστη (Απομακρυσμένη διαχείριση)</translation>
+        <translation>Web UI (Απομακρυσμένος έλεγχος)</translation>
     </message>
     <message>
         <source>IP address:</source>
@@ -653,11 +886,11 @@
     </message>
     <message>
         <source>Bypass authentication for clients on localhost</source>
-        <translation>Παράκαμψη πιστοποίησης για υπολογιστές-πελάτες σε localhost</translation>
+        <translation>Παράκαμψη ελέγχου ταυτότητας για clients σε localhost</translation>
     </message>
     <message>
         <source>Bypass authentication for clients in whitelisted IP subnets</source>
-        <translation>Παράκαμψη πιστοποίησης για υπολογιστές-πελάτες σε υποδίκτυα στη λίστα επιτρεπόμενων IP</translation>
+        <translation>Παράκαμψη ελέγχου ταυτότητας για clients σε IP subnets της allowlist</translation>
     </message>
     <message>
         <source>Update my dynamic domain name</source>
@@ -665,19 +898,19 @@
     </message>
     <message>
         <source>Keep incomplete torrents in:</source>
-        <translation>Διατήρηση μη ολοκληρωμένων torrent στο:</translation>
+        <translation>Διατήρηση μη ολοκληρωμένων torrents σε:</translation>
     </message>
     <message>
         <source>Copy .torrent files to:</source>
-        <translation>Αντιγραφή αρχείων .torrent στο:</translation>
+        <translation>Αντιγραφή αρχείων .torrent σε:</translation>
     </message>
     <message>
         <source>Copy .torrent files for finished downloads to:</source>
-        <translation>Αντιγραφή αρχείων .torrent για ολοκληρωμένες λήψεις στο:</translation>
+        <translation>Αντιγραφή αρχείων .torrent για ολοκληρωμένες λήψεις σε:</translation>
     </message>
     <message>
         <source>Pre-allocate disk space for all files</source>
-        <translation>Προ-εντοπισμός χώρου στο δίσκο για όλα τα αρχεία</translation>
+        <translation>Προ-εκχώρηση χώρου στο δίσκο για όλα τα αρχεία</translation>
     </message>
     <message>
         <source>Append .!qB extension to incomplete files</source>
@@ -708,16 +941,12 @@
         <translation>Κωδικός:</translation>
     </message>
     <message>
-        <source>Enabled protocol:</source>
-        <translation>Ενεργό πρωτόκολλο</translation>
-    </message>
-    <message>
         <source>TCP and μTP</source>
         <translation>TCP και μTP</translation>
     </message>
     <message>
         <source>Listening Port</source>
-        <translation>Θύρα ακρόασης</translation>
+        <translation>Θύρα Ακρόασης</translation>
     </message>
     <message>
         <source>Port used for incoming connections:</source>
@@ -728,40 +957,32 @@
         <translation>Χρήση προώθησης UPnP / NAT - PMP θυρών από τον δρομολογητή μου</translation>
     </message>
     <message>
-        <source>Use different port on each startup</source>
-        <translation>Χρήση διαφορετικής θύρας σε κάθε εκκίνηση</translation>
-    </message>
-    <message>
         <source>Connections Limits</source>
         <translation>Όρια Συνδέσεων</translation>
     </message>
     <message>
         <source>Maximum number of connections per torrent:</source>
-        <translation>Μέγιστος αριθμός συνδέσεων ανά torrent</translation>
+        <translation>Μέγιστος αριθμός συνδέσεων ανά torrent:</translation>
     </message>
     <message>
         <source>Global maximum number of connections:</source>
-        <translation>Μέγιστος συνολικός αριθμός συνδέσεων:</translation>
+        <translation>Γενικός μέγιστος αριθμός συνδέσεων:</translation>
     </message>
     <message>
         <source>Maximum number of upload slots per torrent:</source>
-        <translation>Μέγιστος αριθμός θέσεων αποστολής ανά torrent:</translation>
+        <translation>Μέγιστος αριθμός slots αποστολής ανά torrent:</translation>
     </message>
     <message>
         <source>Global maximum number of upload slots:</source>
-        <translation>Γενικός μέγιστος αριθμός θέσεων αποστολής:</translation>
+        <translation>Γενικός μέγιστος αριθμός slots αποστολής:</translation>
     </message>
     <message>
         <source>Proxy Server</source>
-        <translation>Διακομιστής Μεσολάβησης</translation>
+        <translation>Διακομιστής Proxy</translation>
     </message>
     <message>
         <source>Type:</source>
         <translation>Τύπος:</translation>
-    </message>
-    <message>
-        <source>(None)</source>
-        <translation>(Κανένα)</translation>
     </message>
     <message>
         <source>SOCKS4</source>
@@ -777,7 +998,7 @@
     </message>
     <message>
         <source>Host:</source>
-        <translation>Εξυπηρετητής:</translation>
+        <translation>Host:</translation>
     </message>
     <message>
         <source>Port:</source>
@@ -785,11 +1006,7 @@
     </message>
     <message>
         <source>Use proxy for peer connections</source>
-        <translation>Χρήση μεσολαβητή για συνδέσεις ομότιμων</translation>
-    </message>
-    <message>
-        <source>Use proxy only for torrents</source>
-        <translation>Χρήση μεσολαβητή μόνο για torrents</translation>
+        <translation>Χρήση proxy για peer συνδέσεις</translation>
     </message>
     <message>
         <source>Filter path (.dat, .p2p, .p2b):</source>
@@ -801,7 +1018,7 @@
     </message>
     <message>
         <source>Apply to trackers</source>
-        <translation>Εφαρμογή στους ιχνηλάτες</translation>
+        <translation>Εφαρμογή στους trackers</translation>
     </message>
     <message>
         <source>Global Rate Limits</source>
@@ -813,7 +1030,7 @@
     </message>
     <message>
         <source>Download:</source>
-        <translation>Λήψη</translation>
+        <translation>Λήψη:</translation>
     </message>
     <message>
         <source>Alternative Rate Limits</source>
@@ -863,15 +1080,15 @@
     </message>
     <message>
         <source>Enable DHT (decentralized network) to find more peers</source>
-        <translation>Ενεργοποίηση DHT (αποκεντροποιημένο δίκτυο) για την εύρεση περισσοτέρων διασυνδέσεων</translation>
+        <translation>Ενεργοποίηση DHT (αποκεντρωμένο δίκτυο) για εύρεση περισσοτέρων peers</translation>
     </message>
     <message>
         <source>Enable Peer Exchange (PeX) to find more peers</source>
-        <translation>Ενεργοποίηση Ανταλλαγής Ομότιμων (PeX) για εύρεση περισσότερων ομότιμων χρηστών</translation>
+        <translation>Ενεργοποίηση Ανταλλαγής Peer (PeX) για εύρεση περισσότερων peers</translation>
     </message>
     <message>
         <source>Enable Local Peer Discovery to find more peers</source>
-        <translation>Ενεργοποίηση Ανακάλυψης Τοπικών Διασυνδέσεων για την εύρεση περισσοτέρων διασυνδέσεων</translation>
+        <translation>Ενεργοποίηση Ανακάλυψης Τοπικών Peer για εύρεση περισσοτέρων peers</translation>
     </message>
     <message>
         <source>Encryption mode:</source>
@@ -947,7 +1164,7 @@
     </message>
     <message>
         <source>%R: Root path (first torrent subdirectory path)</source>
-        <translation>%R: Ριζική διαδρομή (πρώτη διαδρομή υποκαταλόγου torrent)</translation>
+        <translation>%R: Ριζική διαδρομή (διαδρομή υποκαταλόγου του πρώτου torrent)</translation>
     </message>
     <message>
         <source>%D: Save path</source>
@@ -955,7 +1172,7 @@
     </message>
     <message>
         <source>%C: Number of files</source>
-        <translation>%C: Αριθμός των αρχείων</translation>
+        <translation>%C: Αριθμός αρχείων</translation>
     </message>
     <message>
         <source>%Z: Torrent size (bytes)</source>
@@ -963,23 +1180,11 @@
     </message>
     <message>
         <source>%T: Current tracker</source>
-        <translation>%T: Τρέχων ιχνηλάτης</translation>
-    </message>
-    <message>
-        <source>%I: Info hash</source>
-        <translation>%I: Πληροφορίες hash</translation>
+        <translation>%T: Τρέχων tracker</translation>
     </message>
     <message>
         <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., "%N")</source>
-        <translation>Συμβουλή: Ενθυλακώστε την παράμετρο με εισαγωγικά για να αποφύγετε την αποκοπή του κειμένου στον κενό χώρο (π.χ., "%Ν")</translation>
-    </message>
-    <message>
-        <source>The Web UI username must be at least 3 characters long.</source>
-        <translation>Το όνομα χρήστη του Περιβάλλοντος Χρήστη Ιστού πρέπει να έχει μήκος τουλάχιστον 3 χαρακτήρες.</translation>
-    </message>
-    <message>
-        <source>The Web UI password must be at least 6 characters long.</source>
-        <translation>Ο κωδικός πρόσβασης του Περιβάλλοντος Χρήστη Ιστού πρέπει να έχει μήκος τουλάχιστον 6 χαρακτήρες.</translation>
+        <translation>Συμβουλή: Περικλείστε την παράμετρο με αγγλικά εισαγωγικά για να αποφύγετε την αποκοπή του κειμένου στα κενά (π.χ. "%Ν")</translation>
     </message>
     <message>
         <source>minutes</source>
@@ -987,455 +1192,1039 @@
     </message>
     <message>
         <source>KiB/s</source>
-        <translation type="unfinished" />
+        <translation>KiB/s</translation>
     </message>
     <message>
         <source>Enable clickjacking protection</source>
-        <translation type="unfinished" />
+        <translation>Ενεργοποίηση προστασίας clickjacking</translation>
     </message>
     <message>
         <source>Enable Cross-Site Request Forgery (CSRF) protection</source>
-        <translation type="unfinished" />
+        <translation>Ενεργοποίηση προστασίας Cross-Site Request Forgery (CSRF)</translation>
     </message>
     <message>
         <source>Delete .torrent files afterwards</source>
-        <translation type="unfinished" />
+        <translation>Διαγραφή αρχείων .torrent μετά</translation>
     </message>
     <message>
         <source>Download rate threshold:</source>
-        <translation type="unfinished" />
+        <translation>Όριο ρυθμού λήψης:</translation>
     </message>
     <message>
         <source>Upload rate threshold:</source>
-        <translation type="unfinished" />
+        <translation>Όριο ρυθμού αποστολής:</translation>
     </message>
     <message>
         <source>Change current password</source>
-        <translation type="unfinished" />
+        <translation>Αλλαγή τρέχοντος κωδικού</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Use alternative Web UI</source>
-        <translation type="unfinished" />
+        <translation>Αυτόματα</translation>
     </message>
     <message>
         <source>Default Save Path:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>The alternative Web UI files location cannot be blank.</source>
-        <translation type="unfinished" />
+        <translation>Προεπιλεγμένη Διαδρομή Αποθήκευσης:</translation>
     </message>
     <message>
         <source>Do not start the download automatically</source>
-        <translation type="unfinished" />
+        <translation>Μη αυτόματη έναρξη της λήψης</translation>
     </message>
     <message>
         <source>Switch torrent to Manual Mode</source>
-        <translation type="unfinished" />
+        <translation>Εναλλαγή του torrent σε Χειροκίνητη Λειτουργία</translation>
     </message>
     <message>
         <source>When Torrent Category changed:</source>
-        <translation type="unfinished" />
+        <translation>Όταν αλλαχθεί η Κατηγορία Torrent:</translation>
     </message>
     <message>
         <source>Relocate affected torrents</source>
-        <translation type="unfinished" />
+        <translation>Μετεγκατάσταση επηρεασμένων torrent</translation>
     </message>
     <message>
         <source>Apply rate limit to peers on LAN</source>
-        <translation type="unfinished" />
+        <translation>Εφαρμογή ορίου ρυθμού σε peers στο LAN</translation>
     </message>
     <message>
         <source>0 means unlimited</source>
-        <translation type="unfinished" />
+        <translation>0 σημαίνει απεριόριστο</translation>
     </message>
     <message>
         <source>Relocate torrent</source>
-        <translation type="unfinished" />
+        <translation>Μετεγκατάσταση torrent</translation>
     </message>
     <message>
         <source>When Default Save Path changed:</source>
-        <translation type="unfinished" />
+        <translation>Όταν αλλάξει η Προεπιλεγμένη Διαδρομή Αποθήκευσης:</translation>
     </message>
     <message>
         <source>Enable Host header validation</source>
-        <translation type="unfinished" />
+        <translation>Ενεργοποίηση ελέγχου ταυτότητας της κεφαλίδας του Host</translation>
     </message>
     <message>
         <source>Security</source>
-        <translation type="unfinished" />
+        <translation>Ασφάλεια</translation>
     </message>
     <message>
         <source>When Category Save Path changed:</source>
-        <translation type="unfinished" />
+        <translation>Όταν αλλάξει η Διαδρομή Αποθήκευσης Κατηγορίας:</translation>
     </message>
     <message>
         <source>seconds</source>
-        <translation type="unfinished" />
+        <translation>δευτερόλεπτα</translation>
     </message>
     <message>
         <source>Switch affected torrents to Manual Mode</source>
-        <translation type="unfinished" />
+        <translation>Εναλλαγή επηρεασμένων torrents σε Χειροκίνητη Λειτουργία</translation>
     </message>
     <message>
         <source>Files location:</source>
-        <translation type="unfinished" />
+        <translation>Τοποθεσία αρχείων:</translation>
     </message>
     <message>
         <source>Manual</source>
-        <translation type="unfinished" />
+        <translation>Χειροκίνητα</translation>
     </message>
     <message>
         <source>Torrent inactivity timer:</source>
-        <translation type="unfinished" />
+        <translation>Χρόνος αδράνειας torrent:</translation>
     </message>
     <message>
         <source>Default Torrent Management Mode:</source>
-        <translation type="unfinished" />
+        <translation>Προεπιλεγμένη Λειτουργία Διαχείρισης Torrent:</translation>
     </message>
     <message>
         <source>When adding a torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Info: The password is saved unencrypted</source>
-        <translation type="unfinished" />
+        <translation>Όταν προστίθεται κάποιο torrent</translation>
     </message>
     <message>
         <source>μTP-TCP mixed mode algorithm:</source>
-        <translation type="unfinished" />
+        <translation>Αλγόριθμος μικτής λειτουργίας μTP-TCP:</translation>
     </message>
     <message>
         <source>Upload rate based</source>
-        <translation type="unfinished" />
+        <translation>Βάσει ρυθμού αποστολής</translation>
     </message>
     <message>
         <source>%G: Tags (separated by comma)</source>
-        <translation type="unfinished" />
+        <translation>%G: Ετικέτες (διαχωρισμένες με κόμμα)</translation>
     </message>
     <message>
         <source>Socket backlog size:</source>
-        <translation type="unfinished" />
+        <translation>Μέγεθος backlog του socket:</translation>
     </message>
     <message>
         <source>Enable super seeding for torrent</source>
-        <translation type="unfinished" />
+        <translation>Ενεργοποίηση super seeding για το torrent</translation>
     </message>
     <message>
         <source>Prefer TCP</source>
-        <translation type="unfinished" />
+        <translation>Προτίμηση TCP</translation>
     </message>
     <message>
         <source>Outstanding memory when checking torrents:</source>
-        <translation type="unfinished" />
+        <translation>Outstanding μνήμης κατά τον έλεγχο των torrents:</translation>
     </message>
     <message>
         <source>Anti-leech</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Enable OS cache:</source>
-        <translation type="unfinished" />
+        <translation>Anti-leech </translation>
     </message>
     <message>
         <source>When ratio reaches</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>When seeding time reaches</source>
-        <translation type="unfinished" />
+        <translation>Όταν η αναλογία φτάνει</translation>
     </message>
     <message>
         <source>Allow multiple connections from the same IP address:</source>
-        <translation type="unfinished" />
+        <translation>Να επιτρέπονται πολλαπλές συνδέσεις από την ίδια διεύθυνση IP:</translation>
     </message>
     <message>
         <source>File pool size:</source>
-        <translation type="unfinished" />
+        <translation>Μέγεθος ομάδας αρχείων:</translation>
     </message>
     <message>
         <source>Any interface</source>
-        <translation type="unfinished" />
+        <translation>Οποιαδήποτε διεπαφή</translation>
     </message>
     <message>
         <source>Always announce to all tiers:</source>
-        <translation type="unfinished" />
+        <translation>Πάντα ανακοίνωση σε όλα τα επίπεδα:</translation>
     </message>
     <message>
         <source>Embedded tracker port:</source>
-        <translation type="unfinished" />
+        <translation>Θύρα ενσωματωμένου tracker:</translation>
     </message>
     <message>
         <source>Fastest upload</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Pause torrent</source>
-        <translation type="unfinished" />
+        <translation>Γρηγορότερη αποστολή</translation>
     </message>
     <message>
         <source>Remove torrent and its files</source>
-        <translation type="unfinished" />
+        <translation>Αφαίρεση του torrent και των αρχείων του</translation>
     </message>
     <message>
         <source>qBittorrent Section</source>
-        <translation type="unfinished" />
+        <translation>Ενότητα qBittorrent</translation>
     </message>
     <message>
         <source>Send buffer watermark factor:</source>
-        <translation type="unfinished" />
+        <translation>Παράγοντας Send buffer watermark:</translation>
     </message>
     <message>
         <source>libtorrent Section</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Outgoing ports (Min) [0: Disabled]:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>IP Address to report to trackers (requires restart):</source>
-        <translation type="unfinished" />
+        <translation>Ενότητα libtorrent</translation>
     </message>
     <message>
         <source>Recheck torrents on completion:</source>
-        <translation type="unfinished" />
+        <translation>Επανέλεγχος των torrent μετά την ολοκλήρωση:</translation>
     </message>
     <message>
         <source>Allow encryption</source>
-        <translation type="unfinished" />
+        <translation>Να επιτρέπεται η κρυπτογράφηση</translation>
     </message>
     <message>
         <source>Send upload piece suggestions:</source>
-        <translation type="unfinished" />
+        <translation>Στείλτε προτάσεις ανεβάσματος  κομματιών:</translation>
     </message>
     <message>
         <source>Enable embedded tracker:</source>
-        <translation type="unfinished" />
+        <translation>Ενεργοποίηση ενσωματωμένου tracker:</translation>
     </message>
     <message>
         <source>Remove torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Outgoing ports (Max) [0: Disabled]:</source>
-        <translation type="unfinished" />
+        <translation>Αφαίρεση torrent</translation>
     </message>
     <message>
         <source>Asynchronous I/O threads:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>s</source>
-        <translation type="unfinished" />
+        <translation>Ασύγχρονα νήματα I/O:</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
-        <translation type="unfinished" />
+        <translation>Send buffer watermark:</translation>
     </message>
     <message>
         <source>Peer proportional (throttles TCP)</source>
-        <translation type="unfinished" />
+        <translation>Ανάλογα με τα peers (ρυθμίζει το TCP)</translation>
     </message>
     <message>
         <source>Fixed slots</source>
-        <translation type="unfinished" />
+        <translation>Σταθερά slots</translation>
     </message>
     <message>
         <source>Advanced</source>
-        <translation type="unfinished" />
+        <translation>Για προχωρημένους</translation>
     </message>
     <message>
         <source>min</source>
-        <translation type="unfinished" />
+        <translation>λεπτά</translation>
     </message>
     <message>
         <source>Upload choking algorithm:</source>
-        <translation type="unfinished" />
+        <translation>Αλγόριθμος choking αποστολής:</translation>
     </message>
     <message>
         <source>Seeding Limits</source>
-        <translation type="unfinished" />
+        <translation>Όρια Seeding</translation>
     </message>
     <message>
         <source>KiB</source>
-        <translation type="unfinished" />
+        <translation>KiB</translation>
     </message>
     <message>
         <source>Round-robin</source>
-        <translation type="unfinished" />
+        <translation>Round-robin</translation>
     </message>
     <message>
         <source>Upload slots behavior:</source>
-        <translation type="unfinished" />
+        <translation>Συμπεριφορά slots αποστολής:</translation>
     </message>
     <message>
         <source>MiB</source>
-        <translation type="unfinished" />
+        <translation>MiB</translation>
     </message>
     <message>
         <source>Send buffer low watermark:</source>
-        <translation type="unfinished" />
+        <translation>Send buffer low watermark:</translation>
     </message>
     <message>
         <source>Save resume data interval:</source>
-        <translation type="unfinished" />
+        <translation>Μεσοδιάστημα αποθήκευσης δεδομένων συνέχισης:</translation>
     </message>
     <message>
         <source>Always announce to all trackers in a tier:</source>
-        <translation type="unfinished" />
+        <translation>Πάντα announce προς όλους τους trackers του tier:</translation>
     </message>
     <message>
         <source>Session timeout:</source>
-        <translation type="unfinished" />
+        <translation>Χρονικό όριο λήξης συνεδρίας:</translation>
     </message>
     <message>
         <source>Resolve peer countries:</source>
-        <translation type="unfinished" />
+        <translation>Επίλυση χωρών των peer:</translation>
     </message>
     <message>
         <source>ban for:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Use piece extent affinity (requires libtorrent &gt;= 1.2.2):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Stop tracker timeout:</source>
-        <translation type="unfinished" />
+        <translation>αποκλεισμός για:</translation>
     </message>
     <message>
         <source>Ban client after consecutive failures:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Enable cookie Secure flag (requires HTTPS)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>UPnP lease duration [0: Permanent lease]:</source>
-        <translation type="unfinished" />
+        <translation>Αποκλεισμός client μετά από συνεχόμενες αποτυχίες:</translation>
     </message>
     <message>
         <source>Header: value pairs, one per line</source>
-        <translation type="unfinished" />
+        <translation>Κεφαλίδα: ζευγάρια τιμών, ένα ανά γραμμή</translation>
     </message>
     <message>
         <source>Add custom HTTP headers</source>
-        <translation type="unfinished" />
+        <translation>Προσθήκη προσαρμοσμένων κεφαλίδων HTTP</translation>
     </message>
     <message>
         <source>Filters:</source>
-        <translation type="unfinished" />
+        <translation>Φίλτρα:</translation>
     </message>
     <message>
         <source>Enable fetching RSS feeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Hashing threads (requires libtorrent &gt;= 2.0):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Coalesce reads &amp; writes (requires libtorrent &lt; 2.0):</source>
-        <translation type="unfinished" />
+        <translation>Ενεργοποίηση ανάκτησης ροών RSS</translation>
     </message>
     <message>
         <source>Peer turnover threshold percentage:</source>
-        <translation type="unfinished" />
+        <translation>Ποσοστό ορίου των κύκλων εργασιών του peer:</translation>
     </message>
     <message>
         <source>RSS Torrent Auto Downloader</source>
-        <translation type="unfinished" />
+        <translation>Αυτόματος Λήπτης Torrent μέσω RSS</translation>
     </message>
     <message>
         <source>RSS</source>
-        <translation type="unfinished" />
+        <translation>RSS</translation>
     </message>
     <message>
         <source>Network interface:</source>
-        <translation type="unfinished" />
+        <translation>Διεπαφή δικτύου:</translation>
     </message>
     <message>
         <source>RSS Reader</source>
-        <translation type="unfinished" />
+        <translation>Αναγνώστης RSS</translation>
     </message>
     <message>
         <source>Edit auto downloading rules...</source>
-        <translation type="unfinished" />
+        <translation>Επεξεργασία κανόνων αυτόματης λήψης...</translation>
     </message>
     <message>
         <source>Download REPACK/PROPER episodes</source>
-        <translation type="unfinished" />
+        <translation>Λήψη REPACK/PROPER επεισοδίων</translation>
     </message>
     <message>
         <source>Feeds refresh interval:</source>
-        <translation type="unfinished" />
+        <translation>Μεσοδιάστημα ανανέωσης ροών:</translation>
     </message>
     <message>
         <source>Peer turnover disconnect percentage:</source>
-        <translation type="unfinished" />
+        <translation>Ποσοστό αποσύνδεσης των κύκλων εργασιών του peer:</translation>
     </message>
     <message>
         <source>Maximum number of articles per feed:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Max concurrent HTTP announces (requires libtorrent &gt;= 1.2.7):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Keep top-level folder</source>
-        <translation type="unfinished" />
+        <translation>Μέγιστος αριθμός άρθρων ανά ροή:</translation>
     </message>
     <message>
         <source> min</source>
-        <translation type="unfinished" />
+        <translation>λεπτά</translation>
     </message>
     <message>
         <source>Peer turnover disconnect interval:</source>
-        <translation type="unfinished" />
+        <translation>Μεσοδιάστημα αποσύνδεσης του κύκλου εργασιών του peer:</translation>
     </message>
     <message>
         <source>Optional IP address to bind to:</source>
-        <translation type="unfinished" />
+        <translation>Προαιρετική διεύθυνση IP για δέσμευση:</translation>
     </message>
     <message>
         <source>Disallow connection to peers on privileged ports:</source>
-        <translation type="unfinished" />
+        <translation>Να απαγορεύεται η σύνδεση των peers σε προνομιακές θύρες:</translation>
     </message>
     <message>
         <source>Enable auto downloading of RSS torrents</source>
-        <translation type="unfinished" />
+        <translation>Ενεργοποίηση αυτόματης λήψης των torrents μέσω RSS</translation>
     </message>
     <message>
         <source>RSS Smart Episode Filter</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Disk cache (requires libtorrent &lt; 2.0):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Disk cache expiry interval (requires libtorrent &lt; 2.0):</source>
-        <translation type="unfinished" />
+        <translation>Έξυπνο Φίλτρο Επεισοδίων RSS</translation>
     </message>
     <message>
         <source>Validate HTTPS tracker certificate:</source>
+        <translation>Επικύρωση του HTTPS πιστοποιητικού του tracker:</translation>
+    </message>
+    <message>
+        <source>Peer connection protocol:</source>
+        <translation>Πρωτόκολλο σύνδεσης peer:</translation>
+    </message>
+    <message>
+        <source>Torrent content layout:</source>
+        <translation>Διάταξη περιεχομένου του torrent:</translation>
+    </message>
+    <message>
+        <source>Create subfolder</source>
+        <translation>Δημιουργία υποφακέλου</translation>
+    </message>
+    <message>
+        <source>Original</source>
+        <translation>Πρωτότυπο</translation>
+    </message>
+    <message>
+        <source>Don't create subfolder</source>
+        <translation>Να μη δημιουργηθεί υποφάκελος</translation>
+    </message>
+    <message>
+        <source>Type of service (ToS) for connections to peers</source>
+        <translation type="vanished">Τύπος υπηρεσίας (ToS) για συνδέσεις με peers</translation>
+    </message>
+    <message>
+        <source>Outgoing connections per second:</source>
+        <translation>Εξερχόμενες συνδέσεις ανά δευτερόλεπτο:</translation>
+    </message>
+    <message>
+        <source>Random</source>
+        <translation>Τυχαίο</translation>
+    </message>
+    <message>
+        <source>%K: Torrent ID</source>
+        <translation>%K: Torrent ID</translation>
+    </message>
+    <message>
+        <source>Reannounce to all trackers when IP or port changed:</source>
+        <translation>Reannounce σε όλους τους trackers όταν αλλάξει η IP ή η θύρα:</translation>
+    </message>
+    <message>
+        <source>Trusted proxies list:</source>
+        <translation>Λίστα έμπιστων proxies:</translation>
+    </message>
+    <message>
+        <source>Enable reverse proxy support</source>
+        <translation>Ενεργοποίηση υποστήριξης αντίστροφου proxy</translation>
+    </message>
+    <message>
+        <source>%J: Info hash v2</source>
+        <translation>%J: Info hash v2</translation>
+    </message>
+    <message>
+        <source>%I: Info hash v1</source>
+        <translation>%I: Info hash v1</translation>
+    </message>
+    <message>
+        <source>IP address reported to trackers (requires restart):</source>
+        <translation>Η διεύθυνση IP που εκτίθεται στους trackers (απαιτεί επανεκκίνηση):</translation>
+    </message>
+    <message>
+        <source>Set to 0 to let your system pick an unused port</source>
+        <translation>Ορίστε το σε 0 για να επιτρέψετε στο σύστημά σας να επιλέξει μια αχρησιμοποίητη θύρα</translation>
+    </message>
+    <message>
+        <source>Server-side request forgery (SSRF) mitigation:</source>
+        <translation>Μετριασμός Server-side request forgery (SSRF):</translation>
+    </message>
+    <message>
+        <source>Disk queue size:</source>
+        <translation>Μέγεθος ουράς δίσκου:</translation>
+    </message>
+    <message>
+        <source>Log performance warnings</source>
+        <translation>Προειδοποιήσεις καταγραφής απόδοσης</translation>
+    </message>
+    <message>
+        <source>Maximum outstanding requests to a single peer:</source>
+        <translation>Μέγιστα εκκρεμή αιτήματα σε μοναδικό peer:</translation>
+    </message>
+    <message>
+        <source>Max active checking torrents:</source>
+        <translation>Μέγιστος έλεγχος ενεργών torrents:</translation>
+    </message>
+    <message>
+        <source>Memory mapped files</source>
+        <translation>Αρχεία αντιστοιχισμένα με μνήμη</translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation>Προεπιλογή</translation>
+    </message>
+    <message>
+        <source>POSIX-compliant</source>
+        <translation>Συμβατό με το POSIX</translation>
+    </message>
+    <message>
+        <source>It controls the internal state update interval which in turn will affect UI updates</source>
+        <translation>Ελέγχει το χρονικό διάστημα ενημέρωσης της εσωτερικής κατάστασης το οποίο με τη σειρά του θα επηρεάσει τις ενημερώσεις της διεπαφής χρήστη</translation>
+    </message>
+    <message>
+        <source>Disk IO read mode:</source>
+        <translation>Λειτουργία ανάγνωσης IO δίσκου</translation>
+    </message>
+    <message>
+        <source>Disable OS cache</source>
+        <translation>Απενεργοποίηση cache ΛΣ</translation>
+    </message>
+    <message>
+        <source>Disk IO write mode:</source>
+        <translation>Λειτουργία εγγραφής IO δίσκου</translation>
+    </message>
+    <message>
+        <source>Use piece extent affinity:</source>
+        <translation>Χρήση συγγένειας έκτασης κομματιού</translation>
+    </message>
+    <message>
+        <source>Max concurrent HTTP announces:</source>
+        <translation>Μέγιστες ταυτόχρονες ανακοινώσεις HTTP</translation>
+    </message>
+    <message>
+        <source>Enable OS cache</source>
+        <translation>Ενεργοποίηση cache ΛΣ</translation>
+    </message>
+    <message>
+        <source>Refresh interval:</source>
+        <translation>Χρονικό διάστημα ανανέωσης</translation>
+    </message>
+    <message>
+        <source>ms</source>
+        <translation>ms</translation>
+    </message>
+    <message>
+        <source>Excluded file names</source>
+        <translation>Ονόματα αρχείων σε εξαίρεση</translation>
+    </message>
+    <message>
+        <source>Support internationalized domain name (IDN):</source>
+        <translation>Υποστήριξη διεθνοποιημένου ονόματος τομέα (IDN)</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use ';' to split multiple entries. Can use wildcard '*'.</source>
+        <translation>Allowlist για φιλτράρισμα τιμών κεφαλίδας HTTP Host.
+Για να αμυνθείτε από επιθέσεις επαναδέσμευσης DNS,
+θα πρέπει να βάλετε ονόματα τομέα που χρησιμοποιούνται από τον διακομιστή του WebUI.
+
+Χρησιμοποιήστε «;» για να χωρίσετε πολλαπλές καταχωρήσεις. Μπορείτε να χρησιμοποιήσετε και wildcard «*».</translation>
+    </message>
+    <message>
+        <source>HTTPS certificate should not be empty</source>
+        <translation>Το πιστοποιητικό HTTPS δεν πρέπει να είναι κενό</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use ';' to split multiple entries.</source>
+        <translation>Καθορίστε αντίστροφες proxy IPs (ή subnets, π.χ. 0.0.0.0/24) για να χρησιμοποιήσετε τη προωθημένη διεύθυνση του client (X-Forwarded-For header). Χρησιμοποιήστε το ';' για να διαχωρίσετε πολλές εγγραφές.</translation>
+    </message>
+    <message>
+        <source>HTTPS key should not be empty</source>
+        <translation>Τα κλειδιά HTTPS δεν πρέπει να είναι κενά</translation>
+    </message>
+    <message>
+        <source>Run external program</source>
+        <translation>Εκτέλεση εξωτερικού προγράμμματος</translation>
+    </message>
+    <message>
+        <source>Files checked</source>
+        <translation>Αρχεία ελέγχθηκαν</translation>
+    </message>
+    <message>
+        <source>Enable port forwarding for embedded tracker:</source>
+        <translation>Ενεργοποίηση port forwarding για ενσωματωμένο tracker:</translation>
+    </message>
+    <message>
+        <source>If checked, hostname lookups are done via the proxy.</source>
+        <translation>Εάν είναι επιλεγμένο, οι αναζητήσεις ονόματος κεντρικού υπολογιστή γίνονται μέσω του διακομιστή μεσολάβησης.</translation>
+    </message>
+    <message>
+        <source>Metadata received</source>
+        <translation>Μεταδεδομένα ελήφθησαν</translation>
+    </message>
+    <message>
+        <source>Torrent stop condition:</source>
+        <translation>Κατάσταση διακοπής torrent:</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>Κανένα</translation>
+    </message>
+    <message>
+        <source>Example: 172.17.32.0/24, fdff:ffff:c8::/40</source>
+        <translation>Παράδειγμα: 172.17.32.0/24, fdff:ffff:c8::/40</translation>
+    </message>
+    <message>
+        <source>SQLite database (experimental)</source>
+        <translation>Βάση δεδομένων SQLite (πειραματικό)</translation>
+    </message>
+    <message>
+        <source>Resume data storage type (requires restart):</source>
+        <translation>Τύπος αποθήκευσης δεδομένων συνέχισης (απαιτεί επανεκκίνηση)</translation>
+    </message>
+    <message>
+        <source>Fastresume files</source>
+        <translation>Αρχεία fastresume</translation>
+    </message>
+    <message>
+        <source>Backup the log file after:</source>
+        <translation>Αντίγραφο ασφαλείας του αρχείου καταγραφής μετά από:</translation>
+    </message>
+    <message>
+        <source>days</source>
+        <translation>ημέρες</translation>
+    </message>
+    <message>
+        <source>Behavior</source>
+        <translation>Συμπεριφορά</translation>
+    </message>
+    <message>
+        <source>Delete backup logs older than:</source>
+        <translation>Διαγραφή αντιγράφων ασφαλείας αρχείου καταγραφής παλαιότερα από:</translation>
+    </message>
+    <message>
+        <source>Use proxy for BitTorrent purposes</source>
+        <translation>Χρήση διακομιστή μεσολάβησης για σκοπούς BitTorrent</translation>
+    </message>
+    <message>
+        <source>years</source>
+        <translation>χρόνια</translation>
+    </message>
+    <message>
+        <source>Save path:</source>
+        <translation>Διαδρομή αποθήκευσης:</translation>
+    </message>
+    <message>
+        <source>months</source>
+        <translation>μήνες</translation>
+    </message>
+    <message>
+        <source>Remember Multi-Rename settings</source>
+        <translation>Αποθήκευση ρυθμίσεων Πολλαπλής μετονομασίας</translation>
+    </message>
+    <message>
+        <source>Use proxy for general purposes</source>
+        <translation>Χρήση διακομιστή μεσολάβησης για γενικούς σκοπούς</translation>
+    </message>
+    <message>
+        <source>Use proxy for RSS purposes</source>
+        <translation>Χρήση διακομιστή μεσολάβησης για σκοπούς RSS</translation>
+    </message>
+    <message>
+        <source>Socket send buffer size [0: system default]:</source>
+        <translation>Μέγεθος buffer αποστολής υποδοχής [0: προεπιλογή συστήματος]</translation>
+    </message>
+    <message>
+        <source>Outgoing ports (Max) [0: disabled]:</source>
+        <translation>Εξερχόμενες θύρες (Μέγ.) [0: Ανενεργό]</translation>
+    </message>
+    <message>
+        <source>Socket receive buffer size [0: system default]:</source>
+        <translation>Μέγεθος buffer λήψης υποδοχής [0: προεπιλογή συστήματος]</translation>
+    </message>
+    <message>
+        <source>Use Subcategories</source>
+        <translation type="vanished">Χρήση Υποκατηγοριών</translation>
+    </message>
+    <message>
+        <source>Add to top of queue</source>
+        <translation>Προσθήκη στην αρχή της ουράς</translation>
+    </message>
+    <message>
+        <source>Stop tracker timeout [0: disabled]:</source>
+        <translation>Χρονικό όριο διακοπής tracker: [0: ανενεργό]</translation>
+    </message>
+    <message>
+        <source>Outgoing ports (Min) [0: disabled]:</source>
+        <translation>Εξερχόμενες θύρες (Ελάχ.) [0: Ανενεργό]:</translation>
+    </message>
+    <message>
+        <source>UPnP lease duration [0: permanent lease]:</source>
+        <translation>Διάρκεια μίσθωσης UPnP [0: Μόνιμη μίσθωση]</translation>
+    </message>
+    <message>
+        <source>Bdecode depth limit:</source>
+        <translation>Όριο Bdecode depth:</translation>
+    </message>
+    <message>
+        <source>Bdecode token limit:</source>
+        <translation>Όριο Bdecode token:</translation>
+    </message>
+    <message>
+        <source>When total seeding time reaches</source>
+        <translation>Όταν ο συνολικός χρόνος seeding ολοκληρωθεί</translation>
+    </message>
+    <message>
+        <source>(None)</source>
+        <translation>(Κανένα)</translation>
+    </message>
+    <message>
+        <source>Python executable path (may require restart):</source>
+        <translation>Εκτελέσιμη διαδρομή Python (μπορεί να απαιτεί επανεκκίνηση):</translation>
+    </message>
+    <message>
+        <source>Resets to default if empty</source>
+        <translation>Επαναφέρεται στην προεπιλογή εάν είναι κενό</translation>
+    </message>
+    <message>
+        <source>Perform hostname lookup via proxy</source>
+        <translation>Εκτέλεση αναζήτησης hostname μέσω proxy</translation>
+    </message>
+    <message>
+        <source>If &amp;quot;mixed mode&amp;quot; is enabled, I2P torrents are allowed to also get peers from other sources than the tracker, and connect to regular IPs, not providing any anonymization. This may be useful if the user is not interested in the anonymization of I2P, but still wants to be able to connect to I2P peers.</source>
+        <translation>Αν η &amp;quot;μικτή λειτουργία&amp;quot; είναι ενεργοποιημένη, τα torrents I2P επιτρέπεται επίσης να λαμβάνουν συνομηλίκους από άλλες πηγές εκτός από τον ιχνηλάτη και να συνδέονται με κανονικές IP, χωρίς να παρέχουν ανωνυμοποίηση. Αυτό μπορεί να είναι χρήσιμο εάν ο χρήστης δεν ενδιαφέρεται για την ανωνυμοποίηση του I2P, αλλά εξακολουθεί να θέλει να μπορεί να συνδεθεί με ομότιμους I2P.</translation>
+    </message>
+    <message>
+        <source>DHT bootstrap nodes:</source>
+        <translation>Κόμβοι εκκίνησης DHT:</translation>
+    </message>
+    <message>
+        <source>When inactive seeding time reaches</source>
+        <translation>Όταν ο χρόνος ανενεργού seeding ολοκληρωθεί</translation>
+    </message>
+    <message>
+        <source>Mixed mode</source>
+        <translation>Μικτή λειτουργία</translation>
+    </message>
+    <message>
+        <source>.torrent file size limit:</source>
+        <translation>όριο μεγέθους αρχείου .torrent</translation>
+    </message>
+    <message>
+        <source>(Auto detect if empty)</source>
+        <translation>(Αυτόματος εντοπισμός εάν είναι κενό)</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in ".unwanted" folder</source>
+        <translation>Διατήρηση των μη επιλεγμένων αρχείων στον φάκελο «.unwanted».</translation>
+    </message>
+    <message>
+        <source>Enable Mark-of-the-Web (MOTW) for downloaded files (require macOS or Windows):</source>
+        <translation>Ενεργοποίηση του Mark-of-the-Web (MOTW) για τα ληφθέντα αρχεία (απαιτείται macOS ή Windows)</translation>
+    </message>
+    <message>
+        <source> sec</source>
+        <translation> sec</translation>
+    </message>
+    <message>
+        <source>I2P outbound quantity:</source>
+        <translation>Εξερχόμενη ποσότητα I2P:</translation>
+    </message>
+    <message>
+        <source>I2P inbound quantity:</source>
+        <translation>Εισερχόμενη ποσότητα I2P:</translation>
+    </message>
+    <message>
+        <source>Hashing threads:</source>
+        <translation>Hashing threads:</translation>
+    </message>
+    <message>
+        <source>Physical memory (RAM) usage limit:</source>
+        <translation>Οριο χρήσης φυσικής μνήμης (RAM):</translation>
+    </message>
+    <message>
+        <source>Use alternative WebUI</source>
+        <translation>Χρήση εναλλακτικού Web UI</translation>
+    </message>
+    <message>
+        <source>Disk cache expiry interval:</source>
+        <translation>Μεσοδιάστημα λήξης cache δίσκου</translation>
+    </message>
+    <message>
+        <source>I2P outbound length:</source>
+        <translation>Μήκος εξερχόμενου I2P:</translation>
+    </message>
+    <message>
+        <source>I2P (Experimental)</source>
+        <translation>I2P (πειραματικό)</translation>
+    </message>
+    <message>
+        <source>Disk IO type (requires restart):</source>
+        <translation>Τύπος IO δίσκου (απαιτείται επανεκκίνηση):</translation>
+    </message>
+    <message>
+        <source>The alternative WebUI files location cannot be blank.</source>
+        <translation>Η εναλλακτική τοποθεσία των αρχείων WebUI δεν μπορεί να είναι κενή.</translation>
+    </message>
+    <message>
+        <source>Disk cache:</source>
+        <translation>Cache δίσκου:</translation>
+    </message>
+    <message>
+        <source>Write-through</source>
+        <translation>Write-through</translation>
+    </message>
+    <message>
+        <source>WebUI</source>
+        <translation>WebUI</translation>
+    </message>
+    <message>
+        <source>The WebUI password must be at least 6 characters long.</source>
+        <translation>Ο κωδικός πρόσβασης WebUI πρέπει να αποτελείται από τουλάχιστον 6 χαρακτήρες.</translation>
+    </message>
+    <message>
+        <source>Coalesce reads &amp;amp; writes:</source>
+        <translation>Συνένωση αναγνώσεων &amp; εγγραφών:</translation>
+    </message>
+    <message>
+        <source>I2P inbound length:</source>
+        <translation>Μήκος εισερχόμενου I2P:</translation>
+    </message>
+    <message>
+        <source>It appends the text to the window title to help distinguish qBittorent instances</source>
+        <translation>Προσαρτά το κείμενο στον τίτλο του παραθύρου ώστε να μπορείτε να ξεχωρίσετε τις υποστάσεις του qBittorent</translation>
+    </message>
+    <message>
+        <source>The WebUI username must be at least 3 characters long.</source>
+        <translation>Το όνομα χρήστη WebUI πρέπει να αποτελείται από τουλάχιστον 3 χαρακτήρες.</translation>
+    </message>
+    <message>
+        <source>Same host request delay:</source>
+        <translation>Καθυστέρηση αιτήματος ίδιου host:</translation>
+    </message>
+    <message>
+        <source>Customize application instance name:</source>
+        <translation>Προσαρμογή ονόματος υπόστασης εφαρμογής:</translation>
+    </message>
+    <message>
+        <source>Color scheme:</source>
+        <translation>Σχέδιο χρωμάτων:</translation>
+    </message>
+    <message>
+        <source>Show external IP in status bar</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Fetched trackers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Confirm when deleting torrents</source>
+        <translation>Επιβεβαίωση κατά την διαγραφή των torrent</translation>
+    </message>
+    <message>
+        <source>Ignore SSL errors:</source>
+        <translation>Αγνόηση σφαλμάτων SSL:</translation>
+    </message>
+    <message>
+        <source>Dark</source>
+        <translation>Σκοτεινό</translation>
+    </message>
+    <message>
+        <source>Delete files permanently</source>
+        <translation>Μόνιμη διαγραφή αρχείων</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation>Αυτόματο</translation>
+    </message>
+    <message>
+        <source>Use alternating row colors</source>
+        <translation>Χρήση εναλλασσόμενων χρωμάτων σειράς</translation>
+    </message>
+    <message>
+        <source>Display full announce URL in the Tracker column</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>URL:</source>
+        <translation>URL:</translation>
+    </message>
+    <message>
+        <source>Transfer list</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>The announce port must be between 0 and 65535.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Light</source>
+        <translation>Φωτεινό</translation>
+    </message>
+    <message>
+        <source>Automatically append these trackers to new downloads:</source>
+        <translation>Αυτόματη προσάρτηση αυτών των trackers σε νέες λήψεις:</translation>
+    </message>
+    <message>
+        <source>Downloading torrents:</source>
+        <translation>Λήψη torrents:</translation>
+    </message>
+    <message>
+        <source>Start / stop torrent</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Send test email</source>
+        <translation>Αποστολή δοκιμαστικού email</translation>
+    </message>
+    <message>
+        <source>Completed torrents:</source>
+        <translation>Ολοκληρωμένα torrents:</translation>
+    </message>
+    <message>
+        <source>Enable cookie Secure flag (requires HTTPS or localhost connection)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Action on double-click</source>
+        <translation>Ενέργεια στο διπλό κλικ</translation>
+    </message>
+    <message>
+        <source>Save statistics interval:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Shows a confirmation dialog upon torrent deletion</source>
+        <translation>Εμφανίζει ένα παράθυρο διαλόγου επιβεβαίωσης κατά τη διαγραφή torrent</translation>
+    </message>
+    <message>
+        <source>Run on torrent finished:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Attempted to send email. Check your inbox to confirm success</source>
+        <translation>Προσπάθεια αποστολής email. Ελέγξτε τα εισερχόμενά σας για να επιβεβαιώσετε την επιτυχία</translation>
+    </message>
+    <message>
+        <source>Automatically append trackers from URL to new downloads:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent content removing mode:</source>
+        <translation>Λειτουργία αφαίρεσης περιεχομένου του torrent:</translation>
+    </message>
+    <message>
+        <source>Move files to trash (if possible)</source>
+        <translation>Μετακίνηση αρχείων στον κάδο (αν είναι δυνατό)</translation>
+    </message>
+    <message>
+        <source>Stop torrent</source>
+        <translation>Διακοπή torrent</translation>
+    </message>
+    <message>
+        <source>Use Category paths in Manual Mode</source>
+        <translation>Χρήση διαδρομών Κατηγορίας κατά τη Χειροκίνητη Λειτουργία</translation>
+    </message>
+    <message>
+        <source>List of alternative WebUI</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Run on torrent added:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Port reported to trackers (requires restart) [0: listening port]:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>User interface language:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Merge trackers to existing torrent</source>
+        <translation>Συγχώνευση trackers στο υπάρχον torrent</translation>
+    </message>
+    <message>
+        <source>Confirm torrent recheck:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Custom WebUI settings</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Following settings are WebUI only</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Simple pread/pwrite</source>
+        <translation>Απλό pread/pwrite</translation>
+    </message>
+    <message>
+        <source>Resolve relative Save Path against appropriate Category path instead of Default one</source>
+        <translation>Επιλύστε τη σχετική Διαδρομή Αποθήκευσης έναντι της κατάλληλης διαδρομής Κατηγορίας, αντί για την Προεπιλεγμένη</translation>
+    </message>
+    <message>
+        <source>No action</source>
+        <translation>Καμία ενέργεια</translation>
+    </message>
+    <message>
+        <source>Auto hide zero status filters</source>
+        <translation>Αυτόματη απόκρυψη φίλτρων μηδενικής κατάστασης</translation>
+    </message>
+    <message>
+        <source>Interface</source>
+        <translation>Διεπαφή</translation>
+    </message>
+    <message>
+        <source>Log Files</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Enable optimized table rendering (experimental)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Note: The password is saved unencrypted</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Internal hostname resolver cache expiry interval</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>sec</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Rotate API key</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Generate a key</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>When adding a duplicate torrent</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Delete API key</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>%M: Comment</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Generate API key</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Copied</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>User</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Reset filter selection</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>API Key</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Copy API key</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Differentiated Services Code Point (DSCP) for connections to peers</source>
         <translation type="unfinished" />
     </message>
 </context>
 <context>
     <name>PeerListWidget</name>
-    <message>
-        <source>IP</source>
-        <translation>IP</translation>
-    </message>
     <message>
         <source>Port</source>
         <translation>Θύρα</translation>
@@ -1451,7 +2240,7 @@
     <message>
         <source>Client</source>
         <comment>i.e.: Client application</comment>
-        <translation>Πελάτης</translation>
+        <translation>Client</translation>
     </message>
     <message>
         <source>Progress</source>
@@ -1471,12 +2260,12 @@
     <message>
         <source>Downloaded</source>
         <comment>i.e: total data downloaded</comment>
-        <translation>Ληφθέντα</translation>
+        <translation>Έγινε Λήψη</translation>
     </message>
     <message>
         <source>Uploaded</source>
         <comment>i.e: total data uploaded</comment>
-        <translation>Απεσταλμένα</translation>
+        <translation>Έγινε Αποστολή</translation>
     </message>
     <message>
         <source>Relevance</source>
@@ -1490,23 +2279,31 @@
     </message>
     <message>
         <source>Ban peer permanently</source>
-        <translation type="unfinished" />
+        <translation>Μόνιμος αποκλεισμός peer</translation>
     </message>
     <message>
         <source>Are you sure you want to permanently ban the selected peers?</source>
-        <translation type="unfinished" />
+        <translation>Είστε σίγουροι ότι θέλετε να αποκλείσετε μόνιμα τα επιλεγμένα peer;</translation>
     </message>
     <message>
         <source>Copy IP:port</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Add a new peer...</source>
-        <translation type="unfinished" />
+        <translation>Αντιγραφή IP:θύρα</translation>
     </message>
     <message>
         <source>Country/Region</source>
-        <translation type="unfinished" />
+        <translation>Χώρα/Περιοχή</translation>
+    </message>
+    <message>
+        <source>Add peers...</source>
+        <translation>Προσθήκη peers...</translation>
+    </message>
+    <message>
+        <source>Peer ID Client</source>
+        <translation>Peer ID Client</translation>
+    </message>
+    <message>
+        <source>IP/Address</source>
+        <translation>IP/Διεύθυνση</translation>
     </message>
 </context>
 <context>
@@ -1528,11 +2325,11 @@
     </message>
     <message>
         <source>Mixed</source>
-        <translation type="unfinished" />
+        <translation>Μικτά</translation>
     </message>
     <message>
         <source>Do not download</source>
-        <translation type="unfinished" />
+        <translation>Να μη γίνει λήψη</translation>
     </message>
 </context>
 <context>
@@ -1543,11 +2340,11 @@
     </message>
     <message>
         <source>Trackers</source>
-        <translation>Ιχνηλάτες</translation>
+        <translation>Trackers</translation>
     </message>
     <message>
         <source>Peers</source>
-        <translation>Διασυνδέσεις</translation>
+        <translation>Peers</translation>
     </message>
     <message>
         <source>HTTP Sources</source>
@@ -1562,7 +2359,7 @@
     <name>PropertiesWidget</name>
     <message>
         <source>Downloaded:</source>
-        <translation>Ληφθέντα:</translation>
+        <translation>Έγινε Λήψη:</translation>
     </message>
     <message>
         <source>Transfer</source>
@@ -1575,15 +2372,15 @@
     </message>
     <message>
         <source>ETA:</source>
-        <translation>Εκτιμώμενος Χρόνος:</translation>
+        <translation>ΠΩΑ:</translation>
     </message>
     <message>
         <source>Uploaded:</source>
-        <translation>Απεσταλμένα:</translation>
+        <translation>Έγινε Αποστολή:</translation>
     </message>
     <message>
         <source>Seeds:</source>
-        <translation>Διαμοιραστές:</translation>
+        <translation>Seeds:</translation>
     </message>
     <message>
         <source>Download Speed:</source>
@@ -1595,7 +2392,7 @@
     </message>
     <message>
         <source>Peers:</source>
-        <translation>Διασυνδέσεις:</translation>
+        <translation>Peers:</translation>
     </message>
     <message>
         <source>Download Limit:</source>
@@ -1607,7 +2404,7 @@
     </message>
     <message>
         <source>Wasted:</source>
-        <translation>Χαμένα:</translation>
+        <translation>Σπαταλημένα:</translation>
     </message>
     <message>
         <source>Connections:</source>
@@ -1627,7 +2424,7 @@
     </message>
     <message>
         <source>Reannounce In:</source>
-        <translation>Επανανακοίνωση Σε:</translation>
+        <translation>Reannounce Σε:</translation>
     </message>
     <message>
         <source>Last Seen Complete:</source>
@@ -1656,10 +2453,6 @@
     <message>
         <source>Created On:</source>
         <translation>Δημιουργήθηκε Στις:</translation>
-    </message>
-    <message>
-        <source>Torrent Hash:</source>
-        <translation>Torrent Hash:</translation>
     </message>
     <message>
         <source>Save Path:</source>
@@ -1694,24 +2487,148 @@
         <translation>%1 (%2 μ.ο.)</translation>
     </message>
     <message>
-        <source>Download limit:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Upload limit:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <source>Priority</source>
-        <translation type="unfinished" />
+        <translation>Προτεραιότητα</translation>
     </message>
     <message>
         <source>Filter files...</source>
-        <translation type="unfinished" />
+        <translation>Φίλτρο αρχείων...</translation>
     </message>
     <message>
         <source>Rename...</source>
+        <translation>Μετονομασία...</translation>
+    </message>
+    <message>
+        <source>%1 (seeded for %2)</source>
+        <translation>%1 (διαμοιράστηκε για %2)</translation>
+    </message>
+    <message>
+        <source>Info Hash v2:</source>
+        <translation>Info Hash v2:</translation>
+    </message>
+    <message>
+        <source>Info Hash v1:</source>
+        <translation>Info Hash v1:</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Δ/Υ</translation>
+    </message>
+    <message>
+        <source>Progress:</source>
+        <translation>Πρόοδος:</translation>
+    </message>
+    <message>
+        <source>Use regular expressions</source>
+        <translation>Χρήση κανονικών εκφράσεων</translation>
+    </message>
+    <message>
+        <source>Filename</source>
+        <translation>Ονομα αρχείου</translation>
+    </message>
+    <message>
+        <source>Filename + Extension</source>
+        <translation>Ονομα αρχείου + Επέκταση</translation>
+    </message>
+    <message>
+        <source>Enumerate Files</source>
+        <translation>Αρίθμηση αρχείων</translation>
+    </message>
+    <message>
+        <source>Rename failed: file or folder already exists</source>
+        <translation>Η μετονομασία απέτυχε: το αρχείο ή ο φάκελος υπάρχει ήδη</translation>
+    </message>
+    <message>
+        <source>Toggle Selection</source>
+        <translation>Εναλλαγή Επιλογής</translation>
+    </message>
+    <message>
+        <source>Replacement Input</source>
+        <translation>Είσοδος αντικατάστασης</translation>
+    </message>
+    <message>
+        <source>Replace</source>
+        <translation>Αντικατάσταση</translation>
+    </message>
+    <message>
+        <source>Extension</source>
+        <translation>Επέκταση</translation>
+    </message>
+    <message>
+        <source>Replace All</source>
+        <translation>Αντικατάσταση Ολων</translation>
+    </message>
+    <message>
+        <source>Include files</source>
+        <translation>Συμπερίληψη αρχείων</translation>
+    </message>
+    <message>
+        <source>Include folders</source>
+        <translation>Συμπερίληψη φακέλων</translation>
+    </message>
+    <message>
+        <source>Search Files</source>
+        <translation>Αναζήτηση αρχείων</translation>
+    </message>
+    <message>
+        <source>Case sensitive</source>
+        <translation>Διάκριση πεζών-κεφαλαίων</translation>
+    </message>
+    <message>
+        <source>Match all occurrences</source>
+        <translation>Αντιστοίχιση όλων των εμφανίσεων</translation>
+    </message>
+    <message>
+        <source>Copy web seed URL</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Replace option</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Edit web seed URL...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Web seed URL:</source>
+        <translation>URL του Web seed:</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation>Ναι</translation>
+    </message>
+    <message>
+        <source>Ratio / Time Active (in months), indicates how popular the torrent is</source>
+        <translation>Αναλογία / Ενεργός Χρόνος (σε μήνες), δείχνει πόσο δημοφιλές είναι το torrent</translation>
+    </message>
+    <message>
+        <source>Popularity:</source>
+        <translation>Δημοτικότητα:</translation>
+    </message>
+    <message>
+        <source>Apply to which filename part</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>No</source>
+        <translation>Όχι</translation>
+    </message>
+    <message>
+        <source>Remove web seed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Web seed editing</source>
+        <translation>Επεξεργασία Web seed</translation>
+    </message>
+    <message>
+        <source>Add web seeds...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Private:</source>
+        <translation>Ιδιωτικά:</translation>
     </message>
 </context>
 <context>
@@ -1732,14 +2649,18 @@
         <source>Default save location</source>
         <translation>Προεπιλεγμένη τοποθεσία αποθήκευσης</translation>
     </message>
+    <message>
+        <source>Other...</source>
+        <translation>Άλλο...</translation>
+    </message>
+    <message>
+        <source>Type folder here</source>
+        <translation>Πληκτρολογήστε τον φάκελο εδώ</translation>
+    </message>
 </context>
 <context>
     <name>SpeedLimitDialog</name>
-    <message>
-        <source>KiB/s</source>
-        <translation>KiB/δ</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>StatsDialog</name>
     <message>
@@ -1752,11 +2673,11 @@
     </message>
     <message>
         <source>Cache statistics</source>
-        <translation>Στατιστικά προσωρινής μνήμης</translation>
+        <translation>Στατιστικά cache</translation>
     </message>
     <message>
         <source>Read cache hits:</source>
-        <translation>Συμβάντα ανάγνωσης προσωρινής μνήμης:</translation>
+        <translation>Συμβάντα cache ανάγνωσης:</translation>
     </message>
     <message>
         <source>Average time in queue:</source>
@@ -1764,27 +2685,27 @@
     </message>
     <message>
         <source>Connected peers:</source>
-        <translation type="unfinished" />
+        <translation>Συνδεμένα peers:</translation>
     </message>
     <message>
         <source>All-time share ratio:</source>
-        <translation type="unfinished" />
+        <translation>Συνολική αναλογία διαμοιρασμού:</translation>
     </message>
     <message>
         <source>All-time download:</source>
-        <translation type="unfinished" />
+        <translation>Συνολικά ληφθέντα:</translation>
     </message>
     <message>
         <source>Session waste:</source>
-        <translation type="unfinished" />
+        <translation>Σπατάλη συνεδρίας: </translation>
     </message>
     <message>
         <source>All-time upload:</source>
-        <translation type="unfinished" />
+        <translation>Συνολικά απεσταλμένα:</translation>
     </message>
     <message>
         <source>Total buffer size:</source>
-        <translation type="unfinished" />
+        <translation>Συνολικό μέγεθος buffer:</translation>
     </message>
     <message>
         <source>Performance statistics</source>
@@ -1796,11 +2717,11 @@
     </message>
     <message>
         <source>Write cache overload:</source>
-        <translation>Υπερφόρτωση εγγραφής προσωρινής μνήμης:</translation>
+        <translation>Υπερφόρτωση cache εγγραφής:</translation>
     </message>
     <message>
         <source>Read cache overload:</source>
-        <translation>Υπερφόρτωση ανάγνωσης προσωρινής μνήμης:</translation>
+        <translation>Υπερφόρτωση cache ανάγνωσης:</translation>
     </message>
     <message>
         <source>Total queued size:</source>
@@ -1827,19 +2748,11 @@
     </message>
     <message>
         <source>Seeding (0)</source>
-        <translation>Γίνεται Διαμοιρασμός (0)</translation>
+        <translation>Γίνεται Seeding (0)</translation>
     </message>
     <message>
         <source>Completed (0)</source>
         <translation>Ολοκληρωμένα (0)</translation>
-    </message>
-    <message>
-        <source>Resumed (0)</source>
-        <translation>Σε Συνέχιση (0)</translation>
-    </message>
-    <message>
-        <source>Paused (0)</source>
-        <translation>Σε Παύση (0)</translation>
     </message>
     <message>
         <source>Active (0)</source>
@@ -1863,19 +2776,11 @@
     </message>
     <message>
         <source>Seeding (%1)</source>
-        <translation>Γίνεται Διαμοιρασμός (%1)</translation>
+        <translation>Γίνεται Seeding (%1)</translation>
     </message>
     <message>
         <source>Completed (%1)</source>
         <translation>Ολοκληρωμένα (%1)</translation>
-    </message>
-    <message>
-        <source>Paused (%1)</source>
-        <translation>Σε Παύση (%1)</translation>
-    </message>
-    <message>
-        <source>Resumed (%1)</source>
-        <translation>Σε Συνέχιση (%1)</translation>
     </message>
     <message>
         <source>Active (%1)</source>
@@ -1891,27 +2796,71 @@
     </message>
     <message>
         <source>Stalled Uploading (%1)</source>
-        <translation type="unfinished" />
+        <translation>Καθυστέρηση αποστολής (%1)</translation>
     </message>
     <message>
         <source>Stalled Downloading (%1)</source>
-        <translation type="unfinished" />
+        <translation>Καθυστέρηση λήψης (%1)</translation>
     </message>
     <message>
         <source>Stalled Downloading (0)</source>
-        <translation type="unfinished" />
+        <translation>Καθυστέρηση λήψης (0)</translation>
     </message>
     <message>
         <source>Stalled (0)</source>
-        <translation type="unfinished" />
+        <translation>Σε καθυστέρηση (0)</translation>
     </message>
     <message>
         <source>Stalled Uploading (0)</source>
-        <translation type="unfinished" />
+        <translation>Καθυστέρηση αποστολής (0)</translation>
     </message>
     <message>
         <source>Stalled (%1)</source>
-        <translation type="unfinished" />
+        <translation>Σε καθυστέρηση (%1)</translation>
+    </message>
+    <message>
+        <source>Checking (%1)</source>
+        <translation>Γίνεται έλεγχος (%1)</translation>
+    </message>
+    <message>
+        <source>Checking (0)</source>
+        <translation>Γίνεται έλεγχος (0)</translation>
+    </message>
+    <message>
+        <source>Moving (%1)</source>
+        <translation>Μετακίνηση (%1)</translation>
+    </message>
+    <message>
+        <source>Moving (0)</source>
+        <translation>Μετακίνηση (0)</translation>
+    </message>
+    <message>
+        <source>Running (0)</source>
+        <translation>Εκτελούνται (0)</translation>
+    </message>
+    <message>
+        <source>Stopped (0)</source>
+        <translation>Σταματημένα (0)</translation>
+    </message>
+    <message>
+        <source>Stopped (%1)</source>
+        <translation>Σταματημένα (%1)</translation>
+    </message>
+    <message>
+        <source>Running (%1)</source>
+        <translation>Εκτελούνται (%1)</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation>Αφαίρεση torrent</translation>
+    </message>
+    <message>
+        <source>Start torrents</source>
+        <translation>Έναρξη torrents</translation>
+    </message>
+    <message>
+        <source>Stop torrents</source>
+        <translation>Παύση torrents</translation>
     </message>
 </context>
 <context>
@@ -1930,11 +2879,6 @@
         <translation>Μέγεθος</translation>
     </message>
     <message>
-        <source>Done</source>
-        <comment>% Done</comment>
-        <translation>Ολοκληρώθηκε</translation>
-    </message>
-    <message>
         <source>Status</source>
         <comment>Torrent status (e.g. downloading, seeding, paused)</comment>
         <translation>Κατάσταση</translation>
@@ -1947,7 +2891,7 @@
     <message>
         <source>Peers</source>
         <comment>i.e. partial sources (often untranslated)</comment>
-        <translation>Αποδέκτες</translation>
+        <translation>Peers</translation>
     </message>
     <message>
         <source>Down Speed</source>
@@ -1967,7 +2911,7 @@
     <message>
         <source>ETA</source>
         <comment>i.e: Estimated Time of Arrival / Time left</comment>
-        <translation>ΕΤΑ</translation>
+        <translation>ΠΩΑ</translation>
     </message>
     <message>
         <source>Category</source>
@@ -1989,7 +2933,7 @@
     </message>
     <message>
         <source>Tracker</source>
-        <translation>Ιχνηλάτης</translation>
+        <translation>Tracker</translation>
     </message>
     <message>
         <source>Down Limit</source>
@@ -2004,22 +2948,22 @@
     <message>
         <source>Downloaded</source>
         <comment>Amount of data downloaded (e.g. in MB)</comment>
-        <translation>Ληφθέντα</translation>
+        <translation>Έγινε Λήψη</translation>
     </message>
     <message>
         <source>Uploaded</source>
         <comment>Amount of data uploaded (e.g. in MB)</comment>
-        <translation>Απεσταλμένα</translation>
+        <translation>Έγινε Αποστολή</translation>
     </message>
     <message>
         <source>Session Download</source>
         <comment>Amount of data downloaded since program open (e.g. in MB)</comment>
-        <translation>Λήψεις Συνεδρίας</translation>
+        <translation>Ληφθέντα Συνεδρίας</translation>
     </message>
     <message>
         <source>Session Upload</source>
         <comment>Amount of data uploaded since program open (e.g. in MB)</comment>
-        <translation>Αποστολές Συνεδρίας</translation>
+        <translation>Απεσταλμένα Συνεδρίας</translation>
     </message>
     <message>
         <source>Remaining</source>
@@ -2039,7 +2983,7 @@
     <message>
         <source>Completed</source>
         <comment>Amount of data completed (e.g. in MB)</comment>
-        <translation>Ολοκληρωμένα</translation>
+        <translation>Ολοκληρώθηκαν</translation>
     </message>
     <message>
         <source>Ratio Limit</source>
@@ -2063,125 +3007,197 @@
     </message>
     <message>
         <source>Availability</source>
+        <translation>Διαθεσιμότητα</translation>
+    </message>
+    <message>
+        <source>Reannounce In</source>
+        <translation>Επανανακοίνωση σε:</translation>
+    </message>
+    <message>
+        <source>Private</source>
+        <translation>Ιδιωτικά</translation>
+    </message>
+    <message>
+        <source>Progress</source>
+        <translation>Πρόοδος</translation>
+    </message>
+    <message>
+        <source>Info Hash v2</source>
+        <translation>Info Hash v2</translation>
+    </message>
+    <message>
+        <source>Info Hash v1</source>
+        <translation>Info Hash v1</translation>
+    </message>
+    <message>
+        <source>Incomplete Save Path</source>
+        <translation>Μη συμπληρωμένη Διαδρομή Αποθήκευσης</translation>
+    </message>
+    <message>
+        <source>Popularity</source>
+        <translation>Δημοτικότητα</translation>
+    </message>
+    <message>
+        <source>Status Icon</source>
         <translation type="unfinished" />
     </message>
 </context>
 <context>
     <name>TrackerListWidget</name>
     <message>
-        <source>URL</source>
-        <translation>URL</translation>
-    </message>
-    <message>
         <source>Status</source>
         <translation>Κατάσταση</translation>
     </message>
     <message>
         <source>Peers</source>
-        <translation>Αποδέκτες</translation>
+        <translation>Peers</translation>
     </message>
     <message>
         <source>Message</source>
         <translation>Μήνυμα</translation>
     </message>
     <message>
-        <source>Downloaded</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <source>Tracker URL:</source>
-        <translation type="unfinished" />
+        <translation>URL του tracker:</translation>
     </message>
     <message>
         <source>Updating...</source>
-        <translation type="unfinished" />
+        <translation>Ενημερώνεται...</translation>
     </message>
     <message>
         <source>Working</source>
-        <translation type="unfinished" />
+        <translation>Λειτουργεί</translation>
     </message>
     <message>
         <source>Disabled</source>
-        <translation type="unfinished" />
+        <translation>Απενεργοποιημένο</translation>
     </message>
     <message>
         <source>Not contacted yet</source>
-        <translation type="unfinished" />
+        <translation>Χωρίς επικοινωνία ακόμα</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation type="unfinished" />
+        <translation>Δ/Υ</translation>
     </message>
     <message>
         <source>Seeds</source>
-        <translation type="unfinished" />
+        <translation>Διαμοιραστές</translation>
     </message>
     <message>
         <source>Not working</source>
-        <translation type="unfinished" />
+        <translation>Δεν Λειτουργεί</translation>
     </message>
     <message>
         <source>Copy tracker URL</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Add a new tracker...</source>
-        <translation type="unfinished" />
+        <translation>Αντιγραφή URL tracker</translation>
     </message>
     <message>
         <source>Edit tracker URL...</source>
-        <translation type="unfinished" />
+        <translation>Επεξεργασία URL tracker:</translation>
     </message>
     <message>
         <source>Tracker editing</source>
-        <translation type="unfinished" />
+        <translation>Επεξεργασία tracker</translation>
     </message>
     <message>
         <source>Leeches</source>
-        <translation type="unfinished" />
+        <translation>Leeches</translation>
     </message>
     <message>
         <source>Remove tracker</source>
-        <translation type="unfinished" />
+        <translation>Αφαίρεση tracker</translation>
     </message>
     <message>
         <source>Remaining</source>
-        <translation type="unfinished" />
+        <translation>Απομένουν</translation>
     </message>
     <message>
         <source>Availability</source>
-        <translation type="unfinished" />
+        <translation>Διαθεσιμότητα</translation>
     </message>
     <message>
         <source>Tier</source>
-        <translation type="unfinished" />
+        <translation>Επίπεδο</translation>
     </message>
     <message>
         <source>Download Priority</source>
-        <translation type="unfinished" />
+        <translation>Προτεραιότητα Λήψης</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation>Όνομα</translation>
     </message>
     <message>
         <source>Progress</source>
+        <translation>Πρόοδος</translation>
+    </message>
+    <message>
+        <source>Total Size</source>
+        <translation>Συνολικό Μέγεθος</translation>
+    </message>
+    <message>
+        <source>Times Downloaded</source>
+        <translation>Φορές Λήψης</translation>
+    </message>
+    <message>
+        <source>Add trackers...</source>
+        <translation>Προσθήκη trackers...</translation>
+    </message>
+    <message>
+        <source>Renamed</source>
+        <translation>Μετονομασμένο</translation>
+    </message>
+    <message>
+        <source>Original</source>
+        <translation>Πρωτότυπο</translation>
+    </message>
+    <message>
+        <source>URL/Announce Endpoint</source>
+        <translation>URL/Ανακοίνωση Endpoint</translation>
+    </message>
+    <message>
+        <source>BT Protocol</source>
+        <translation>Πρωτόκολλο BT</translation>
+    </message>
+    <message>
+        <source>Next Announce</source>
+        <translation>Επόμενη Ανακοίνωση</translation>
+    </message>
+    <message>
+        <source>Tier:</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <source>Size</source>
+        <source>Tracker error</source>
+        <translation>Σφάλμα tracker</translation>
+    </message>
+    <message>
+        <source>Unreachable</source>
+        <translation>Απρόσιτος</translation>
+    </message>
+    <message>
+        <source>Force reannounce to selected tracker(s)</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Min Announce</source>
+        <translation>Λεπτά Ανακοίνωσης</translation>
+    </message>
+    <message>
+        <source>Force reannounce to all trackers</source>
+        <translation>Εξαναγκασμός reannounce σε όλους τους trackers</translation>
     </message>
 </context>
 <context>
     <name>TrackersAdditionDialog</name>
     <message>
-        <source>Trackers addition dialog</source>
-        <translation>Παράθυρο διαλόγου προσθήκης ιχνηλατών</translation>
+        <source>List of trackers to add (one per line):</source>
+        <translation>Λίστα trackers για προσθήκη (ένας ανά γραμμή):</translation>
     </message>
     <message>
-        <source>List of trackers to add (one per line):</source>
-        <translation>Λίστα ιχνηλατών προς προσθήκη (ένας ανά σειρά):</translation>
+        <source>Add trackers</source>
+        <translation>Προσθήκη trackers</translation>
     </message>
 </context>
 <context>
@@ -2189,71 +3205,79 @@
     <message>
         <source>%1 ago</source>
         <comment>e.g.: 1h 20m ago</comment>
-        <translation>%1 πριν</translation>
-    </message>
-    <message>
-        <source>Allocating</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Paused</source>
-        <translation type="unfinished" />
+        <translation>πριν από %1</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation type="unfinished" />
+        <translation>Ολοκληρωμένα</translation>
     </message>
     <message>
         <source>Moving</source>
-        <translation type="unfinished" />
+        <translation>Μετακίνηση</translation>
     </message>
     <message>
         <source>[F] Seeding</source>
-        <translation type="unfinished" />
+        <translation>[Ε] Seeding</translation>
     </message>
     <message>
         <source>Seeding</source>
-        <translation type="unfinished" />
+        <translation>Seeding</translation>
     </message>
     <message>
         <source>Queued</source>
-        <translation type="unfinished" />
+        <translation>Στην Ουρά</translation>
     </message>
     <message>
         <source>Errored</source>
-        <translation type="unfinished" />
+        <translation>Με Σφάλμα</translation>
     </message>
     <message>
         <source>[F] Downloading</source>
-        <translation type="unfinished" />
+        <translation>[Ε] Γίνεται Λήψη</translation>
     </message>
     <message>
         <source>Downloading metadata</source>
-        <translation type="unfinished" />
+        <translation>Γίνεται λήψη μεταδεδομένων</translation>
     </message>
     <message>
         <source>Checking</source>
-        <translation type="unfinished" />
+        <translation>Γίνεται έλεγχος</translation>
     </message>
     <message>
         <source>Missing Files</source>
-        <translation type="unfinished" />
+        <translation>Αρχεία που Λείπουν</translation>
     </message>
     <message>
         <source>Queued for checking</source>
-        <translation type="unfinished" />
+        <translation>Στην ουρά για έλεγχο</translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation type="unfinished" />
+        <translation>Γίνεται λήψη</translation>
     </message>
     <message>
         <source>Checking resume data</source>
-        <translation type="unfinished" />
+        <translation>Έλεγχος δεδομένων συνέχισης</translation>
     </message>
     <message>
         <source>Stalled</source>
-        <translation type="unfinished" />
+        <translation>Σε καθυστέρηση</translation>
+    </message>
+    <message>
+        <source>%1 (seeded for %2)</source>
+        <translation>%1 (διαμοιράστηκε για %2)</translation>
+    </message>
+    <message>
+        <source>[F] Downloading metadata</source>
+        <translation>[Ε] Λήψη μεταδεδομένων</translation>
+    </message>
+    <message>
+        <source>Stopped</source>
+        <translation>Σταματημένο</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Δ/Υ</translation>
     </message>
 </context>
 <context>
@@ -2268,10 +3292,18 @@
     </message>
     <message>
         <source>Tags</source>
-        <translation type="unfinished" />
+        <translation>Ετικέτες</translation>
     </message>
     <message>
         <source>Trackers</source>
+        <translation>Trackers</translation>
+    </message>
+    <message>
+        <source>Collapse/expand</source>
+        <translation>Συρρίκνωση/Επέκταση</translation>
+    </message>
+    <message>
+        <source>Collapse/expand category</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -2288,26 +3320,6 @@
     <message>
         <source>Rename</source>
         <translation>Μετονομασία</translation>
-    </message>
-    <message>
-        <source>Resume</source>
-        <comment>Resume/start the torrent</comment>
-        <translation>Συνέχιση</translation>
-    </message>
-    <message>
-        <source>Force Resume</source>
-        <comment>Force Resume/start the torrent</comment>
-        <translation>Εξαναγκαστική Συνέχιση</translation>
-    </message>
-    <message>
-        <source>Pause</source>
-        <comment>Pause the torrent</comment>
-        <translation>Παύση</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <comment>Delete the torrent</comment>
-        <translation>Διαγραφή</translation>
     </message>
     <message>
         <source>Limit share ratio...</source>
@@ -2373,7 +3385,7 @@
     </message>
     <message>
         <source>Super seeding mode</source>
-        <translation>Λειτουργία ενισχυμένου διαμοιρασμού</translation>
+        <translation>Λειτουργία super seeding</translation>
     </message>
     <message>
         <source>Rename...</source>
@@ -2384,75 +3396,115 @@
         <translation>Λήψη σε διαδοχική σειρά</translation>
     </message>
     <message>
-        <source>Force Recheck</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <source>New Category</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Location</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>New name</source>
-        <translation type="unfinished" />
+        <translation>Νέα Κατηγορία</translation>
     </message>
     <message>
         <source>Set location</source>
-        <translation type="unfinished" />
+        <translation>Ρύθμιση τοποθεσίας</translation>
     </message>
     <message>
         <source>Force reannounce</source>
-        <translation type="unfinished" />
+        <translation>Εξαναγκαστικό reannounce</translation>
     </message>
     <message>
         <source>Edit Category</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Save path</source>
-        <translation type="unfinished" />
+        <translation>Επεξεργασία Κατηγορίας</translation>
     </message>
     <message>
         <source>Comma-separated tags:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Add Tags</source>
-        <translation type="unfinished" />
+        <translation>Ετικέτες διαχωρισμένες με κόμμα:</translation>
     </message>
     <message>
         <source>Tags</source>
-        <translation type="unfinished" />
+        <translation>Ετικέτες</translation>
     </message>
     <message>
         <source>Magnet link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Hash</source>
-        <translation type="unfinished" />
+        <translation>Σύνδεσμος Magnet</translation>
     </message>
     <message>
         <source>Remove All</source>
-        <translation type="unfinished" />
+        <translation>Αφαίρεση Όλων</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation>Όνομα</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="unfinished" />
+        <translation>Αντιγραφή</translation>
     </message>
     <message>
         <source>Queue</source>
-        <translation type="unfinished" />
+        <translation>Ουρά</translation>
     </message>
     <message>
         <source>Add...</source>
+        <translation>Προσθήκη...</translation>
+    </message>
+    <message>
+        <source>Info hash v1</source>
+        <translation>Info hash v1</translation>
+    </message>
+    <message>
+        <source>Info hash v2</source>
+        <translation>Info hash v2</translation>
+    </message>
+    <message>
+        <source>Torrent ID</source>
+        <translation>Torrent ID</translation>
+    </message>
+    <message>
+        <source>Export .torrent</source>
+        <translation>Εξαγωγή .torrent</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Αφαίρεση</translation>
+    </message>
+    <message>
+        <source>Rename Files...</source>
+        <translation>Μετονομασία Αρχείων...</translation>
+    </message>
+    <message>
+        <source>Renaming</source>
+        <translation>Μετονομασία</translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation>Σχόλιο</translation>
+    </message>
+    <message>
+        <source>Force Start</source>
+        <translation>Εξαναγκαστική Εκκίνηση</translation>
+    </message>
+    <message>
+        <source>Location:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>Διακοπή</translation>
+    </message>
+    <message>
+        <source>Automatic mode means that various torrent properties(eg save path) will be decided by the associated category</source>
+        <translation>Η Αυτόματη λειτουργία σημαίνει ότι διάφορες ιδιότητες του torrent (π.χ. διαδρομή αποθήκευσης) θα αποφασιστούν από την συσχετισμένη κατηγορία.</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation>Εκκίνηση</translation>
+    </message>
+    <message>
+        <source>New name:</source>
+        <translation>Νέο όνομα:</translation>
+    </message>
+    <message>
+        <source>Add tags</source>
+        <translation>Προσθήκη ετικετών</translation>
+    </message>
+    <message>
+        <source>Content Path</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -2464,23 +3516,51 @@
     </message>
     <message>
         <source>Use global share limit</source>
-        <translation>Χρήση γενικού ορίου αναλογίας</translation>
+        <translation>Χρήση γενικού ορίου διαμοιρασμού</translation>
     </message>
     <message>
         <source>Set no share limit</source>
-        <translation>Χωρίς όριο αναλογίας</translation>
+        <translation>Ορισμός κανενός ορίου διαμοιρασμού</translation>
     </message>
     <message>
         <source>Set share limit to</source>
-        <translation>Ρύθμιση ορίου αναλογίας σε</translation>
+        <translation>Ορισμός ορίου διαμοιρασμού σε</translation>
     </message>
     <message>
         <source>ratio</source>
         <translation>αναλογία</translation>
     </message>
     <message>
-        <source>minutes</source>
-        <translation>λεπτά</translation>
+        <source>total minutes</source>
+        <translation>συνολικά λεπτά</translation>
+    </message>
+    <message>
+        <source>inactive minutes</source>
+        <translation>ανενεργά λεπτά</translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation>Προεπιλογή</translation>
+    </message>
+    <message>
+        <source>Remove torrent</source>
+        <translation>Αφαίρεση torrent</translation>
+    </message>
+    <message>
+        <source>Remove torrent and its content</source>
+        <translation>Αφαίρεση torrent και του περιεχομένου του</translation>
+    </message>
+    <message>
+        <source>Stop torrent</source>
+        <translation>Διακοπή torrent</translation>
+    </message>
+    <message>
+        <source>Enable super seeding for torrent</source>
+        <translation>Ενεργοποίηση super seeding για το torrent</translation>
+    </message>
+    <message>
+        <source>Action when the limit is reached</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2489,31 +3569,23 @@
 <context>
     <name>confirmDeletionDlg</name>
     <message>
-        <source>Deletion confirmation</source>
-        <translation>Επιβεβαίωση διαγραφής</translation>
+        <source>Remove torrent(s)</source>
+        <translation>Αφαίρεση torrent</translation>
     </message>
     <message>
-        <source>Also delete the files on the hard disk</source>
-        <translation>Να διαγραφούν επίσης τα αρχεία στο σκληρό δίσκο</translation>
+        <source>Also remove the content files</source>
+        <translation>Αφαίρεση επίσης και τα αρχεία περιεχομένου</translation>
     </message>
     <message>
-        <source>Deletion confirmation - qBittorrent</source>
-        <translation type="unfinished" />
+        <source>Remove tracker</source>
+        <translation>Αφαίρεση tracker</translation>
     </message>
 </context>
 <context>
     <name>downloadFromURL</name>
     <message>
         <source>Download from URLs</source>
-        <translation>Λήψη από διευθύνσεις URL</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Λήψη</translation>
-    </message>
-    <message>
-        <source>Add Torrent Links</source>
-        <translation type="unfinished" />
+        <translation>Λήψη από URLs</translation>
     </message>
 </context>
 <context>
@@ -2566,7 +3638,7 @@
     <message>
         <source>%1d %2h</source>
         <comment>e.g: 2days 10hours</comment>
-        <translation>%1μ %2ώ</translation>
+        <translation>%1ημ. %2ώ.</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -2583,101 +3655,141 @@
         <comment>e.g: 10minutes</comment>
         <translation>%1λ</translation>
     </message>
+    <message>
+        <source>%1y %2d</source>
+        <translation>%1χρ. %2ημ.</translation>
+    </message>
 </context>
 <context>
     <name>TorrentsController</name>
     <message>
         <source>Save path is empty</source>
-        <translation type="unfinished" />
+        <translation>Η διαδρομή αποθήκευσης είναι κενή</translation>
     </message>
 </context>
 <context>
     <name>PluginSourceDlg</name>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <source>Plugin path:</source>
-        <translation type="unfinished" />
+        <translation>Διαδρομή προσθήκης:</translation>
     </message>
     <message>
         <source>URL or local directory</source>
-        <translation type="unfinished" />
+        <translation>URL ή τοπικός κατάλογος</translation>
     </message>
     <message>
         <source>Install plugin</source>
-        <translation type="unfinished" />
+        <translation>Εγκατάσταση προσθήκης</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="unfinished" />
+        <translation>Ok</translation>
     </message>
 </context>
 <context>
     <name>SearchEngineWidget</name>
     <message>
         <source>Seeds:</source>
-        <translation type="unfinished" />
+        <translation>Διαμοιραστές:</translation>
     </message>
     <message>
         <source>All plugins</source>
-        <translation type="unfinished" />
+        <translation>Όλες οι προσθήκες</translation>
     </message>
     <message>
         <source>Size:</source>
-        <translation type="unfinished" />
+        <translation>Μέγεθος:</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished" />
+        <translation>Διακοπή</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished" />
+        <translation>Αναζήτηση</translation>
     </message>
     <message>
         <source>Search plugins...</source>
-        <translation type="unfinished" />
+        <translation>Αναζήτηση προσθηκών…</translation>
     </message>
     <message>
         <source>All categories</source>
-        <translation type="unfinished" />
+        <translation>Όλες οι κατηγορίες</translation>
     </message>
     <message>
         <source>Search in:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Results (showing</source>
-        <translation type="unfinished" />
+        <translation>Αναζήτηση σε:</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished" />
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <source>Torrent names only</source>
-        <translation type="unfinished" />
+        <translation>Ονόματα αρχείων torrent μόνο</translation>
     </message>
     <message>
         <source>Only enabled</source>
-        <translation type="unfinished" />
+        <translation>Μόνο ενεργοποιημένα</translation>
     </message>
     <message>
         <source>out of</source>
-        <translation type="unfinished" />
+        <translation>από</translation>
     </message>
     <message>
         <source>Everywhere</source>
-        <translation type="unfinished" />
+        <translation>Παντού</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation type="unfinished" />
+        <translation>Προειδοποίηση</translation>
     </message>
     <message>
         <source>Increase window width to display additional filters</source>
+        <translation>Αυξήστε το πλάτος του παραθύρου για να εμφανίσετε επιπλέον φίλτρα</translation>
+    </message>
+    <message>
+        <source>to</source>
+        <translation>σε</translation>
+    </message>
+    <message>
+        <source>Results</source>
+        <translation>Αποτελέσματα</translation>
+    </message>
+    <message>
+        <source>showing</source>
+        <translation>εμφανίζονται</translation>
+    </message>
+    <message>
+        <source>Click the "Search plugins..." button at the bottom right of the window to install some.</source>
+        <translation>Κάντε κλικ στο κουμπί «Αναζήτηση προσθηκών...» στην κάτω δεξιά γωνία του παραθύρου για να εγκαταστήσετε μερικές.</translation>
+    </message>
+    <message>
+        <source>There aren't any search plugins installed.</source>
+        <translation>Δεν υπάρχουν εγκατεστημένες προσθήκες</translation>
+    </message>
+    <message>
+        <source>Select category</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Min size prefix</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Start a search above.</source>
+        <translation>Ξεκινήστε μια αναζήτηση παραπάνω.</translation>
+    </message>
+    <message>
+        <source>Max size prefix</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Select plugins</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -2685,278 +3797,326 @@
     <name>PluginSelectDlg</name>
     <message>
         <source>Uninstall</source>
-        <translation type="unfinished" />
+        <translation>Απεγκατάσταση</translation>
     </message>
     <message>
         <source>Install new plugin</source>
-        <translation type="unfinished" />
+        <translation>Εγκατάσταση νέας προσθήκης</translation>
     </message>
     <message>
         <source>You can get new search engine plugins here:</source>
-        <translation type="unfinished" />
+        <translation>Μπορείτε να λάβετε νέες προσθήκες μηχανών αναζήτησης εδώ:</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished" />
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <source>Installed search plugins:</source>
-        <translation type="unfinished" />
+        <translation>Εγκατεστημένες προσθήκες αναζήτησης:</translation>
     </message>
     <message>
         <source>Enabled</source>
-        <translation type="unfinished" />
+        <translation>Ενεργοποιημένο</translation>
     </message>
     <message>
         <source>Warning: Be sure to comply with your country's copyright laws when downloading torrents from any of these search engines.</source>
-        <translation type="unfinished" />
+        <translation>Προειδοποίηση: Βεβαιωθείτε ότι συμμορφώνεστε με τους νόμους περί πνευματικής ιδιοκτησίας της χώρας σας κατά τη λήψη torrents από οποιαδήποτε από αυτές τις μηχανές αναζήτησης.</translation>
     </message>
     <message>
         <source>Check for updates</source>
-        <translation type="unfinished" />
+        <translation>Έλεγχος για ενημερώσεις</translation>
     </message>
     <message>
         <source>Search plugins</source>
-        <translation type="unfinished" />
+        <translation>Προσθήκες αναζήτησης</translation>
     </message>
 </context>
 <context>
     <name>SearchResultsTable</name>
     <message>
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation>Όνομα</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="unfinished" />
+        <translation>Μέγεθος</translation>
     </message>
     <message>
         <source>Leechers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Search engine</source>
-        <translation type="unfinished" />
+        <translation>Leechers</translation>
     </message>
     <message>
         <source>Seeders</source>
-        <translation type="unfinished" />
+        <translation>Seeders</translation>
+    </message>
+    <message>
+        <source>Published On</source>
+        <translation>Δημοσιεύτηκε Στις</translation>
+    </message>
+    <message>
+        <source>Engine URL</source>
+        <translation>Engine URL</translation>
+    </message>
+    <message>
+        <source>Engine</source>
+        <translation>Engine</translation>
     </message>
 </context>
 <context>
     <name>SearchPluginsTable</name>
     <message>
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation>Όνομα</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation type="unfinished" />
+        <translation>Url</translation>
     </message>
     <message>
         <source>Enabled</source>
-        <translation type="unfinished" />
+        <translation>Ενεργοποιημένο</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="unfinished" />
+        <translation>Έκδοση</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="unfinished" />
+        <translation>Ναι</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished" />
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
     <name>PeersAdditionDialog</name>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <source>Add Peers</source>
-        <translation type="unfinished" />
+        <translation>Προσθήκη Peers</translation>
     </message>
     <message>
         <source>List of peers to add (one IP per line):</source>
-        <translation type="unfinished" />
+        <translation>Λίστα peers για προσθήκη (μία IP ανά γραμμή):</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="unfinished" />
+        <translation>Ok</translation>
     </message>
     <message>
         <source>Format: IPv4:port / [IPv6]:port</source>
-        <translation type="unfinished" />
+        <translation>Μορφή: IPv4:θύρα / [IPv6]:θύρα</translation>
     </message>
 </context>
 <context>
     <name>TagFilterWidget</name>
     <message>
         <source>New Tag</source>
-        <translation type="unfinished" />
+        <translation>Νέα Ετικέτα</translation>
     </message>
     <message>
         <source>Add tag...</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Delete torrents</source>
-        <translation type="unfinished" />
+        <translation>Προσθήκη ετικέτας...</translation>
     </message>
     <message>
         <source>Tag:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Pause torrents</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Resume torrents</source>
-        <translation type="unfinished" />
+        <translation>Ετικέτα:</translation>
     </message>
     <message>
         <source>Remove unused tags</source>
-        <translation type="unfinished" />
+        <translation>Αφαίρεση αχρησιμοποίητων ετικετών</translation>
     </message>
     <message>
         <source>Invalid tag name</source>
-        <translation type="unfinished" />
+        <translation>Μη έγκυρο όνομα ετικέτας</translation>
     </message>
     <message>
         <source>Remove tag</source>
-        <translation type="unfinished" />
+        <translation>Αφαίρεση ετικέτας</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation>Αφαίρεση torrent</translation>
+    </message>
+    <message>
+        <source>Start torrents</source>
+        <translation>Έναρξη torrents</translation>
+    </message>
+    <message>
+        <source>Stop torrents</source>
+        <translation>Διακοπή torrents</translation>
     </message>
 </context>
 <context>
     <name>TagFilterModel</name>
     <message>
         <source>All</source>
-        <translation type="unfinished" />
+        <translation>Όλα</translation>
     </message>
     <message>
         <source>Untagged</source>
-        <translation type="unfinished" />
+        <translation>Χωρίς ετικέτα</translation>
     </message>
 </context>
 <context>
     <name>AboutDialog</name>
     <message>
         <source>Bug Tracker:</source>
-        <translation type="unfinished" />
+        <translation>Bug Tracker:</translation>
     </message>
     <message>
         <source>About</source>
-        <translation type="unfinished" />
+        <translation>Σχετικά</translation>
     </message>
     <message>
         <source>Forum:</source>
-        <translation type="unfinished" />
+        <translation>Φόρουμ:</translation>
     </message>
     <message>
         <source>E-mail:</source>
-        <translation type="unfinished" />
+        <translation>Διεύθυνση ηλ. ταχυδρομείου:</translation>
     </message>
     <message>
         <source>Current maintainer</source>
-        <translation type="unfinished" />
+        <translation>Τρέχων συντηρητής</translation>
     </message>
     <message>
         <source>Home Page:</source>
-        <translation type="unfinished" />
+        <translation>Αρχική Σελίδα:</translation>
     </message>
     <message>
         <source>Greece</source>
-        <translation type="unfinished" />
+        <translation>Ελλάδα</translation>
     </message>
     <message>
         <source>Special Thanks</source>
-        <translation type="unfinished" />
+        <translation>Ειδικές Ευχαριστίες</translation>
     </message>
     <message>
         <source>An advanced BitTorrent client programmed in C++, based on Qt toolkit and libtorrent-rasterbar.</source>
-        <translation type="unfinished" />
+        <translation>Ένας προηγμένος BitTorrent client προγραμματισμένος σε C++, βασισμένος σε Qt toolkit και libtorrent-rasterbar.</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation type="unfinished" />
+        <translation>Όνομα:</translation>
     </message>
     <message>
         <source>About qBittorrent</source>
-        <translation type="unfinished" />
+        <translation>Σχετικά με το qBittorent</translation>
     </message>
     <message>
         <source>License</source>
-        <translation type="unfinished" />
+        <translation>Άδεια</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished" />
+        <translation>Μεταφραστές</translation>
     </message>
     <message>
         <source>qBittorrent was built with the following libraries:</source>
-        <translation type="unfinished" />
+        <translation>Το qBittorrent φτιάχτηκε με τις ακόλουθες βιβλιοθήκες:</translation>
     </message>
     <message>
         <source>Nationality:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="unfinished" />
+        <translation>Εθνικότητα:</translation>
     </message>
     <message>
         <source>Software Used</source>
-        <translation type="unfinished" />
+        <translation>Λογισμικό που Χρησιμοποιήθηκε</translation>
     </message>
     <message>
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
-        <translation type="unfinished" />
+        <translation>Η δωρεάν βάση δεδομένων IP to Country Lite χρησιμοποιείται για την επίλυση των χωρών των peers. Η βάση δεδομένων διατίθεται με τους όρους της Διεθνούς Άδειας Αναφορά Δημιουργού 4.0 της Creative Commons.</translation>
+    </message>
+    <message>
+        <source>Authors</source>
+        <translation>Δημιουργοί</translation>
+    </message>
+    <message>
+        <source>France</source>
+        <translation>Γαλλία</translation>
+    </message>
+    <message>
+        <source>qBittorrent Mascot</source>
+        <translation>Μασκότ του qBittorrent</translation>
+    </message>
+    <message>
+        <source>qBittorrent icon</source>
+        <translation>Εικονίδιο του qBittorrent</translation>
     </message>
 </context>
 <context>
     <name>OptionDialog</name>
     <message>
         <source>All addresses</source>
-        <translation type="unfinished" />
+        <translation>Όλες οι διευθύνσεις </translation>
     </message>
     <message>
         <source>All IPv6 addresses</source>
-        <translation type="unfinished" />
+        <translation>Όλες οι διευθύνσεις IPv6</translation>
     </message>
     <message>
         <source>All IPv4 addresses</source>
-        <translation type="unfinished" />
+        <translation>Όλες οι διευθύνσεις IPv4</translation>
     </message>
 </context>
 <context>
     <name>SearchJobWidget</name>
     <message>
         <source>Copy</source>
-        <translation type="unfinished" />
+        <translation>Αντιγραφή</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished" />
+        <translation>Λήψη</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation>Όνομα</translation>
     </message>
     <message>
         <source>Description page URL</source>
-        <translation type="unfinished" />
+        <translation>URL σελίδας περιγραφής</translation>
     </message>
     <message>
         <source>Open description page</source>
-        <translation type="unfinished" />
+        <translation>Άνοιγμα σελίδας περιγραφής</translation>
     </message>
     <message>
         <source>Download link</source>
+        <translation>Σύνδεσμος λήψης</translation>
+    </message>
+    <message>
+        <source>Search has finished</source>
+        <translation>Η αναζήτηση ολοκληρώθηκε</translation>
+    </message>
+    <message>
+        <source>An error occurred during search...</source>
+        <translation>Προέκυψε ένα σφάλμα κατά την αναζήτηση...</translation>
+    </message>
+    <message>
+        <source>Close tab</source>
+        <translation>Κλείσιμο καρτέλας</translation>
+    </message>
+    <message>
+        <source>Searching...</source>
+        <translation>Αναζήτηση...</translation>
+    </message>
+    <message>
+        <source>Search aborted</source>
+        <translation>Η αναζήτηση διακόπηκε</translation>
+    </message>
+    <message>
+        <source>Close all tabs</source>
+        <translation>Κλείσιμο όλων των καρτελών</translation>
+    </message>
+    <message>
+        <source>Refresh tab</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -2964,364 +4124,429 @@
     <name>TorrentContentTreeView</name>
     <message>
         <source>Renaming</source>
-        <translation type="unfinished" />
+        <translation>Μετονομασία</translation>
     </message>
     <message>
         <source>New name:</source>
-        <translation type="unfinished" />
+        <translation>Νέο όνομα:</translation>
     </message>
 </context>
 <context>
     <name>RSSWidget</name>
     <message>
         <source>Date: </source>
-        <translation type="unfinished" />
+        <translation>Ημερομηνία:</translation>
     </message>
     <message>
         <source>Please choose a new name for this RSS feed</source>
-        <translation type="unfinished" />
+        <translation>Παρακαλώ επιλέξτε ένα νέο όνομα για αυτήν τη ροή RSS</translation>
     </message>
     <message>
         <source>Please choose a folder name</source>
-        <translation type="unfinished" />
+        <translation>Παρακαλώ επιλέξτε όνομα φακέλου</translation>
     </message>
     <message>
         <source>New feed name:</source>
-        <translation type="unfinished" />
+        <translation>Νέο όνομα ροής:</translation>
     </message>
     <message>
         <source>Update all</source>
-        <translation type="unfinished" />
+        <translation>Ενημέρωση όλων</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished" />
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <source>RSS Downloader...</source>
-        <translation type="unfinished" />
+        <translation>Λήπτης RSS...</translation>
     </message>
     <message>
         <source>Mark items read</source>
-        <translation type="unfinished" />
+        <translation>Επισήμανση αντικειμένων ως διαβασμένα</translation>
     </message>
     <message>
         <source>Update all feeds</source>
-        <translation type="unfinished" />
+        <translation>Ενημέρωση όλων των ροών</translation>
     </message>
     <message>
         <source>Copy feed URL</source>
-        <translation type="unfinished" />
+        <translation>Αντιγραφή URL ροής</translation>
     </message>
     <message>
         <source>Torrents: (double-click to download)</source>
-        <translation type="unfinished" />
+        <translation>Torrents: (κάντε διπλό κλικ για λήψη)</translation>
     </message>
     <message>
         <source>Open news URL</source>
-        <translation type="unfinished" />
+        <translation>Άνοιγμα URL ειδήσεων</translation>
     </message>
     <message>
         <source>Rename...</source>
-        <translation type="unfinished" />
+        <translation>Μετονομασία…</translation>
     </message>
     <message>
         <source>Feed URL:</source>
-        <translation type="unfinished" />
+        <translation>URL ροής:</translation>
     </message>
     <message>
         <source>New folder...</source>
-        <translation type="unfinished" />
+        <translation>Νέος φάκελος...</translation>
     </message>
     <message>
         <source>New subscription</source>
-        <translation type="unfinished" />
+        <translation>Νέα συνδρομή</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished" />
+        <translation>Ενημέρωση</translation>
     </message>
     <message>
         <source>Folder name:</source>
-        <translation type="unfinished" />
+        <translation>Όνομα φακέλου:</translation>
     </message>
     <message>
         <source>Please type a RSS feed URL</source>
-        <translation type="unfinished" />
+        <translation>Παρακαλώ εισάγετε ένα URL ροής RSS</translation>
     </message>
     <message>
         <source>Fetching of RSS feeds is disabled now! You can enable it in application settings.</source>
-        <translation type="unfinished" />
+        <translation>Η ανάκτηση των ροών RSS είναι απενεργοποιημένη τώρα! Μπορείτε να την ενεργοποιήσετε στις ρυθμίσεις της εφαρμογής.</translation>
     </message>
     <message>
         <source>Deletion confirmation</source>
-        <translation type="unfinished" />
+        <translation>Επιβεβαίωση διαγραφής</translation>
     </message>
     <message>
         <source>Are you sure you want to delete the selected RSS feeds?</source>
-        <translation type="unfinished" />
+        <translation>Είστε σίγουροι ότι θέλετε να διαγράψετε τις επιλεγμένες ροές RSS;</translation>
     </message>
     <message>
         <source>New subscription...</source>
-        <translation type="unfinished" />
+        <translation>Νέα συνδρομή...</translation>
     </message>
     <message>
         <source>Download torrent</source>
+        <translation>Λήψη torrent</translation>
+    </message>
+    <message>
+        <source>Edit feed URL...</source>
+        <translation>Επεξεργασία URL ροής...</translation>
+    </message>
+    <message>
+        <source>Unable to update URL</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>URL is unchanged</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>URL cannot be empty</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Open link</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Author: </source>
+        <translation> Δημιουργός:</translation>
     </message>
 </context>
 <context>
     <name>AutomatedRssDownloader</name>
     <message>
         <source>Download Rules</source>
-        <translation type="unfinished" />
+        <translation>Κανόνες Λήψης</translation>
     </message>
     <message>
         <source>Matching RSS Articles</source>
-        <translation type="unfinished" />
+        <translation>Άρθρα RSS που Αντιστοιχούν</translation>
     </message>
     <message>
         <source>* to match zero or more of any characters</source>
-        <translation type="unfinished" />
+        <translation>* για να αντιστοιχηθεί με κανέναν ή περισσότερους από τυχόν χαρακτήρες</translation>
     </message>
     <message>
         <source> will match all articles.</source>
-        <translation type="unfinished" />
+        <translation>θα αντιστοιχηθεί με όλα τα άρθρα.</translation>
     </message>
     <message>
         <source>Episode filter rules: </source>
-        <translation type="unfinished" />
+        <translation>Κανόνες φίλτρου επεισοδίου:</translation>
     </message>
     <message>
         <source>Auto downloading of RSS torrents is disabled now! You can enable it in application settings.</source>
-        <translation type="unfinished" />
+        <translation>Η αυτόματη λήψη τροφοδοσιών RSS είναι αυτή τη στιγμή απενεργοποιημένη! Μπορείτε να την ενεργοποιήσετε στις ρυθμίσεις εφαρμογής.</translation>
     </message>
     <message>
         <source>Rule Definition</source>
-        <translation type="unfinished" />
+        <translation>Ορισμός Κανόνα</translation>
     </message>
     <message>
         <source>Save to:</source>
-        <translation type="unfinished" />
+        <translation>Αποθήκευση σε:</translation>
     </message>
     <message>
         <source>Use Regular Expressions</source>
-        <translation type="unfinished" />
+        <translation>Χρήση Κανονικών Εκφράσεων</translation>
     </message>
     <message>
         <source>New rule name</source>
-        <translation type="unfinished" />
+        <translation>Νέο όνομα κανόνα</translation>
     </message>
     <message>
         <source>Filter must end with semicolon</source>
-        <translation type="unfinished" />
+        <translation>Το φίλτρο πρέπει να τελειώνει με ελληνικό ερωτηματικό</translation>
     </message>
     <message>
         <source>? to match any single character</source>
-        <translation type="unfinished" />
+        <translation>? για να αντιστοιχηθεί με οποιονδήποτε μονό χαρακτήρα</translation>
     </message>
     <message>
         <source>Matches articles based on episode filter.</source>
-        <translation type="unfinished" />
+        <translation>Αντιστοιχεί με άρθρα βασισμένα στο φίλτρο επεισοδίου.</translation>
     </message>
     <message>
         <source>Assign Category:</source>
-        <translation type="unfinished" />
+        <translation>Ανάθεση Κατηγορίας:</translation>
     </message>
     <message>
         <source>Regex mode: use Perl-compatible regular expressions</source>
-        <translation type="unfinished" />
+        <translation>Λειτουργία regex: χρησιμοποιήστε συμβατές-με-Perl κανονικές εκφράσεις</translation>
     </message>
     <message>
         <source>| is used as OR operator</source>
-        <translation type="unfinished" />
+        <translation>Το | χρησιμοποιείται ως τελεστής OR</translation>
     </message>
     <message>
         <source>Clear downloaded episodes</source>
-        <translation type="unfinished" />
+        <translation>Εκκαθάριση ληφθέντων επεισοδίων</translation>
     </message>
     <message>
         <source>Whitespaces count as AND operators (all words, any order)</source>
-        <translation type="unfinished" />
+        <translation>Τα κενά μετράνε ως τελεστές AND (όλες οι λέξεις, οποιαδήποτε σειρά)</translation>
     </message>
     <message>
         <source>An expression with an empty %1 clause (e.g. %2)</source>
-        <translation type="unfinished" />
+        <translation>Μια έκφραση με μία κενή  συνθήκη %1 (e.g. %2)</translation>
     </message>
     <message>
         <source>Example: </source>
-        <translation type="unfinished" />
+        <translation>Παράδειγμα:</translation>
     </message>
     <message>
         <source>Add new rule...</source>
-        <translation type="unfinished" />
+        <translation>Προσθήκη νέου κανόνα…</translation>
     </message>
     <message>
         <source>Are you sure you want to clear the list of downloaded episodes for the selected rule?</source>
-        <translation type="unfinished" />
+        <translation>Είστε βέβαιοι ότι θέλετε να διαγράψετε τη λίστα των ληφθέντων επεισοδίων για τον επιλεγμένο κανόνα;</translation>
     </message>
     <message>
         <source>Must Contain:</source>
-        <translation type="unfinished" />
+        <translation>Να Περιέχει:</translation>
     </message>
     <message>
         <source>Infinite range: &lt;b&gt;1x25-;&lt;/b&gt; matches episodes 25 and upward of season one, and all episodes of later seasons</source>
-        <translation type="unfinished" />
+        <translation>Άπειρο εύρος: &lt;b&gt;1x25-;&lt;/b&gt; αντιστοιχεί με τα επεισόδια 25 και πάνω της πρώτης σεζόν, και όλα τα επεισόδια μεταγενέστερων σεζόν</translation>
     </message>
     <message>
         <source>Save to a Different Directory</source>
-        <translation type="unfinished" />
+        <translation>Αποθήκευση σε Διαφορετικό Κατάλογο</translation>
     </message>
     <message>
         <source>Must Not Contain:</source>
-        <translation type="unfinished" />
+        <translation>Να Μην Περιέχει:</translation>
     </message>
     <message>
         <source>Single number: &lt;b&gt;1x25;&lt;/b&gt; matches episode 25 of season one</source>
-        <translation type="unfinished" />
+        <translation>Ενιαίος αριθμός: &lt;b&gt;1x25;&lt;/b&gt; αντιστοιχεί στο επεισόδιο 25 της πρώτης σεζόν</translation>
     </message>
     <message>
         <source>Three range types for episodes are supported: </source>
-        <translation type="unfinished" />
+        <translation>Υποστηρίζονται τρεις τύποι εύρους για τα επεισόδια:</translation>
     </message>
     <message>
         <source>Are you sure you want to remove the selected download rules?</source>
-        <translation type="unfinished" />
+        <translation>Σίγουρα θέλετε να αφαιρέσετε τους επιλεγμένους κανόνες λήψης;</translation>
     </message>
     <message>
         <source>Use global settings</source>
-        <translation type="unfinished" />
+        <translation>Χρήση γενικών ρυθμίσεων</translation>
     </message>
     <message>
         <source>Normal range: &lt;b&gt;1x25-40;&lt;/b&gt; matches episodes 25 through 40 of season one</source>
-        <translation type="unfinished" />
+        <translation>Κανονικό εύρος: &lt;b&gt;1x25-40;&lt;/b&gt; ταιριάζει στα επεισόδια 25 έως 40 της πρώτης σεζόν</translation>
     </message>
     <message>
         <source>Please type the new rule name</source>
-        <translation type="unfinished" />
+        <translation>Παρακαλώ πληκτρολογήστε το νέο όνομα κανόνα</translation>
     </message>
     <message>
         <source>Rule renaming</source>
-        <translation type="unfinished" />
+        <translation>Μετονομασία κανόνα</translation>
     </message>
     <message>
         <source>Always</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Smart Episode Filter will check the episode number to prevent downloading of duplicates.
-Supports the formats: S01E01, 1x1, 2017.01.01 and 01.01.2017 (Date formats also support - as a separator)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Create Subfolder:</source>
-        <translation type="unfinished" />
+        <translation>Πάντα</translation>
     </message>
     <message>
         <source>Episode number is a mandatory positive value</source>
-        <translation type="unfinished" />
+        <translation>Ο αριθμός επεισοδίου είναι μια υποχρεωτική θετική τιμή.</translation>
     </message>
     <message>
         <source> will match 2, 5, 8 through 15, 30 and onward episodes of season one</source>
-        <translation type="unfinished" />
+        <translation>θα αντιστοιχίσει τα 2, 5, 8 έως 15, 30 και μετέπειτα επεισόδια της πρώτης σεζόν.</translation>
     </message>
     <message>
         <source>Rule deletion confirmation</source>
-        <translation type="unfinished" />
+        <translation>Επιβεβαίωση διαγραφής κανόνα</translation>
     </message>
     <message>
         <source>Last Match: %1 days ago</source>
-        <translation type="unfinished" />
+        <translation>Τελευταία Αντιστοιχία: πριν από %1 ημέρες</translation>
     </message>
     <message>
         <source>Episode Filter:</source>
-        <translation type="unfinished" />
+        <translation>Φίλτρο Επεισοδίου:</translation>
     </message>
     <message>
         <source>Rss Downloader</source>
-        <translation type="unfinished" />
+        <translation>Λήψη RSS</translation>
     </message>
     <message>
         <source>Season number is a mandatory non-zero value</source>
-        <translation type="unfinished" />
+        <translation>Ο αριθμός της σεζόν είναι υποχρεωτική μή μηδενική τιμή</translation>
     </message>
     <message>
         <source>Never</source>
-        <translation type="unfinished" />
+        <translation>Ποτέ</translation>
     </message>
     <message>
         <source>Apply Rule to Feeds:</source>
-        <translation type="unfinished" />
+        <translation>Εφαρμογή Κανόνα στις Ροές:</translation>
     </message>
     <message>
         <source> days</source>
-        <translation type="unfinished" />
+        <translation>ημέρες</translation>
     </message>
     <message>
         <source>Use Smart Episode Filter</source>
-        <translation type="unfinished" />
+        <translation>Χρήση Έξυπνου Φίλτρου Επεισοδίου</translation>
     </message>
     <message>
         <source>If word order is important use * instead of whitespace.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Add Paused:</source>
-        <translation type="unfinished" />
+        <translation>Εάν η σειρά λέξεων είναι σημαντική, χρησιμοποιήστε * αντί για κενά. </translation>
     </message>
     <message>
         <source>Please type the name of the new download rule.</source>
-        <translation type="unfinished" />
+        <translation>Παρακαλώ πληκτρολογήστε το όνομα του νέου κανόνα λήψης.</translation>
     </message>
     <message>
         <source>Wildcard mode: you can use</source>
-        <translation type="unfinished" />
+        <translation>Λειτουργία wildcard: μπορείτε να χρησιμοποιήσετε</translation>
     </message>
     <message>
         <source> will exclude all articles.</source>
-        <translation type="unfinished" />
+        <translation>θα εξαιρέσει όλα τα άρθρα.</translation>
     </message>
     <message>
         <source>Delete rule</source>
-        <translation type="unfinished" />
+        <translation>Διαγραφή κανόνα</translation>
     </message>
     <message>
         <source>Ignore Subsequent Matches for (0 to Disable)</source>
-        <translation type="unfinished" />
+        <translation>Παράβλεψη Μεταγενέστερων Αντιστοιχιών για (0 για Απενεργοποίηση)</translation>
     </message>
     <message>
         <source>Rename rule...</source>
-        <translation type="unfinished" />
+        <translation>Μετονομασία κανόνα…</translation>
     </message>
     <message>
         <source>Last Match: Unknown</source>
-        <translation type="unfinished" />
+        <translation>Τελευταία Αντιστοιχία: Άγνωστο</translation>
     </message>
     <message>
         <source>Clear downloaded episodes...</source>
+        <translation>Εκκαθάριση ληφθέντων επεισοδίων...</translation>
+    </message>
+    <message>
+        <source>Smart Episode Filter will check the episode number to prevent downloading of duplicates.
+Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also support - as a separator)</source>
+        <translation>Το Έξυπνο Φίλτρο Επεισοδίων θα ελέγξει τον αριθμό επεισοδίου ώστε να αποφευχθεί η λήψη διπλών επεισοδίων.
+Υποστηρίζει τις μορφές: S01E01, 1x1, 2017.12.31 και 31.12.2017 (Επίσης υποστηρίζονται και μορφές ημερομηνίας -  ως διαχωριστικό)</translation>
+    </message>
+    <message>
+        <source>Torrent content layout:</source>
+        <translation>Διάταξη περιεχομένου του torrent:</translation>
+    </message>
+    <message>
+        <source>Create subfolder</source>
+        <translation>Δημιουργία υποφακέλου</translation>
+    </message>
+    <message>
+        <source>Original</source>
+        <translation>Πρωτότυπο</translation>
+    </message>
+    <message>
+        <source>Don't create subfolder</source>
+        <translation>Να μη δημιουργηθεί υποφάκελος</translation>
+    </message>
+    <message>
+        <source>Add Tags:</source>
+        <translation>Προσθήκη ετικετών</translation>
+    </message>
+    <message>
+        <source>Remove rule</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Add rule</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Add Stopped:</source>
+        <translation>Προσθήκη Σε Διακοπή:</translation>
     </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
     <message>
-        <source>Delete torrents</source>
-        <translation type="unfinished" />
+        <source>Remove torrents</source>
+        <translation>Αφαίρεση torrent</translation>
     </message>
     <message>
-        <source>Resume torrents</source>
-        <translation type="unfinished" />
+        <source>All</source>
+        <translation>Όλα</translation>
     </message>
     <message>
-        <source>All (%1)</source>
-        <translation type="unfinished" />
+        <source>Trackerless</source>
+        <translation>Χωρίς Tracker</translation>
     </message>
     <message>
-        <source>Trackerless (%1)</source>
-        <translation type="unfinished" />
+        <source>Start torrents</source>
+        <translation>Εκκίνηση torrents</translation>
     </message>
     <message>
-        <source>Pause torrents</source>
+        <source>Remove tracker</source>
+        <translation>Αφαίρεση tracker</translation>
+    </message>
+    <message>
+        <source>Stop torrents</source>
+        <translation>Διακοπή torrents</translation>
+    </message>
+    <message>
+        <source>Tracker error</source>
+        <translation>Σφάλμα tracker</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Προειδοποίηση</translation>
+    </message>
+    <message>
+        <source>Other error</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -3329,6 +4554,575 @@ Supports the formats: S01E01, 1x1, 2017.01.01 and 01.01.2017 (Date formats also 
     <name>FeedListWidget</name>
     <message>
         <source>RSS feeds</source>
+        <translation>Ροές RSS</translation>
+    </message>
+    <message>
+        <source>Unread</source>
+        <translation>Μη αναγνωσμένα</translation>
+    </message>
+</context>
+<context>
+    <name>ExecutionLogWidget</name>
+    <message>
+        <source>General</source>
+        <translation>Γενικά</translation>
+    </message>
+    <message>
+        <source>Blocked</source>
+        <translation>Αποκλεισμένο</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Αγνωστο</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Όλα</translation>
+    </message>
+    <message>
+        <source>showing</source>
+        <translation>εμφανίζονται</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Αντιγραφή</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Επιλογή Όλων</translation>
+    </message>
+    <message>
+        <source>ID</source>
+        <translation>ID</translation>
+    </message>
+    <message>
+        <source>Log Type</source>
+        <translation>Τύπος Αρχείου καταγραφής</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Καθαρισμός</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Προειδοποίηση</translation>
+    </message>
+    <message>
+        <source>Information Messages</source>
+        <translation>Μηνύματα Πληροφοριών</translation>
+    </message>
+    <message>
+        <source>Warning Messages</source>
+        <translation>Μηνύματα Προειδοποίησης</translation>
+    </message>
+    <message>
+        <source>Filter logs</source>
+        <translation>Φιλτράρισμα αρχείων καταγραφής</translation>
+    </message>
+    <message>
+        <source>Blocked IPs</source>
+        <translation>Αποκλεισμένες IPs</translation>
+    </message>
+    <message>
+        <source>out of</source>
+        <translation>από</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Κατάσταση</translation>
+    </message>
+    <message>
+        <source>Timestamp</source>
+        <translation>Χρονική σήμανση</translation>
+    </message>
+    <message>
+        <source>Clear All</source>
+        <translation>Εκκαθάριση Ολων</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Μήνυμα</translation>
+    </message>
+    <message>
+        <source>Log Levels:</source>
+        <translation>Επίπεδα καταγραφής:</translation>
+    </message>
+    <message>
+        <source>Reason</source>
+        <translation>Αιτία</translation>
+    </message>
+    <message>
+        <source>item</source>
+        <translation>αντικείμενο</translation>
+    </message>
+    <message>
+        <source>IP</source>
+        <translation>IP</translation>
+    </message>
+    <message>
+        <source>Banned</source>
+        <translation>Αποκλεισμένο</translation>
+    </message>
+    <message>
+        <source>Normal Messages</source>
+        <translation>Κανονικά Μηνύματα</translation>
+    </message>
+    <message>
+        <source>Critical</source>
+        <translation>Κρίσιμο</translation>
+    </message>
+    <message>
+        <source>Critical Messages</source>
+        <translation>Κρίσιμα Μηνύματα</translation>
+    </message>
+    <message>
+        <source>Normal</source>
+        <translation>Κανονική</translation>
+    </message>
+    <message>
+        <source>items</source>
+        <translation>αντικείμενα</translation>
+    </message>
+    <message>
+        <source>Results</source>
+        <translation>Αποτελέσματα</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Πληροφορίες</translation>
+    </message>
+    <message>
+        <source>Choose a log level...</source>
+        <translation>Επιλέξτε ένα επίπεδο καταγραφής...</translation>
+    </message>
+</context>
+<context>
+    <name>TrackersFilterWidget</name>
+    <message>
+        <source>Are you sure you want to remove tracker %1 from all torrents?</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Category</name>
+    <message>
+        <source>Unable to edit category</source>
+        <translation>Δεν ήταν δυνατή η επεξεργασία της κατηγορίας</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Unable to create category</source>
+        <translation>Δεν ήταν δυνατή η δημιουργία της κατηγορίας</translation>
+    </message>
+    <message>
+        <source>Unable to set category</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Save path for incomplete torrents:</source>
+        <translation>Διαδρομή αποθήκευσης για ημιτελή torrents:</translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation>Προεπιλογή</translation>
+    </message>
+    <message>
+        <source>New Category</source>
+        <translation>Νέα Κατηγορία</translation>
+    </message>
+    <message>
+        <source>Save path:</source>
+        <translation>Διαδρομή αποθήκευσης:</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation>Ναι</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Κατηγορία:</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>Όχι</translation>
+    </message>
+    <message>
+        <source>Path:</source>
+        <translation>Διαδρομή:</translation>
+    </message>
+    <message>
+        <source>Use another path for incomplete torrents:</source>
+        <translation>Χρήση άλλης διαδρομής για ημιτελή torrents:</translation>
+    </message>
+</context>
+<context>
+    <name>CookiesDialog</name>
+    <message>
+        <source>Domain</source>
+        <translation>Τομέας</translation>
+    </message>
+    <message>
+        <source>Manage Cookies</source>
+        <translation>Διαχείριση Cookies</translation>
+    </message>
+    <message>
+        <source>Add Cookie</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Αφαίρεση</translation>
+    </message>
+    <message>
+        <source>Expiration Date</source>
+        <translation>Ημερομηνία Λήξης</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Τιμή</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Όνομα</translation>
+    </message>
+    <message>
+        <source>Path</source>
+        <translation>Διαδρομή</translation>
+    </message>
+</context>
+<context>
+    <name>confirmAutoTMMDialog</name>
+    <message>
+        <source>Enable automatic torrent management</source>
+        <translation>Ενεργοποίηση αυτόματης διαχείρισης torrent</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to enable Automatic Torrent Management for the selected torrent(s)? They may be relocated.</source>
+        <translation>Είστε βέβαιοι πως θέλετε να ενεργοποιήσετε την Αυτόματη Διαχείριση Torrent για τα επιλεγμένα torrent(s); Μπορεί να μετεγκατασταθούν.</translation>
+    </message>
+</context>
+<context>
+    <name>confirmRecheckDialog</name>
+    <message>
+        <source>Are you sure you want to recheck the selected torrent(s)?</source>
+        <translation>Είστε σίγουροι πως θέλετε να επανελέγξετε τα επιλεγμένα torrent(s);</translation>
+    </message>
+    <message>
+        <source>Recheck confirmation</source>
+        <translation>Επιβεβαίωση επανέλεγχου</translation>
+    </message>
+</context>
+<context>
+    <name>SearchWidget</name>
+    <message>
+        <source>Close tab</source>
+        <translation>Κλείσιμο καρτέλας</translation>
+    </message>
+</context>
+<context>
+    <name>Login</name>
+    <message>
+        <source>qBittorrent WebUI</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Password</source>
+        <translation>Κωδικός Πρόσβασης</translation>
+    </message>
+    <message>
+        <source>JavaScript Required! You must enable JavaScript for the WebUI to work properly</source>
+        <translation>Απαιτείται JavaScript! Πρέπει να ενεργοποιήσετε τη JavaScript για να λειτουργήσει σωστά το Web UI</translation>
+    </message>
+    <message>
+        <source>Login</source>
+        <translation>Σύνδεση</translation>
+    </message>
+    <message>
+        <source>Server response:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Unable to log in, server is probably unreachable.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Όνομα χρήστη</translation>
+    </message>
+    <message>
+        <source>Invalid Username or Password.</source>
+        <translation>Μη έγκυρο Όνομα Χρήστη ή Κωδικός Πρόσβασης.</translation>
+    </message>
+</context>
+<context>
+    <name>TorrentCreator</name>
+    <message>
+        <source>Private</source>
+        <translation>Ιδιωτικά</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Queued</source>
+        <translation>Στην Ουρά</translation>
+    </message>
+    <message>
+        <source>Unable to create torrent.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Private
+                torrent (Won't distribute on DHT network)</source>
+        <translation>Ιδιωτικό
+                 torrent (δε θα διανεμηθεί σε δίκτυο DHT)</translation>
+    </message>
+    <message>
+        <source>Unable to export torrent file</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Create New Torrent</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Comments:</source>
+        <translation>Σχόλια:</translation>
+    </message>
+    <message>
+        <source>Download Torrent</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Status Icon</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Web seed URLs:</source>
+        <translation>URLs των Web seed:</translation>
+    </message>
+    <message>
+        <source>Failed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation>Σχόλιο</translation>
+    </message>
+    <message>
+        <source>Finished</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>Ρυθμίσεις</translation>
+    </message>
+    <message>
+        <source>Error Message</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Κατάσταση</translation>
+    </message>
+    <message>
+        <source>Align to piece boundary for files larger
+                than:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Select file/folder to share:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Piece Size</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Progress</source>
+        <translation>Πρόοδος</translation>
+    </message>
+    <message>
+        <source>Completed On</source>
+        <translation>Ολοκληρώθηκε στις</translation>
+    </message>
+    <message>
+        <source>Hybrid</source>
+        <translation>Υβριδικό</translation>
+    </message>
+    <message>
+        <source>Unable to load torrent creation tasks</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Optimize
+                    alignment</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Δ/Υ</translation>
+    </message>
+    <message>
+        <source>Tracker URLs:</source>
+        <translation>URLs του tracker:</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to delete selected tasks?</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Path:</source>
+        <translation>Διαδρομή:</translation>
+    </message>
+    <message>
+        <source>Create Torrent</source>
+        <translation>Δημιουργία torrent</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation>Αυτόματο</translation>
+    </message>
+    <message>
+        <source>Started On</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Web Seeds</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Start
+                seeding
+                immediately</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Format</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent format:</source>
+        <translation>Μορφή torrent:</translation>
+    </message>
+    <message>
+        <source>Source Path</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Added On</source>
+        <translation>Προστέθηκε στις</translation>
+    </message>
+    <message>
+        <source>Running</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent Creator</source>
+        <translation>Δημιουργός torrent</translation>
+    </message>
+    <message>
+        <source>Source:</source>
+        <translation>Πηγή:</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trackers</translation>
+    </message>
+    <message>
+        <source>Piece size:</source>
+        <translation>Μέγεθος κομματιού:</translation>
+    </message>
+    <message>
+        <source>Fields</source>
+        <translation>Πεδία</translation>
+    </message>
+    <message>
+        <source>Remove Task</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Export Torrent</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>DownloadFromURLDialog</name>
+    <message>
+        <source>Download</source>
+        <translation>Λήψη</translation>
+    </message>
+    <message>
+        <source>Magnet link</source>
+        <translation>Σύνδεσμος Magnet</translation>
+    </message>
+    <message>
+        <source>Add torrent links</source>
+        <translation>Προσθήκη συνδέσμων torrent</translation>
+    </message>
+    <message>
+        <source>One link per line (HTTP links, Magnet links and info-hashes are supported)</source>
+        <translation>Ένας σύνδεσμος ανά γραμμή (υποστηρίζονται σύνδεσμοι HTTP, σύνδεσμοι Magnet και info-hashes)</translation>
+    </message>
+    <message>
+        <source>URLs</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Add Torrent Links</source>
+        <translation>Προσθήκη Συνδέσμων Torrent…</translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimit</name>
+    <message>
+        <source>Limit:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Speed limit</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Upload limit:</source>
+        <translation>Όριο αποστολής:</translation>
+    </message>
+    <message>
+        <source>Download limit:</source>
+        <translation>Όριο λήψης:</translation>
+    </message>
+    <message>
+        <source>KiB/s</source>
+        <translation>KiB/δ</translation>
+    </message>
+</context>
+<context>
+    <name>ListWidget</name>
+    <message>
+        <source>Resize All</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Resize</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>confirmRotateAPIKeyDialog</name>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent's API.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Delete this API key? The current key will immediately stop working.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
         <translation type="unfinished" />
     </message>
 </context>

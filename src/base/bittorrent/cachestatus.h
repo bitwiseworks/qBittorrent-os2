@@ -26,21 +26,18 @@
  * exception statement from your version.
  */
 
-#ifndef BITTORRENT_CACHESTATUS_H
-#define BITTORRENT_CACHESTATUS_H
+#pragma once
 
-#include <QtGlobal>
+#include <QtTypes>
 
 namespace BitTorrent
 {
     struct CacheStatus
     {
-        quint64 totalUsedBuffers = 0;
-        quint64 jobQueueLength = 0;
-        quint64 averageJobTime = 0;
-        quint64 queuedBytes = 0;
-        qreal readRatio = 0.0;
+        qint64 totalUsedBuffers = 0;
+        qint64 jobQueueLength = 0;
+        qint64 averageJobTime = 0;
+        qint64 queuedBytes = 0;
+        qreal readRatio = 0;  // TODO: remove when LIBTORRENT_VERSION_NUM >= 20000
     };
 }
-
-#endif // BITTORRENT_CACHESTATUS_H

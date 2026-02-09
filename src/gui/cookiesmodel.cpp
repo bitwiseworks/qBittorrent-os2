@@ -43,8 +43,10 @@ QList<QNetworkCookie> CookiesModel::cookies() const
 
 QVariant CookiesModel::headerData(int section, Qt::Orientation orientation, int role) const
 {
-    if ((role == Qt::DisplayRole) && (orientation == Qt::Horizontal)) {
-        switch (section) {
+    if ((role == Qt::DisplayRole) && (orientation == Qt::Horizontal))
+    {
+        switch (section)
+        {
         case COL_DOMAIN:
             return tr("Domain");
         case COL_PATH:
@@ -71,9 +73,8 @@ QModelIndex CookiesModel::index(int row, int column, const QModelIndex &parent) 
     return createIndex(row, column, &m_cookies[row]);
 }
 
-QModelIndex CookiesModel::parent(const QModelIndex &index) const
+QModelIndex CookiesModel::parent([[maybe_unused]] const QModelIndex &index) const
 {
-    Q_UNUSED(index);
     return {};
 }
 
@@ -84,9 +85,8 @@ int CookiesModel::rowCount(const QModelIndex &parent) const
     return m_cookies.size();
 }
 
-int CookiesModel::columnCount(const QModelIndex &parent) const
+int CookiesModel::columnCount([[maybe_unused]] const QModelIndex &parent) const
 {
-    Q_UNUSED(parent);
     return NB_COLUMNS;
 }
 
@@ -96,7 +96,8 @@ QVariant CookiesModel::data(const QModelIndex &index, int role) const
         || ((role != Qt::DisplayRole) && (role != Qt::EditRole)))
         return {};
 
-    switch (index.column()) {
+    switch (index.column())
+    {
     case COL_DOMAIN:
         return m_cookies[index.row()].domain();
     case COL_PATH:
@@ -116,7 +117,8 @@ bool CookiesModel::setData(const QModelIndex &index, const QVariant &value, int 
 {
     if (role != Qt::EditRole) return false;
 
-    switch (index.column()) {
+    switch (index.column())
+    {
     case COL_DOMAIN:
         m_cookies[index.row()].setDomain(value.toString());
         break;

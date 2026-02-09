@@ -31,33 +31,78 @@
 #include <iterator>
 #include <memory>
 
+#include <libtorrent/fwd.hpp>
+
+#include <QIODevice>
+
+#include "base/3rdparty/expected.hpp"
+#include "base/pathfwd.h"
+
 class QByteArray;
 class QFileDevice;
+class QString;
 
-namespace Utils
+namespace Utils::IO
 {
-    namespace IO
+    // A wrapper class that satisfy LegacyOutputIterator requirement
+    class FileDeviceOutputIterator
     {
-        // A wrapper class that satisfy LegacyOutputIterator requirement
-        class FileDeviceOutputIterator
-            : public std::iterator<std::output_iterator_tag, void, void, void, void>
+    public:
+        // std::iterator_traits
+        using iterator_category = std::output_iterator_tag;
+        using difference_type = void;
+        using value_type = void;
+        using pointer = void;
+        using reference = void;
+
+        explicit FileDeviceOutputIterator(QFileDevice &device, int bufferSize = (4 * 1024));
+        FileDeviceOutputIterator(const FileDeviceOutputIterator &other) = default;
+        ~FileDeviceOutputIterator();
+
+        // mimic std::ostream_iterator behavior
+        FileDeviceOutputIterator &operator=(char c);
+
+        constexpr FileDeviceOutputIterator &operator*()
         {
-        public:
-            explicit FileDeviceOutputIterator(QFileDevice &device, const int bufferSize = (4 * 1024));
-            FileDeviceOutputIterator(const FileDeviceOutputIterator &other) = default;
-            ~FileDeviceOutputIterator();
+            return *this;
+        }
 
-            // mimic std::ostream_iterator behavior
-            FileDeviceOutputIterator &operator=(char c);
-            // TODO: make these `constexpr` in C++17
-            FileDeviceOutputIterator &operator*();
-            FileDeviceOutputIterator &operator++();
-            FileDeviceOutputIterator &operator++(int);
+        constexpr FileDeviceOutputIterator &operator++()
+        {
+            return *this;
+        }
 
-        private:
-            QFileDevice *m_device;
-            std::shared_ptr<QByteArray> m_buffer;
-            int m_bufferSize;
+        constexpr FileDeviceOutputIterator &operator++(int)
+        {
+            return *this;
+        }
+
+    private:
+        QFileDevice *m_device = nullptr;
+        std::shared_ptr<QByteArray> m_buffer;
+        int m_bufferSize = 0;
+    };
+
+    struct ReadError
+    {
+        enum Code
+        {
+            NotExist,
+            ExceedSize,
+            Failed,  // `read()` operation failed
+            SizeMismatch
         };
-    }
+
+        Code status = {};
+        QString message;
+    };
+
+    // TODO: define a specific type for `additionalMode`
+    // providing `size` is explicit and is strongly recommended
+    nonstd::expected<QByteArray, ReadError> readFile(const Path &path, qint64 size, QIODevice::OpenMode additionalMode = {});
+
+    nonstd::expected<void, QString> saveToFile(const Path &path, const QByteArray &data);
+    nonstd::expected<void, QString> saveToFile(const Path &path, const lt::entry &data);
+    nonstd::expected<Path, QString> saveToTempFile(const QByteArray &data);
+    nonstd::expected<Path, QString> saveToTempFile(const lt::entry &data);
 }

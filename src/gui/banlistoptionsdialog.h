@@ -26,10 +26,11 @@
  * exception statement from your version.
  */
 
-#ifndef BANLISTOPTIONSDIALOG_H
-#define BANLISTOPTIONSDIALOG_H
+#pragma once
 
 #include <QDialog>
+
+#include "base/settingvalue.h"
 
 class QSortFilterProxyModel;
 class QStringListModel;
@@ -39,13 +40,14 @@ namespace Ui
     class BanListOptionsDialog;
 }
 
-class BanListOptionsDialog : public QDialog
+class BanListOptionsDialog final : public QDialog
 {
     Q_OBJECT
+    Q_DISABLE_COPY_MOVE(BanListOptionsDialog)
 
 public:
     explicit BanListOptionsDialog(QWidget *parent = nullptr);
-    ~BanListOptionsDialog();
+    ~BanListOptionsDialog() override;
 
 private slots:
     void on_buttonBox_accepted();
@@ -54,10 +56,9 @@ private slots:
     void on_txtIP_textChanged(const QString &ip);
 
 private:
-    Ui::BanListOptionsDialog *m_ui;
-    QStringListModel *m_model;
-    QSortFilterProxyModel *m_sortFilter;
-    bool m_modified;
+    Ui::BanListOptionsDialog *m_ui = nullptr;
+    SettingValue<QSize> m_storeDialogSize;
+    QStringListModel *m_model = nullptr;
+    QSortFilterProxyModel *m_sortFilter = nullptr;
+    bool m_modified = false;
 };
-
-#endif // BANLISTOPTIONSDIALOG_H

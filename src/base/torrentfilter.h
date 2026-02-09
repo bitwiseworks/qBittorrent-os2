@@ -1,6 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
- * Copyright (C) 2014  Vladimir Golovnev <glassez@yandex.ru>
+ * Copyright (C) 2014-2025  Vladimir Golovnev <glassez@yandex.ru>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -26,79 +26,89 @@
  * exception statement from your version.
  */
 
-#ifndef TORRENTFILTER_H
-#define TORRENTFILTER_H
+#pragma once
+
+#include <optional>
 
 #include <QSet>
 #include <QString>
 
-typedef QSet<QString> QStringSet;
+#include "base/bittorrent/infohash.h"
+#include "base/bittorrent/torrentannouncestatus.h"
+#include "base/tag.h"
 
 namespace BitTorrent
 {
-    class TorrentHandle;
+    class Torrent;
 }
+
+using TorrentIDSet = QSet<BitTorrent::TorrentID>;
 
 class TorrentFilter
 {
 public:
-    enum Type
+    enum Status
     {
         All,
         Downloading,
         Seeding,
         Completed,
-        Resumed,
-        Paused,
+        Running,
+        Stopped,
         Active,
         Inactive,
         Stalled,
         StalledUploading,
         StalledDownloading,
-        Errored
+        Checking,
+        Moving,
+        Errored,
+
+        _Count
     };
 
     // These mean any permutation, including no category / tag.
-    static const QString AnyCategory;
-    static const QStringSet AnyHash;
-    static const QString AnyTag;
+    static const std::optional<TorrentIDSet> AnyID;
+    static const std::optional<QString> AnyCategory;
+    static const std::optional<Tag> AnyTag;
+    static const std::optional<QString> AnyTrackerHost;
+    static const std::optional<BitTorrent::TorrentAnnounceStatus> AnyAnnounceStatus;
 
-    static const TorrentFilter DownloadingTorrent;
-    static const TorrentFilter SeedingTorrent;
-    static const TorrentFilter CompletedTorrent;
-    static const TorrentFilter PausedTorrent;
-    static const TorrentFilter ResumedTorrent;
-    static const TorrentFilter ActiveTorrent;
-    static const TorrentFilter InactiveTorrent;
-    static const TorrentFilter StalledTorrent;
-    static const TorrentFilter StalledUploadingTorrent;
-    static const TorrentFilter StalledDownloadingTorrent;
-    static const TorrentFilter ErroredTorrent;
-
-    TorrentFilter();
+    TorrentFilter() = default;
     // category & tags: pass empty string for uncategorized / untagged torrents.
-    // Pass null string (QString()) to disable filtering (i.e. all torrents).
-    TorrentFilter(Type type, const QStringSet &hashSet = AnyHash, const QString &category = AnyCategory, const QString &tag = AnyTag);
-    TorrentFilter(const QString &filter, const QStringSet &hashSet = AnyHash, const QString &category = AnyCategory, const QString &tags = AnyTag);
+    TorrentFilter(Status status
+            , const std::optional<TorrentIDSet> &idSet = AnyID
+            , const std::optional<QString> &category = AnyCategory
+            , const std::optional<Tag> &tag = AnyTag
+            , const std::optional<bool> &isPrivate = {}
+            , const std::optional<QString> &trackerHost = AnyTrackerHost
+            , const std::optional<BitTorrent::TorrentAnnounceStatus> &announceStatus = AnyAnnounceStatus);
 
-    bool setType(Type type);
-    bool setTypeByName(const QString &filter);
-    bool setHashSet(const QStringSet &hashSet);
-    bool setCategory(const QString &category);
-    bool setTag(const QString &tag);
+    bool setStatus(Status status);
+    bool setTorrentIDSet(const std::optional<TorrentIDSet> &idSet);
+    bool setCategory(const std::optional<QString> &category);
+    bool setTag(const std::optional<Tag> &tag);
+    bool setPrivate(std::optional<bool> isPrivate);
+    bool setTrackerHost(const std::optional<QString> &trackerHost);
+    bool setAnnounceStatus(const std::optional<BitTorrent::TorrentAnnounceStatus> &announceStatus);
 
-    bool match(const BitTorrent::TorrentHandle *torrent) const;
+    bool match(const BitTorrent::Torrent *torrent) const;
 
 private:
-    bool matchState(const BitTorrent::TorrentHandle *torrent) const;
-    bool matchHash(const BitTorrent::TorrentHandle *torrent) const;
-    bool matchCategory(const BitTorrent::TorrentHandle *torrent) const;
-    bool matchTag(const BitTorrent::TorrentHandle *torrent) const;
+    bool matchStatus(const BitTorrent::Torrent *torrent) const;
+    bool matchHash(const BitTorrent::Torrent *torrent) const;
+    bool matchCategory(const BitTorrent::Torrent *torrent) const;
+    bool matchTag(const BitTorrent::Torrent *torrent) const;
+    bool matchPrivate(const BitTorrent::Torrent *torrent) const;
+    bool matchTracker(const BitTorrent::Torrent *torrent) const;
 
-    Type m_type;
-    QString m_category;
-    QString m_tag;
-    QStringSet m_hashSet;
+    Status m_status {All};
+    std::optional<QString> m_category;
+    std::optional<Tag> m_tag;
+    std::optional<TorrentIDSet> m_idSet;
+    std::optional<bool> m_private;
+    std::optional<QString> m_trackerHost;
+    std::optional<BitTorrent::TorrentAnnounceStatus> m_announceStatus;
 };
 
-#endif // TORRENTFILTER_H
+QString getTrackerHost(const QString &url);

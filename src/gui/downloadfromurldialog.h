@@ -26,33 +26,35 @@
  * exception statement from your version.
  */
 
-#ifndef DOWNLOADFROMURL_H
-#define DOWNLOADFROMURL_H
+#pragma once
 
 #include <QDialog>
+
+#include "base/settingvalue.h"
 
 namespace Ui
 {
     class DownloadFromURLDialog;
 }
 
-class DownloadFromURLDialog : public QDialog
+class DownloadFromURLDialog final : public QDialog
 {
     Q_OBJECT
-    Q_DISABLE_COPY(DownloadFromURLDialog)
+    Q_DISABLE_COPY_MOVE(DownloadFromURLDialog)
 
 public:
     explicit DownloadFromURLDialog(QWidget *parent);
-    ~DownloadFromURLDialog();
+    ~DownloadFromURLDialog() override;
 
 signals:
     void urlsReadyToBeDownloaded(const QStringList &torrentURLs);
 
 private slots:
-    void downloadButtonClicked();
+    void onSubmit();
 
 private:
-    Ui::DownloadFromURLDialog *m_ui;
-};
+    void keyPressEvent(QKeyEvent *event) override;
 
-#endif // DOWNLOADFROMURL_H
+    Ui::DownloadFromURLDialog *m_ui = nullptr;
+    SettingValue<QSize> m_storeDialogSize;
+};

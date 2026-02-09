@@ -26,10 +26,9 @@
  * exception statement from your version.
  */
 
-#ifndef QBT_INDEXRANGE_H
-#define QBT_INDEXRANGE_H
+#pragma once
 
-#include <QtGlobal>
+#include <QtAssert>
 
 // Interval is defined via [first;last]
 template <typename Index>
@@ -38,8 +37,7 @@ class IndexInterval
 public:
     using IndexType = Index;
 
-    // TODO: add constexpr when using C++17
-    IndexInterval(const IndexType first, const IndexType last)
+    constexpr IndexInterval(const IndexType first, const IndexType last)
         : m_first {first}
         , m_last {last}
     {
@@ -103,14 +101,10 @@ public:
             return iter;
         }
 
-        constexpr bool operator==(const Iterator &other) const
+        // comparing iterators from different containers is undefined behavior in C++ standard library
+        friend constexpr bool operator==(const Iterator &left, const Iterator &right)
         {
-            return (*(*this) == *other);
-        }
-
-        constexpr bool operator!=(const Iterator &other) const
-        {
-            return !(*this == other);
+            return (*left == *right);
         }
 
     private:
@@ -169,5 +163,3 @@ private:
     IndexType m_first;
     IndexDiffType m_size;
 };
-
-#endif // QBT_INDEXRANGE_H

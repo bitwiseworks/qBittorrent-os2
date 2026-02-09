@@ -1,5 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
+ * Copyright (C) 2023  Vladimir Golovnev <glassez@yandex.ru>
  * Copyright (C) 2018  Mike Tzou (Chocobo1)
  *
  * This program is free software; you can redistribute it and/or
@@ -29,23 +30,24 @@
 #pragma once
 
 class QByteArray;
+class QByteArrayView;
 class QString;
+class QStringView;
 
-namespace Utils
+namespace Utils::Password
 {
-    namespace Password
+    // Implements constant-time comparison to protect against timing attacks
+    // Taken from https://crackstation.net/hashing-security.htm
+    bool slowEquals(QByteArrayView left, QByteArrayView right);
+
+    QString generate(int passwordLength);
+
+    namespace PBKDF2
     {
-        // Implements constant-time comparison to protect against timing attacks
-        // Taken from https://crackstation.net/hashing-security.htm
-        bool slowEquals(const QByteArray &a, const QByteArray &b);
+        QByteArray generate(const QString &password);
+        QByteArray generate(const QByteArray &password);
 
-        namespace PBKDF2
-        {
-            QByteArray generate(const QString &password);
-            QByteArray generate(const QByteArray &password);
-
-            bool verify(const QByteArray &secret, const QString &password);
-            bool verify(const QByteArray &secret, const QByteArray &password);
-        }
+        bool verify(const QByteArray &secret, QStringView password);
+        bool verify(const QByteArray &secret, const QByteArray &password);
     }
 }

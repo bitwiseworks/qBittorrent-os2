@@ -30,15 +30,13 @@
 
 #include <QVariant>
 
+#include "base/unicodestrings.h"
+#include "base/utils/misc.h"
+#include "base/utils/string.h"
 #include "torrentcontentmodelfolder.h"
 
 TorrentContentModelItem::TorrentContentModelItem(TorrentContentModelFolder *parent)
     : m_parentItem(parent)
-    , m_size(0)
-    , m_remaining(0)
-    , m_priority(BitTorrent::DownloadPriority::Normal)
-    , m_progress(0)
-    , m_availability(-1.)
 {
 }
 
@@ -99,18 +97,69 @@ int TorrentContentModelItem::columnCount() const
     return NB_COL;
 }
 
-QVariant TorrentContentModelItem::data(int column) const
+QString TorrentContentModelItem::displayData(const int column) const
 {
     if (isRootItem())
         return m_itemData.value(column);
 
-    switch (column) {
+    switch (column)
+    {
+    case COL_NAME:
+        return m_name;
+    case COL_PRIO:
+        switch (m_priority)
+        {
+        case BitTorrent::DownloadPriority::Mixed:
+            return tr("Mixed", "Mixed (priorities");
+        case BitTorrent::DownloadPriority::Ignored:
+            return tr("Do not download", "Do not download (priority)");
+        case BitTorrent::DownloadPriority::High:
+            return tr("High", "High (priority)");
+        case BitTorrent::DownloadPriority::Maximum:
+            return tr("Maximum", "Maximum (priority)");
+        default:
+            return tr("Normal", "Normal (priority)");
+        }
+    case COL_PROGRESS:
+        return (m_progress >= 1)
+               ? u"100%"_s
+               : (Utils::String::fromDouble((m_progress * 100), 1) + u'%');
+    case COL_SIZE:
+        return Utils::Misc::friendlyUnit(m_size);
+    case COL_REMAINING:
+        return Utils::Misc::friendlyUnit(remaining());
+    case COL_AVAILABILITY:
+        {
+            const qreal avail = availability();
+            if (avail < 0)
+                return tr("N/A");
+
+            const QString value = (avail >= 1)
+                                  ? u"100"_s
+                                  : Utils::String::fromDouble((avail * 100), 1);
+            return (value + u'%');
+        }
+    default:
+        Q_UNREACHABLE();
+        break;
+    }
+
+    return {};
+}
+
+QVariant TorrentContentModelItem::underlyingData(const int column) const
+{
+    if (isRootItem())
+        return m_itemData.value(column);
+
+    switch (column)
+    {
     case COL_NAME:
         return m_name;
     case COL_PRIO:
         return static_cast<int>(m_priority);
     case COL_PROGRESS:
-        return progress();
+        return progress() * 100;
     case COL_SIZE:
         return m_size;
     case COL_REMAINING:
@@ -118,9 +167,11 @@ QVariant TorrentContentModelItem::data(int column) const
     case COL_AVAILABILITY:
         return availability();
     default:
-        Q_ASSERT(false);
-        return {};
+        Q_UNREACHABLE();
+        break;
     }
+
+    return {};
 }
 
 int TorrentContentModelItem::row() const

@@ -26,8 +26,7 @@
  * exception statement from your version.
  */
 
-#ifndef EXECUTIONLOGWIDGET_H
-#define EXECUTIONLOGWIDGET_H
+#pragma once
 
 #include <QWidget>
 
@@ -45,18 +44,17 @@ class LogListView;
 class ExecutionLogWidget : public QWidget
 {
     Q_OBJECT
+    Q_DISABLE_COPY_MOVE(ExecutionLogWidget)
 
 public:
     ExecutionLogWidget(Log::MsgTypes types, QWidget *parent);
     ~ExecutionLogWidget();
-    
+
     void setMessageTypes(Log::MsgTypes types);
 
 private:
-    void displayContextMenu(const QPoint &pos, const LogListView *view, const BaseLogModel *model) const;
+    void displayContextMenu(const LogListView *view, const BaseLogModel *model) const;
 
-    Ui::ExecutionLogWidget *m_ui;
-    LogFilterModel *m_messageFilterModel;
+    Ui::ExecutionLogWidget *m_ui = nullptr;
+    LogFilterModel *m_messageFilterModel = nullptr;
 };
-
-#endif // EXECUTIONLOGWIDGET_H

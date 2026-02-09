@@ -26,8 +26,7 @@
  * exception statement from your version.
  */
 
-#ifndef AUTOEXPANDABLEDIALOG_H
-#define AUTOEXPANDABLEDIALOG_H
+#pragma once
 
 #include <QDialog>
 #include <QLineEdit>
@@ -42,6 +41,7 @@ namespace Ui
 class AutoExpandableDialog final : public QDialog
 {
     Q_OBJECT
+    Q_DISABLE_COPY_MOVE(AutoExpandableDialog)
 
 public:
     explicit AutoExpandableDialog(QWidget *parent);
@@ -55,7 +55,5 @@ protected:
     void showEvent(QShowEvent *e) override;
 
 private:
-    Ui::AutoExpandableDialog *m_ui;
+    Ui::AutoExpandableDialog *m_ui = nullptr;
 };
-
-#endif // AUTOEXPANDABLEDIALOG_H

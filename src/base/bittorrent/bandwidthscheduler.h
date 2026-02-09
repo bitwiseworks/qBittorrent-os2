@@ -27,8 +27,7 @@
  * exception statement from your version.
  */
 
-#ifndef BANDWIDTHSCHEDULER_H
-#define BANDWIDTHSCHEDULER_H
+#pragma once
 
 #include <QObject>
 #include <QTimer>
@@ -36,7 +35,7 @@
 class BandwidthScheduler : public QObject
 {
     Q_OBJECT
-    Q_DISABLE_COPY(BandwidthScheduler)
+    Q_DISABLE_COPY_MOVE(BandwidthScheduler)
 
 public:
     explicit BandwidthScheduler(QObject *parent = nullptr);
@@ -50,7 +49,5 @@ private:
     void onTimeout();
 
     QTimer m_timer;
-    bool m_lastAlternative;
+    bool m_lastAlternative = false;
 };
-
-#endif // BANDWIDTHSCHEDULER_H

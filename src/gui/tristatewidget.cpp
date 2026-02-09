@@ -38,8 +38,6 @@
 
 TriStateWidget::TriStateWidget(const QString &text, QWidget *parent)
     : QWidget {parent}
-    , m_closeOnTriggered {true}
-    , m_checkState {Qt::Unchecked}
     , m_text {text}
 {
     setMouseTracking(true);  // for visual effects via mouse navigation
@@ -51,9 +49,9 @@ void TriStateWidget::setCheckState(const Qt::CheckState checkState)
     m_checkState = checkState;
 }
 
-void TriStateWidget::setCloseOnTriggered(const bool enabled)
+void TriStateWidget::setCloseOnInteraction(const bool enabled)
 {
-    m_closeOnTriggered = enabled;
+    m_closeOnInteraction = enabled;
 }
 
 QSize TriStateWidget::minimumSizeHint() const
@@ -74,7 +72,8 @@ void TriStateWidget::paintEvent(QPaintEvent *)
     opt.menuHasCheckableItems = true;
     opt.text = m_text;
 
-    switch (m_checkState) {
+    switch (m_checkState)
+    {
     case Qt::PartiallyChecked:
         opt.state |= QStyle::State_NoChange;
         break;
@@ -87,7 +86,8 @@ void TriStateWidget::paintEvent(QPaintEvent *)
     };
 
     if ((opt.state & QStyle::State_HasFocus)
-        || rect().contains(mapFromGlobal(QCursor::pos()))) {
+        || rect().contains(mapFromGlobal(QCursor::pos())))
+        {
         opt.state |= QStyle::State_Selected;
 
         if (QApplication::mouseButtons() != Qt::NoButton)
@@ -102,13 +102,15 @@ void TriStateWidget::mouseReleaseEvent(QMouseEvent *event)
 {
     toggleCheckState();
 
-    if (m_closeOnTriggered) {
+    if (m_closeOnInteraction)
+    {
         // parent `triggered` signal will be emitted
         QWidget::mouseReleaseEvent(event);
     }
-    else {
+    else
+    {
         update();
-        // need to emit parent `triggered` signal manually
+        // need to emit `triggered` signal manually
         emit triggered(m_checkState == Qt::Checked);
     }
 }
@@ -116,10 +118,12 @@ void TriStateWidget::mouseReleaseEvent(QMouseEvent *event)
 void TriStateWidget::keyPressEvent(QKeyEvent *event)
 {
     if ((event->key() == Qt::Key_Return)
-        || (event->key() == Qt::Key_Enter)) {
+        || (event->key() == Qt::Key_Enter))
+        {
         toggleCheckState();
 
-        if (!m_closeOnTriggered) {
+        if (!m_closeOnInteraction)
+        {
             update();
             // need to emit parent `triggered` signal manually
             emit triggered(m_checkState == Qt::Checked);
@@ -132,7 +136,8 @@ void TriStateWidget::keyPressEvent(QKeyEvent *event)
 
 void TriStateWidget::toggleCheckState()
 {
-    switch (m_checkState) {
+    switch (m_checkState)
+    {
     case Qt::Unchecked:
     case Qt::PartiallyChecked:
         m_checkState = Qt::Checked;

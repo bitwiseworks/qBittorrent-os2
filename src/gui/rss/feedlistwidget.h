@@ -27,8 +27,7 @@
  * exception statement from your version.
  */
 
-#ifndef FEEDLISTWIDGET_H
-#define FEEDLISTWIDGET_H
+#pragma once
 
 #include <QHash>
 #include <QTreeWidget>
@@ -44,6 +43,7 @@ namespace RSS
 class FeedListWidget final : public QTreeWidget
 {
     Q_OBJECT
+    Q_DISABLE_COPY_MOVE(FeedListWidget)
 
 public:
     explicit FeedListWidget(QWidget *parent);
@@ -71,7 +71,5 @@ private:
     void fill(QTreeWidgetItem *parent, RSS::Folder *rssParent);
 
     QHash<RSS::Item *, QTreeWidgetItem *> m_rssToTreeItemMapping;
-    QTreeWidgetItem *m_unreadStickyItem;
+    QTreeWidgetItem *m_unreadStickyItem = nullptr;
 };
-
-#endif // FEEDLISTWIDGET_H

@@ -1,5 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
+ * Copyright (C) 2023  Mike Tzou (Chocobo1)
  * Copyright (C) 2015  Vladimir Golovnev <glassez@yandex.ru>
  * Copyright (C) 2006  Christophe Dumez <chris@qbittorrent.org>
  *
@@ -27,50 +28,99 @@
  * exception statement from your version.
  */
 
-#ifndef UTILS_STRING_H
-#define UTILS_STRING_H
+#pragma once
+
+#include <numeric>
+#include <optional>
+#include <string_view>
 
 #include <QChar>
-#include <QVector>
+#include <QMetaEnum>
+#include <QString>
+#include <QtContainerFwd>
 
-class QString;
-class QStringRef;
+#include "base/concepts/explicitlyconvertibleto.h"
+#include "base/global.h"
 
-class TriStateBool;
-
-namespace Utils
+namespace Utils::String
 {
-    namespace String
+    QString wildcardToRegexPattern(const QString &pattern);
+
+    template <typename T>
+    T unquote(const T &str, const QString &quotes = u"\""_s)
     {
-        QString fromDouble(double n, int precision);
-
-        int naturalCompare(const QString &left, const QString &right, const Qt::CaseSensitivity caseSensitivity);
-        template <Qt::CaseSensitivity caseSensitivity>
-        bool naturalLessThan(const QString &left, const QString &right)
-        {
-            return (naturalCompare(left, right, caseSensitivity) < 0);
-        }
-
-        QString wildcardToRegex(const QString &pattern);
-
-        template <typename T>
-        T unquote(const T &str, const QString &quotes = QChar('"'))
-        {
-            if (str.length() < 2) return str;
-
-            for (const QChar quote : quotes) {
-                if (str.startsWith(quote) && str.endsWith(quote))
-                    return str.mid(1, (str.length() - 2));
-            }
-
+        if (str.length() < 2)
             return str;
+
+        for (const QChar quote : quotes)
+        {
+            if (str.startsWith(quote) && str.endsWith(quote))
+                return str.sliced(1, (str.length() - 2));
         }
 
-        bool parseBool(const QString &string, bool defaultValue);
-        TriStateBool parseTriStateBool(const QString &string);
+        return str;
+    }
 
-        QString join(const QVector<QStringRef> &strings, const QString &separator);
+    std::optional<bool> parseBool(const QString &string);
+    std::optional<int> parseInt(const QString &string);
+    std::optional<double> parseDouble(const QString &string);
+
+    QStringList splitCommand(const QString &command);
+
+    QString fromDouble(double n, int precision);
+    QString fromLatin1(std::string_view string);
+    QString fromLocal8Bit(std::string_view string);
+
+    template <typename Container>
+    QString joinIntoString(const Container &container, const QString &separator)
+        requires ExplicitlyConvertibleTo<typename Container::value_type, QString>
+    {
+        auto iter = container.cbegin();
+        const auto end = container.cend();
+        if (iter == end)
+            return {};
+
+        const qsizetype totalLength = std::accumulate(iter, end, (separator.size() * (container.size() - 1))
+            , [](const qsizetype total, const typename Container::value_type &value)
+        {
+            return total + QString(value).size();
+        });
+
+        QString ret;
+        ret.reserve(totalLength);
+        ret.append(QString(*iter));
+        ++iter;
+
+        while (iter != end)
+        {
+            ret.append(separator + QString(*iter));
+            ++iter;
+        }
+
+        return ret;
+    }
+
+    template <typename T>
+    QString fromEnum(const T &value)
+        requires std::is_enum_v<T>
+    {
+        static_assert(std::is_same_v<int, typename std::underlying_type_t<T>>,
+                      "Enumeration underlying type has to be int.");
+
+        const auto metaEnum = QMetaEnum::fromType<T>();
+        return QString::fromLatin1(metaEnum.valueToKey(static_cast<int>(value)));
+    }
+
+    template <typename T>
+    T toEnum(const QString &serializedValue, const T &defaultValue)
+        requires std::is_enum_v<T>
+    {
+        static_assert(std::is_same_v<int, typename std::underlying_type_t<T>>,
+                      "Enumeration underlying type has to be int.");
+
+        const auto metaEnum = QMetaEnum::fromType<T>();
+        bool ok = false;
+        const T value = static_cast<T>(metaEnum.keyToValue(serializedValue.toLatin1().constData(), &ok));
+        return (ok ? value : defaultValue);
     }
 }
-
-#endif // UTILS_STRING_H

@@ -1,6 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
- * Copyright (C) 2015  Vladimir Golovnev <glassez@yandex.ru>
+ * Copyright (C) 2015-2024  Vladimir Golovnev <glassez@yandex.ru>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -28,12 +28,20 @@
 
 #pragma once
 
-#include <QSet>
-#include <QString>
-#include <QVector>
+#include <optional>
 
-#include "base/tristatebool.h"
-#include "torrenthandle.h"
+#include <QList>
+#include <QMetaType>
+#include <QString>
+
+#include "base/path.h"
+#include "base/tagset.h"
+#include "sharelimits.h"
+#include "sslparameters.h"
+#include "torrent.h"
+#include "torrentcontentlayout.h"
+
+class QJsonObject;
 
 namespace BitTorrent
 {
@@ -43,20 +51,34 @@ namespace BitTorrent
     {
         QString name;
         QString category;
-        QSet<QString> tags;
-        QString savePath;
-        bool disableTempPath = false; // e.g. for imported torrents
+        TagSet tags;
+        Path savePath;
+        std::optional<bool> useDownloadPath;
+        Path downloadPath;
         bool sequential = false;
         bool firstLastPiecePriority = false;
-        TriStateBool addForced;
-        TriStateBool addPaused;
-        QVector<DownloadPriority> filePriorities; // used if TorrentInfo is set
+        bool addForced = false;
+        std::optional<bool> addToQueueTop;
+        std::optional<bool> addStopped;
+        std::optional<Torrent::StopCondition> stopCondition;
+        PathList filePaths; // used if TorrentInfo is set
+        QList<DownloadPriority> filePriorities; // used if TorrentInfo is set
         bool skipChecking = false;
-        TriStateBool createSubfolder;
-        TriStateBool useAutoTMM;
+        std::optional<BitTorrent::TorrentContentLayout> contentLayout;
+        std::optional<bool> useAutoTMM;
         int uploadLimit = -1;
         int downloadLimit = -1;
-        int seedingTimeLimit = TorrentHandle::USE_GLOBAL_SEEDING_TIME;
-        qreal ratioLimit = TorrentHandle::USE_GLOBAL_RATIO;
+        int seedingTimeLimit = DEFAULT_SEEDING_TIME_LIMIT;
+        int inactiveSeedingTimeLimit = DEFAULT_SEEDING_TIME_LIMIT;
+        qreal ratioLimit = DEFAULT_RATIO_LIMIT;
+        ShareLimitAction shareLimitAction = ShareLimitAction::Default;
+        SSLParameters sslParameters;
+
+        friend bool operator==(const AddTorrentParams &lhs, const AddTorrentParams &rhs) = default;
     };
+
+    AddTorrentParams parseAddTorrentParams(const QJsonObject &jsonObj);
+    QJsonObject serializeAddTorrentParams(const AddTorrentParams &params);
 }
+
+Q_DECLARE_METATYPE(BitTorrent::AddTorrentParams)

@@ -30,10 +30,10 @@
 
 #include "apicontroller.h"
 
-class RSSController : public APIController
+class RSSController final : public APIController
 {
     Q_OBJECT
-    Q_DISABLE_COPY(RSSController)
+    Q_DISABLE_COPY_MOVE(RSSController)
 
 public:
     using APIController::APIController;
@@ -41,6 +41,8 @@ public:
 private slots:
     void addFolderAction();
     void addFeedAction();
+    void setFeedURLAction();
+    void setFeedRefreshIntervalAction();
     void removeItemAction();
     void moveItemAction();
     void itemsAction();

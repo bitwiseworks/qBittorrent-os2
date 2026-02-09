@@ -26,19 +26,21 @@
  * exception statement from your version.
  */
 
-#ifndef STATSDIALOG_H
-#define STATSDIALOG_H
+#pragma once
 
 #include <QDialog>
+
+#include "base/settingvalue.h"
 
 namespace Ui
 {
     class StatsDialog;
 }
 
-class StatsDialog : public QDialog
+class StatsDialog final : public QDialog
 {
     Q_OBJECT
+    Q_DISABLE_COPY_MOVE(StatsDialog)
 
 public:
   explicit StatsDialog(QWidget *parent);
@@ -48,7 +50,6 @@ private slots:
     void update();
 
 private:
-    Ui::StatsDialog *m_ui;
+    Ui::StatsDialog *m_ui = nullptr;
+    SettingValue<QSize> m_storeDialogSize;
 };
-
-#endif // STATSDIALOG_H

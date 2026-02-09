@@ -29,24 +29,35 @@
 #include "macutilities.h"
 
 #import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
+#import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
+#import <UserNotifications/UserNotifications.h>
 #include <objc/message.h>
 
+#include <QCoreApplication>
+#include <QMenu>
 #include <QPixmap>
-#include <QSet>
 #include <QSize>
 #include <QString>
-#include <QtMac>
+
+#include "base/logger.h"
+#include "base/path.h"
+
+QImage qt_mac_toQImage(CGImageRef image);
 
 namespace MacUtils
 {
     QPixmap pixmapForExtension(const QString &ext, const QSize &size)
     {
-        @autoreleasepool {
-            NSImage *image = [[NSWorkspace sharedWorkspace] iconForFileType:ext.toNSString()];
-            if (image) {
+        @autoreleasepool
+        {
+            const NSImage *image = [[NSWorkspace sharedWorkspace]
+                iconForContentType:[UTType typeWithFilenameExtension:ext.toNSString()]];
+            if (image)
+            {
                 NSRect rect = NSMakeRect(0, 0, size.width(), size.height());
                 CGImageRef cgImage = [image CGImageForProposedRect:&rect context:nil hints:nil];
-                return QtMac::fromCGImageRef(cgImage);
+                return QPixmap::fromImage(qt_mac_toQImage(cgImage));
             }
 
             return QPixmap();
@@ -63,41 +74,183 @@ namespace MacUtils
         Class delClass = [[appInst delegate] class];
         SEL shouldHandle = sel_registerName("applicationShouldHandleReopen:hasVisibleWindows:");
 
-        if (class_getInstanceMethod(delClass, shouldHandle)) {
-            if (class_replaceMethod(delClass, shouldHandle, (IMP)dockClickHandler, "B@:"))
+        if (class_getInstanceMethod(delClass, shouldHandle))
+        {
+            if (class_replaceMethod(delClass, shouldHandle, reinterpret_cast<IMP>(dockClickHandler), "B@:"))
                 qDebug("Registered dock click handler (replaced original method)");
             else
                 qWarning("Failed to replace method for dock click handler");
         }
-        else {
-            if (class_addMethod(delClass, shouldHandle, (IMP)dockClickHandler, "B@:"))
+        else
+        {
+            if (class_addMethod(delClass, shouldHandle, reinterpret_cast<IMP>(dockClickHandler), "B@:"))
                 qDebug("Registered dock click handler");
             else
                 qWarning("Failed to register dock click handler");
         }
     }
 
-    void displayNotification(const QString &title, const QString &message)
+    void askForNotificationPermission()
     {
-        @autoreleasepool {
-            NSUserNotification *notification = [[NSUserNotification alloc] init];
-            notification.title = title.toNSString();
-            notification.informativeText = message.toNSString();
-            notification.soundName = NSUserNotificationDefaultSoundName;
-
-            [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+        @autoreleasepool
+        {
+            [UNUserNotificationCenter.currentNotificationCenter requestAuthorizationWithOptions:
+                    (UNAuthorizationOptionAlert + UNAuthorizationOptionSound)
+                            completionHandler:^([[maybe_unused]] BOOL granted, NSError * _Nullable error)
+                            {
+                                if (error)
+                                {
+                                    LogMsg(QCoreApplication::translate("MacUtils", "Permission for notifications not granted. Error: \"%1\"").arg
+                                                                               (QString::fromNSString(error.localizedDescription)), Log::WARNING);
+                                }
+                            }];
         }
     }
 
-    void openFiles(const QSet<QString> &pathsList)
+    void displayNotification(const QString &title, const QString &message)
     {
-        @autoreleasepool {
-            NSMutableArray *pathURLs = [NSMutableArray arrayWithCapacity:pathsList.size()];
+        @autoreleasepool
+        {
+            UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+            content.title = title.toNSString();
+            content.body = message.toNSString();
+            content.sound = [UNNotificationSound defaultSound];
+            UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:
+                                              [[NSUUID UUID] UUIDString] content:content
+                                                                                trigger:nil];
+            [UNUserNotificationCenter.currentNotificationCenter
+                addNotificationRequest:request withCompletionHandler:nil];
+        }
+    }
 
-            for (const auto &path : pathsList)
-                [pathURLs addObject:[NSURL fileURLWithPath:path.toNSString()]];
+    void openFiles(const PathList &pathList)
+    {
+        @autoreleasepool
+        {
+            NSMutableArray *pathURLs = [NSMutableArray arrayWithCapacity:pathList.size()];
 
-            [[NSWorkspace sharedWorkspace] activateFileViewerSelectingURLs:pathURLs];
+            for (const auto &path : pathList)
+                [pathURLs addObject:[NSURL fileURLWithPath:path.toString().toNSString()]];
+
+            // In some unknown way, the next line affects Qt's main loop causing the crash
+            // in QApplication::exec() on processing next event after this call.
+            // Even crash doesn't happen exactly after this call, it will happen on
+            // application exit. Call stack and disassembly are the same in all cases.
+            // But running it in another thread (aka in background) solves the issue.
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^
+            {
+                [[NSWorkspace sharedWorkspace] activateFileViewerSelectingURLs:pathURLs];
+            });
+        }
+    }
+
+    bool isMagnetLinkAssocSet()
+    {
+        @autoreleasepool
+        {
+            const NSURL *magnetStandardURL = [[NSWorkspace sharedWorkspace] URLForApplicationToOpenURL:[NSURL URLWithString:@"magnet:"]];
+            const NSURL *qbtURL = [[NSBundle mainBundle] bundleURL];
+            return [magnetStandardURL isEqual:qbtURL];
+        }
+    }
+
+    void setMagnetLinkAssoc()
+    {
+        @autoreleasepool
+        {
+            [[NSWorkspace sharedWorkspace] setDefaultApplicationAtURL:[[NSBundle mainBundle] bundleURL]
+                toOpenURLsWithScheme:@"magnet" completionHandler:nil];
+        }
+    }
+
+    bool isTorrentFileAssocSet()
+    {
+        @autoreleasepool
+        {
+            const NSURL *torrentStandardURL = [[NSWorkspace sharedWorkspace]
+                URLForApplicationToOpenContentType:[UTType typeWithFilenameExtension:@"torrent"]];
+            const NSURL *qbtURL = [[NSBundle mainBundle] bundleURL];
+            return [torrentStandardURL isEqual:qbtURL];
+        }
+    }
+
+    void setTorrentFileAssoc()
+    {
+        @autoreleasepool
+        {
+            [[NSWorkspace sharedWorkspace] setDefaultApplicationAtURL:[[NSBundle mainBundle] bundleURL]
+                toOpenContentType:[UTType typeWithFilenameExtension:@"torrent"]
+                completionHandler:nil];
+        }
+    }
+
+    QString badgeLabelText()
+    {
+        return QString::fromNSString(NSApp.dockTile.badgeLabel);
+    }
+
+    void setBadgeLabelText(const QString &text)
+    {
+        NSApp.dockTile.badgeLabel = text.toNSString();
+    }
+
+    void setupWindowMenu(QMenu *windowMenu)
+    {
+        Q_ASSERT(windowMenu);
+        if (!windowMenu) [[unlikely]]
+            return;
+
+        @autoreleasepool
+        {
+            NSMenu *nsWindowMenu = windowMenu->toNSMenu();
+
+            if (!nsWindowMenu)
+            {
+                qWarning("Failed to get NSMenu from QMenu for Window menu setup");
+                return;
+            }
+
+            [nsWindowMenu setTitle:NSLocalizedStringFromTableInBundle(
+                              @"Window",
+                              @"MenuCommands",
+                              [NSBundle bundleForClass:[NSApplication class]],
+                              @"")];
+
+            NSMenuItem *minimizeItem = [[[NSMenuItem alloc]
+                initWithTitle:NSLocalizedStringFromTableInBundle(
+                    @"Minimize",
+                    @"MenuCommands",
+                    [NSBundle bundleForClass:[NSApplication class]],
+                    @"")
+                action:@selector(performMiniaturize:)
+                keyEquivalent:@"m"] autorelease];
+            [nsWindowMenu addItem:minimizeItem];
+
+            NSMenuItem *zoomItem = [[[NSMenuItem alloc]
+                initWithTitle:NSLocalizedStringFromTableInBundle(
+                    @"Zoom",
+                    @"MenuCommands",
+                    [NSBundle bundleForClass:[NSApplication class]],
+                    @"")
+                action:@selector(performZoom:)
+                keyEquivalent:@""] autorelease];
+            [nsWindowMenu addItem:zoomItem];
+
+            [nsWindowMenu addItem:[NSMenuItem separatorItem]];
+
+            NSMenuItem *bringAllToFrontItem = [[[NSMenuItem alloc]
+                initWithTitle:NSLocalizedStringFromTableInBundle(
+                    @"Bring All to Front",
+                    @"MenuCommands",
+                    [NSBundle bundleForClass:[NSApplication class]],
+                    @"")
+                action:@selector(arrangeInFront:)
+                keyEquivalent:@""] autorelease];
+            [nsWindowMenu addItem:bringAllToFrontItem];
+
+            // Set it as the Window menu for the application
+            // macOS will automatically populate it with the remaining standard window operations
+            [NSApp setWindowsMenu:nsWindowMenu];
         }
     }
 }

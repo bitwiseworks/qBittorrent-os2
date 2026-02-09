@@ -1,5 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
+ * Copyright (C) 2023  Vladimir Golovnev <glassez@yandex.ru>
  * Copyright (C) 2006  Christophe Dumez <chris@qbittorrent.org>
  *
  * This program is free software; you can redistribute it and/or
@@ -26,22 +27,23 @@
  * exception statement from your version.
  */
 
-#ifndef PREVIEWLISTDELEGATE_H
-#define PREVIEWLISTDELEGATE_H
+#pragma once
 
-#include <QItemDelegate>
+#include <QStyledItemDelegate>
 
-class PreviewListDelegate final : public QItemDelegate
+#include "progressbarpainter.h"
+
+class PreviewListDelegate final : public QStyledItemDelegate
 {
     Q_OBJECT
-    Q_DISABLE_COPY(PreviewListDelegate)
+    Q_DISABLE_COPY_MOVE(PreviewListDelegate)
 
 public:
     explicit PreviewListDelegate(QObject *parent = nullptr);
 
-private:
     void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override;
     QWidget *createEditor(QWidget *, const QStyleOptionViewItem &, const QModelIndex &) const override;
-};
 
-#endif // PREVIEWLISTDELEGATE_H
+private:
+    ProgressBarPainter m_progressBarPainter;
+};

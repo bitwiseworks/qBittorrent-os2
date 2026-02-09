@@ -1,5 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
+ * Copyright (C) 2023  Vladimir Golovnev <glassez@yandex.ru>
  * Copyright (C) 2011  Christophe Dumez <chris@qbittorrent.org>
  *
  * This program is free software; you can redistribute it and/or
@@ -26,29 +27,27 @@
  * exception statement from your version.
  */
 
-#ifndef PREVIEWSELECTDIALOG_H
-#define PREVIEWSELECTDIALOG_H
+#pragma once
 
 #include <QDialog>
 
+#include "base/path.h"
 #include "base/settingvalue.h"
-
-class QStandardItemModel;
 
 namespace BitTorrent
 {
-    class TorrentHandle;
+    class Torrent;
 }
+
 namespace Ui
 {
     class PreviewSelectDialog;
 }
-class PreviewListDelegate;
 
 class PreviewSelectDialog final : public QDialog
 {
     Q_OBJECT
-    Q_DISABLE_COPY(PreviewSelectDialog)
+    Q_DISABLE_COPY_MOVE(PreviewSelectDialog)
 
 public:
     enum PreviewColumn
@@ -61,14 +60,15 @@ public:
         NB_COLUMNS
     };
 
-    PreviewSelectDialog(QWidget *parent, const BitTorrent::TorrentHandle *torrent);
+    PreviewSelectDialog(QWidget *parent, const BitTorrent::Torrent *torrent);
     ~PreviewSelectDialog();
 
 signals:
-    void readyToPreviewFile(QString) const;
+    void readyToPreviewFile(const Path &filePath) const;
 
 private slots:
     void previewButtonClicked();
+    void displayColumnHeaderMenu();
 
 private:
     void showEvent(QShowEvent *event) override;
@@ -76,15 +76,11 @@ private:
     void loadWindowState();
     void saveWindowState();
 
-    Ui::PreviewSelectDialog *m_ui;
-    QStandardItemModel *m_previewListModel;
-    PreviewListDelegate *m_listDelegate;
-    const BitTorrent::TorrentHandle *m_torrent;
+    Ui::PreviewSelectDialog *m_ui = nullptr;
+    const BitTorrent::Torrent *m_torrent = nullptr;
     bool m_headerStateInitialized = false;
 
     // Settings
-    CachedSettingValue<QSize> m_storeDialogSize;
-    CachedSettingValue<QByteArray> m_storeTreeHeaderState;
+    SettingValue<QSize> m_storeDialogSize;
+    SettingValue<QByteArray> m_storeTreeHeaderState;
 };
-
-#endif // PREVIEWSELECTDIALOG_H

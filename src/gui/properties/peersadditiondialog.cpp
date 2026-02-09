@@ -40,7 +40,9 @@ PeersAdditionDialog::PeersAdditionDialog(QWidget *parent)
     , m_ui(new Ui::PeersAdditionDialog())
 {
     m_ui->setupUi(this);
+
     connect(m_ui->buttonBox, &QDialogButtonBox::accepted, this, &PeersAdditionDialog::validateInput);
+    connect(m_ui->buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
 }
 
 PeersAdditionDialog::~PeersAdditionDialog()
@@ -48,7 +50,7 @@ PeersAdditionDialog::~PeersAdditionDialog()
     delete m_ui;
 }
 
-QVector<BitTorrent::PeerAddress> PeersAdditionDialog::askForPeers(QWidget *parent)
+QList<BitTorrent::PeerAddress> PeersAdditionDialog::askForPeers(QWidget *parent)
 {
     PeersAdditionDialog dlg(parent);
     dlg.exec();
@@ -57,18 +59,22 @@ QVector<BitTorrent::PeerAddress> PeersAdditionDialog::askForPeers(QWidget *paren
 
 void PeersAdditionDialog::validateInput()
 {
-    if (m_ui->textEditPeers->toPlainText().trimmed().isEmpty()) {
+    if (m_ui->textEditPeers->toPlainText().trimmed().isEmpty())
+    {
         QMessageBox::warning(this, tr("No peer entered"),
                     tr("Please type at least one peer."),
                     QMessageBox::Ok);
         return;
     }
-    for (const QString &peer : asConst(m_ui->textEditPeers->toPlainText().trimmed().split('\n'))) {
+    for (const QString &peer : asConst(m_ui->textEditPeers->toPlainText().trimmed().split(u'\n')))
+    {
         const BitTorrent::PeerAddress addr = BitTorrent::PeerAddress::parse(peer);
-        if (!addr.ip.isNull()) {
+        if (!addr.ip.isNull())
+        {
             m_peersList.append(addr);
         }
-        else {
+        else
+        {
             QMessageBox::warning(this, tr("Invalid peer"),
                     tr("The peer '%1' is invalid.").arg(peer),
                     QMessageBox::Ok);

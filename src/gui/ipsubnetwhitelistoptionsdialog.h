@@ -1,6 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
- * Copyright (C) 2017  Thomas Piccirello <thomas.piccirello@gmail.com>
+ * Copyright (C) 2017  Thomas Piccirello <thomas@piccirello.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -26,10 +26,11 @@
  * exception statement from your version.
  */
 
-#ifndef OPTIONS_IPSUBNETWHITELIST_H
-#define OPTIONS_IPSUBNETWHITELIST_H
+#pragma once
 
 #include <QDialog>
+
+#include "base/settingvalue.h"
 
 class QSortFilterProxyModel;
 class QStringListModel;
@@ -39,14 +40,14 @@ namespace Ui
     class IPSubnetWhitelistOptionsDialog;
 }
 
-class IPSubnetWhitelistOptionsDialog : public QDialog
+class IPSubnetWhitelistOptionsDialog final : public QDialog
 {
     Q_OBJECT
-    Q_DISABLE_COPY(IPSubnetWhitelistOptionsDialog)
+    Q_DISABLE_COPY_MOVE(IPSubnetWhitelistOptionsDialog)
 
 public:
     explicit IPSubnetWhitelistOptionsDialog(QWidget *parent = nullptr);
-    ~IPSubnetWhitelistOptionsDialog();
+    ~IPSubnetWhitelistOptionsDialog() override;
 
 private slots:
     void on_buttonBox_accepted();
@@ -55,10 +56,10 @@ private slots:
     void on_txtIPSubnet_textChanged(const QString &subnetStr);
 
 private:
-    Ui::IPSubnetWhitelistOptionsDialog *m_ui;
-    QStringListModel *m_model;
-    QSortFilterProxyModel *m_sortFilter;
-    bool m_modified;
-};
+    Ui::IPSubnetWhitelistOptionsDialog *m_ui = nullptr;
+    SettingValue<QSize> m_storeDialogSize;
 
-#endif // OPTIONS_IPSUBNETWHITELIST_H
+    QStringListModel *m_model = nullptr;
+    QSortFilterProxyModel *m_sortFilter = nullptr;
+    bool m_modified = false;
+};

@@ -26,8 +26,7 @@
  * exception statement from your version.
  */
 
-#ifndef COOKIESMODEL_H
-#define COOKIESMODEL_H
+#pragma once
 
 #include <QAbstractItemModel>
 #include <QList>
@@ -36,6 +35,7 @@
 class CookiesModel final : public QAbstractItemModel
 {
      Q_OBJECT
+     Q_DISABLE_COPY_MOVE(CookiesModel)
 
 public:
     enum Column
@@ -70,5 +70,3 @@ public:
 private:
     mutable QList<QNetworkCookie> m_cookies;
 };
-
-#endif // COOKIESMODEL_H

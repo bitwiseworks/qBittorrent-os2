@@ -66,38 +66,33 @@
 ****************************************************************************
 */
 
-#ifndef QTLOCALPEER_H
-#define QTLOCALPEER_H
+#pragma once
 
-#include "qtlockedfile.h"
+#include <QLockFile>
+#include <QObject>
+#include <QString>
 
 class QLocalServer;
 
-class QtLocalPeer : public QObject
+class QtLocalPeer final : public QObject
 {
     Q_OBJECT
+    Q_DISABLE_COPY_MOVE(QtLocalPeer)
 
 public:
-    QtLocalPeer(QObject *parent = nullptr, const QString &appId = QString());
+    QtLocalPeer(const QString &path, QObject *parent = nullptr);
 
     bool isClient();
     bool sendMessage(const QString &message, int timeout);
-    QString applicationId() const;
 
 signals:
     void messageReceived(const QString &message);
 
-protected slots:
+private slots:
     void receiveConnection();
 
-protected:
-    QString id;
-    QString socketName;
-    QLocalServer *server = nullptr;
-    QtLP_Private::QtLockedFile lockFile;
-
 private:
-    static const char* ack;
+    QString m_socketName;
+    QLocalServer *m_server = nullptr;
+    QLockFile m_lockFile;
 };
-
-#endif // QTLOCALPEER_H

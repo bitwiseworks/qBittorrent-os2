@@ -1,5 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
+ * Copyright (C) 2021  Mike Tzou (Chocobo1)
  * Copyright (C) 2010  Christophe Dumez <chris@qbittorrent.org>
  *
  * This program is free software; you can redistribute it and/or
@@ -26,38 +27,53 @@
  * exception statement from your version.
  */
 
-#ifndef PROGRAMUPDATER_H
-#define PROGRAMUPDATER_H
+#pragma once
 
 #include <QObject>
+#include <QUrl>
+
+#include "base/utils/version.h"
 
 namespace Net
 {
     struct DownloadResult;
 }
 
-class ProgramUpdater : public QObject
+class ProgramUpdater final : public QObject
 {
     Q_OBJECT
-    Q_DISABLE_COPY(ProgramUpdater)
+    Q_DISABLE_COPY_MOVE(ProgramUpdater)
 
 public:
-    explicit ProgramUpdater(QObject *parent = nullptr, bool invokedByUser = false);
+    using Version = Utils::Version<4, 3>;
+
+    using QObject::QObject;
 
     void checkForUpdates();
-    void updateProgram();
+    Version getNewVersion() const;
+    bool updateProgram() const;
 
 signals:
-    void updateCheckFinished(bool updateAvailable, QString version, bool invokedByUser);
+    void updateCheckFinished();
 
 private slots:
     void rssDownloadFinished(const Net::DownloadResult &result);
+    void fallbackDownloadFinished(const Net::DownloadResult &result, Version &version);
 
 private:
-    bool isVersionMoreRecent(const QString &remoteVersion) const;
+    enum class RemoteSource
+    {
+        Fosshub,
+        QbtMain,
+        QbtBackup
+    };
 
-    QString m_updateUrl;
-    bool m_invokedByUser;
+    void handleFinishedRequest();
+    RemoteSource getLatestRemoteSource() const;
+
+    int m_pendingRequestCount = 0;
+    Version m_fosshubVersion;
+    Version m_qbtMainVersion;
+    Version m_qbtBackupVersion;
+    QUrl m_updateURL;
 };
-
-#endif // PROGRAMUPDATER_H

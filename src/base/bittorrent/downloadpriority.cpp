@@ -1,6 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
- * Copyright (C) 2018  Thomas Piccirello <thomas.piccirello@gmail.com>
+ * Copyright (C) 2018  Thomas Piccirello <thomas@piccirello.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -32,7 +32,8 @@ namespace BitTorrent
 {
     bool isValidDownloadPriority(const DownloadPriority priority)
     {
-        switch (priority) {
+        switch (priority)
+        {
         case DownloadPriority::Ignored:
         case DownloadPriority::Normal:
         case DownloadPriority::High:

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS language="cs" version="2.1">
+<TS version="2.1" language="cs">
 <context>
     <name>AboutDlg</name>
     <message>
@@ -23,16 +23,180 @@
         <translation>Přeskočit kontrolu hashe</translation>
     </message>
     <message>
-        <source>Create subfolder</source>
-        <translation type="vanished">Vytvořit podsložku</translation>
-    </message>
-    <message>
         <source>Torrent Management Mode:</source>
         <translation>Režim správy torrentu:</translation>
     </message>
     <message>
-        <source>Keep top-level folder</source>
-        <translation type="unfinished" />
+        <source>Content layout:</source>
+        <translation>Rozvržení obsahu:</translation>
+    </message>
+    <message>
+        <source>Original</source>
+        <translation>Originál</translation>
+    </message>
+    <message>
+        <source>Create subfolder</source>
+        <translation>Vytvořit podsložku</translation>
+    </message>
+    <message>
+        <source>Don't create subfolder</source>
+        <translation>Nevytvářet podsložku</translation>
+    </message>
+    <message>
+        <source>Manual</source>
+        <translation>Manuální</translation>
+    </message>
+    <message>
+        <source>Automatic</source>
+        <translation>Automatický</translation>
+    </message>
+    <message>
+        <source>Metadata received</source>
+        <translation>Metadata stažena</translation>
+    </message>
+    <message>
+        <source>Files checked</source>
+        <translation>Soubory zkontrolovány</translation>
+    </message>
+    <message>
+        <source>Stop condition:</source>
+        <translation>Podmínka zastavení:</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>Žádná</translation>
+    </message>
+    <message>
+        <source>Add to top of queue</source>
+        <translation>Přidat na začátek fronty</translation>
+    </message>
+    <message>
+        <source>Download in sequential order</source>
+        <translation>Stáhnout v sekvenčním pořadí</translation>
+    </message>
+    <message>
+        <source>Size:</source>
+        <translation>Velikost:</translation>
+    </message>
+    <message>
+        <source>Save at</source>
+        <translation>Uložit jako</translation>
+    </message>
+    <message>
+        <source>Torrent information</source>
+        <translation>Info o torrentu</translation>
+    </message>
+    <message>
+        <source>Save path:</source>
+        <translation>Uložit do:</translation>
+    </message>
+    <message>
+        <source>Info hash v1:</source>
+        <translation>Info hash v1:</translation>
+    </message>
+    <message>
+        <source>Rename torrent</source>
+        <translation>Přejmenovat torrent</translation>
+    </message>
+    <message>
+        <source>Add torrent</source>
+        <translation>Přidat torrent</translation>
+    </message>
+    <message>
+        <source>Not available</source>
+        <translation>Není k dispozici</translation>
+    </message>
+    <message>
+        <source>Priority</source>
+        <translation>Priorita</translation>
+    </message>
+    <message>
+        <source>High</source>
+        <translation>Vysoká</translation>
+    </message>
+    <message>
+        <source>Torrent settings</source>
+        <translation>Nastavení torrentu</translation>
+    </message>
+    <message>
+        <source>Normal</source>
+        <translation>Normální</translation>
+    </message>
+    <message>
+        <source>Save files to location:</source>
+        <translation>Ukládat soubory do umístění:</translation>
+    </message>
+    <message>
+        <source>Set as default category</source>
+        <translation>Nastavit jako výchozí kategorii</translation>
+    </message>
+    <message>
+        <source>Limit upload rate</source>
+        <translation>Omezit rychlost odesílání</translation>
+    </message>
+    <message>
+        <source>Filter files...</source>
+        <translation>Filtrovat soubory...</translation>
+    </message>
+    <message>
+        <source>Add Torrent</source>
+        <translation>Přidat torrent</translation>
+    </message>
+    <message>
+        <source>Use another path for incomplete torrent</source>
+        <translation>Použít jinou cestu pro nedokončený torrent</translation>
+    </message>
+    <message>
+        <source>Date:</source>
+        <translation>Datum:</translation>
+    </message>
+    <message>
+        <source>Save as .torrent file</source>
+        <translation>Uložit jako soubor .torrent</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Vše</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <source>Maximum</source>
+        <translation>Maximální</translation>
+    </message>
+    <message>
+        <source>Do not download</source>
+        <translation>Nestahovat</translation>
+    </message>
+    <message>
+        <source>Download first and last pieces first</source>
+        <translation>Nejprve si stáhněte první a poslední části</translation>
+    </message>
+    <message>
+        <source>Comment:</source>
+        <translation>Komentář:</translation>
+    </message>
+    <message>
+        <source>Unable to download torrent file</source>
+        <translation>Nelze stáhnout torrent soubor</translation>
+    </message>
+    <message>
+        <source>Info hash v2:</source>
+        <translation>Info hash v2:</translation>
+    </message>
+    <message>
+        <source>Tags:</source>
+        <translation>Štítky:</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation>Soubory</translation>
+    </message>
+    <message>
+        <source>Limit download rate</source>
+        <translation>Omezit rychlost stahování</translation>
     </message>
 </context>
 <context>
@@ -61,18 +225,6 @@
         <translation>Odstranit nevyužité kategorie</translation>
     </message>
     <message>
-        <source>Resume torrents</source>
-        <translation>Obnovit torrenty</translation>
-    </message>
-    <message>
-        <source>Pause torrents</source>
-        <translation>Zastavit torrenty</translation>
-    </message>
-    <message>
-        <source>Delete torrents</source>
-        <translation>Smazat torrenty</translation>
-    </message>
-    <message>
         <source>New Category</source>
         <translation>Nová kategorie</translation>
     </message>
@@ -80,16 +232,28 @@
         <source>Edit category...</source>
         <translation>Editovat kategorii...</translation>
     </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation>Odstranit torrenty</translation>
+    </message>
+    <message>
+        <source>Add subcategory...</source>
+        <translation>Přidat podkategorii</translation>
+    </message>
+    <message>
+        <source>Start torrents</source>
+        <translation>Spustit torrenty</translation>
+    </message>
+    <message>
+        <source>Stop torrents</source>
+        <translation>Zastavit torrenty</translation>
+    </message>
 </context>
 <context>
     <name>HttpServer</name>
     <message>
         <source>Exit qBittorrent</source>
         <translation>Ukončit qBittorrent</translation>
-    </message>
-    <message>
-        <source>Only one link per line</source>
-        <translation>Pouze jeden odkaz na řádek</translation>
     </message>
     <message>
         <source>Global upload rate limit must be greater than 0 or disabled.</source>
@@ -133,55 +297,11 @@
     </message>
     <message>
         <source>Unable to save program preferences, qBittorrent is probably unreachable.</source>
-        <translation>Nelze uložit nastavení programu, qBittorrent klient je pravděpodobně nedostupný.</translation>
-    </message>
-    <message>
-        <source>IRC: #qbittorrent on Freenode</source>
-        <translation>IRC: #qbittorrent na Freenode</translation>
+        <translation>Nelze uložit předvolby programu, qBittorrent klient je pravděpodobně nedosažitelný.</translation>
     </message>
     <message>
         <source>Unknown</source>
         <translation>Neznámý</translation>
-    </message>
-    <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>Limit ratia musí být v rozsahu od 0 do 9998.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>Doba seedování musí být v rozsahu od 0 do 525600 minut.</translation>
-    </message>
-    <message>
-        <source>The port used for incoming connections must be between 1 and 65535.</source>
-        <translation>Port příchozích spojení musí být mezi 1 a 65535.</translation>
-    </message>
-    <message>
-        <source>The port used for the Web UI must be between 1 and 65535.</source>
-        <translation>Port webového rozhraní musí být mezi 1 a 65535.</translation>
-    </message>
-    <message>
-        <source>Unable to log in, qBittorrent is probably unreachable.</source>
-        <translation>Nelze se přihlásit, qBittorrent je pravděpodobně nedostupný</translation>
-    </message>
-    <message>
-        <source>Invalid Username or Password.</source>
-        <translation>Neplatné jméno nebo heslo</translation>
-    </message>
-    <message>
-        <source>Username</source>
-        <translation>Uživatelské jméno</translation>
-    </message>
-    <message>
-        <source>Password</source>
-        <translation>Heslo</translation>
-    </message>
-    <message>
-        <source>Login</source>
-        <translation>Přihlášení</translation>
-    </message>
-    <message>
-        <source>Original authors</source>
-        <translation>Původní autoři</translation>
     </message>
     <message>
         <source>Apply</source>
@@ -190,23 +310,6 @@
     <message>
         <source>Add</source>
         <translation>Přidat</translation>
-    </message>
-    <message>
-        <source>Upload Torrents</source>
-        <comment>Upload torrent files to qBittorent using WebUI</comment>
-        <translation>Nahrát torrenty</translation>
-    </message>
-    <message>
-        <source>Save files to location:</source>
-        <translation>Ukládat soubory do umístění:</translation>
-    </message>
-    <message>
-        <source>Cookie:</source>
-        <translation>Cookie:</translation>
-    </message>
-    <message>
-        <source>Type folder here</source>
-        <translation>Zadejte název adresáře</translation>
     </message>
     <message>
         <source>More information</source>
@@ -219,23 +322,6 @@
     <message>
         <source>Set location</source>
         <translation>Nastavit umístění</translation>
-    </message>
-    <message>
-        <source>Limit upload rate</source>
-        <translation>Omezit rychlost odesílání</translation>
-    </message>
-    <message>
-        <source>Limit download rate</source>
-        <translation>Omezit rychlost stahování</translation>
-    </message>
-    <message>
-        <source>Rename torrent</source>
-        <translation>Přejmenovat torrent</translation>
-    </message>
-    <message>
-        <source>Other...</source>
-        <comment>Save Files to: Watch Folder / Default Folder / Other...</comment>
-        <translation>Jiná...</translation>
     </message>
     <message>
         <source>Monday</source>
@@ -277,18 +363,6 @@
         <translation>Odhlásit</translation>
     </message>
     <message>
-        <source>Download Torrents from their URLs or Magnet links</source>
-        <translation>Stahovat torrenty z jejich URL nebo Magnet linku</translation>
-    </message>
-    <message>
-        <source>Upload local torrent</source>
-        <translation>Nahrát lokální torrent</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete the selected torrents from the transfer list?</source>
-        <translation>Opravdu chcete smazat vybrané torrenty ze seznamu přenosů?</translation>
-    </message>
-    <message>
         <source>Save</source>
         <translation>Uložit</translation>
     </message>
@@ -303,10 +377,6 @@
     <message>
         <source>Invalid category name:\nPlease do not use any special characters in the category name.</source>
         <translation>Neplatný název kategorie:\nProsím nepoužívejte žádné speciální znaky ani diakritiku v názvu kategorie.</translation>
-    </message>
-    <message>
-        <source>Unable to create category</source>
-        <translation>Nelze vytvořit kategorii</translation>
     </message>
     <message>
         <source>Upload rate threshold must be greater than 0.</source>
@@ -333,10 +403,6 @@
         <translation>Limit rychlosti stahování musí být větší než 0.</translation>
     </message>
     <message>
-        <source>qBittorrent has been shutdown</source>
-        <translation>qBittorrent byl ukončen</translation>
-    </message>
-    <message>
         <source>Open documentation</source>
         <translation>Otevřít dokumentaci</translation>
     </message>
@@ -347,10 +413,6 @@
     <message>
         <source>Unable to add peers. Please ensure you are adhering to the IP:port format.</source>
         <translation>Nelze přidat peery. Ujistěte se, že dodržujete formát IP:port.</translation>
-    </message>
-    <message>
-        <source>JavaScript Required! You must enable JavaScript for the Web UI to work properly</source>
-        <translation>Je vyžadován JavaScript! Musíte povolit JavaScript aby Web UI pracovalo správně</translation>
     </message>
     <message>
         <source>Name cannot be empty</source>
@@ -366,6 +428,146 @@
     </message>
     <message>
         <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>The port used for incoming connections must be between 0 and 65535.</source>
+        <translation>Port příchozích spojení musí být mezi 0 a 65535.</translation>
+    </message>
+    <message>
+        <source>Original author</source>
+        <translation>Původní autor</translation>
+    </message>
+    <message>
+        <source>The port used for the WebUI must be between 1 and 65535.</source>
+        <translation>Port použitý pro WebUI musí být mezi 1 a 65535.</translation>
+    </message>
+    <message>
+        <source>%1 has been shutdown</source>
+        <translation>%1 bylo vypnuto</translation>
+    </message>
+    <message>
+        <source>JavaScript Required! You must enable JavaScript for the WebUI to work properly</source>
+        <translation>JavaScript vyžadován! Musíte zapnout JavaScript, aby WebUI správně fungovalo</translation>
+    </message>
+    <message>
+        <source>External IP: N/A</source>
+        <translation>Externí IP: N/A</translation>
+    </message>
+    <message>
+        <source>Reverse proxy setup examples</source>
+        <translation>Příklady nastavení reverzní proxy</translation>
+    </message>
+    <message>
+        <source>Could not contact qBittorrent</source>
+        <translation>Nepodařilo se kontaktovat qBittorrent</translation>
+    </message>
+    <message>
+        <source>Remember choice</source>
+        <translation>Zapamatovat volbu</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove these %1 torrents from the transfer list?</source>
+        <translation>Opravdu chcete odebrat tyto %1 torrenty ze seznamu přenosů?</translation>
+    </message>
+    <message>
+        <source>Unable to delete torrents.</source>
+        <translation>Není možné smazat torrenty.</translation>
+    </message>
+    <message>
+        <source>URL</source>
+        <translation>URL</translation>
+    </message>
+    <message>
+        <source>External IP: %1%2</source>
+        <translation>Externí IP: %1%2</translation>
+    </message>
+    <message>
+        <source>Edit web seed</source>
+        <translation>Upravit web seed</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to remove %1 from the transfer list?</source>
+        <translation>Jste si jisti, že chcete odebrat %1 ze seznamu přenosů?</translation>
+    </message>
+    <message>
+        <source>Unable to set Auto Torrent Management for the selected torrents.</source>
+        <translation>Nelze nastavit automatickou správu torrentu pro vybrané torrenty.</translation>
+    </message>
+    <message>
+        <source>Unable to stop torrents.</source>
+        <translation>Nelze zastavit torrenty.</translation>
+    </message>
+    <message>
+        <source>Unable to download file</source>
+        <translation>Nelze stáhnout soubor</translation>
+    </message>
+    <message>
+        <source>External IPs: %1, %2</source>
+        <translation>Externí IPs: %1, %2</translation>
+    </message>
+    <message>
+        <source>Unable to recheck torrents.</source>
+        <translation>Nelze překontrolovat torrenty.</translation>
+    </message>
+    <message>
+        <source>List of web seeds to add (one per line):</source>
+        <translation>Seznam web seedů pro přidání (jeden na řádek):</translation>
+    </message>
+    <message>
+        <source>Unable to start torrents.</source>
+        <translation>Nelze spustit torrenty.</translation>
+    </message>
+    <message>
+        <source>Add web seeds</source>
+        <translation>Přidat web seedy</translation>
+    </message>
+    <message>
+        <source>Unable to delete API key.</source>
+        <translation>Nelze smazat API klíč.</translation>
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
+        <translation>Limit času seedování nesmí být zadán jako záporné číslo.</translation>
+    </message>
+    <message>
+        <source>Peer ToS must be between 0 and 255.</source>
+        <translation type="vanished">Peer ToS musí mít délku mezi 0 a 255.</translation>
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation>Limit poměru sdílení nesmí být zadán jako záporné číslo.</translation>
+    </message>
+    <message>
+        <source>Peer turnover interval must be greater than or equal to 0.</source>
+        <translation>Peer turnover interval musí být 0 nebo delší.</translation>
+    </message>
+    <message>
+        <source>Unable to parse response.</source>
+        <translation>Nelze zpracovat odpověď.</translation>
+    </message>
+    <message>
+        <source>Unable to rotate API key.</source>
+        <translation>Nelze nahradit API klíč.</translation>
+    </message>
+    <message>
+        <source>Peer turnover must be between 0 and 100.</source>
+        <translation>Peer turnover musí být mezi 0 a 100.</translation>
+    </message>
+    <message>
+        <source>Outstanding memory when checking torrents must be greater than 0 and less than 1024.</source>
+        <translation>Nevyřízená paměť při kontrole torrentů musí být více než 0 a méně než 1024.</translation>
+    </message>
+    <message>
+        <source>Unable to load program preferences, qBittorrent is probably unreachable.</source>
+        <translation>Nelze načíst předvolby programu, qBittorrent je pravděpodobně nedosažitelný.</translation>
+    </message>
+    <message>
+        <source>Peer turnover cutoff must be between 0 and 100.</source>
+        <translation>Hranice peer turnover musí být mezi 0 a 100.</translation>
+    </message>
+    <message>
+        <source>Peer DSCP must be between 0 and 255.</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -396,10 +598,6 @@
         <translation>Možnosti...</translation>
     </message>
     <message>
-        <source>Resume</source>
-        <translation>Obnovit</translation>
-    </message>
-    <message>
         <source>Top Toolbar</source>
         <translation>Horní panel nástrojů</translation>
     </message>
@@ -416,28 +614,12 @@
         <translation>Darujte!</translation>
     </message>
     <message>
-        <source>Resume All</source>
-        <translation>Obnovit vše</translation>
-    </message>
-    <message>
         <source>Statistics</source>
         <translation>Statistika</translation>
     </message>
     <message>
         <source>About</source>
         <translation>O aplikaci</translation>
-    </message>
-    <message>
-        <source>Pause</source>
-        <translation>Zastavit</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Smazat</translation>
-    </message>
-    <message>
-        <source>Pause All</source>
-        <translation>Zastavit vše</translation>
     </message>
     <message>
         <source>Add Torrent File...</source>
@@ -470,11 +652,6 @@
     <message>
         <source>Are you sure you want to quit qBittorrent?</source>
         <translation>Určitě chcete ukončit qBittorrent?</translation>
-    </message>
-    <message>
-        <source>[D: %1, U: %2] qBittorrent %3</source>
-        <comment>D = Download; U = Upload; %3 is qBittorrent version</comment>
-        <translation>[S: %1, O: %2] qBittorrent %3</translation>
     </message>
     <message>
         <source>Alternative speed limits</source>
@@ -553,10 +730,6 @@
         <translation>Ikona rychlosti stahování</translation>
     </message>
     <message>
-        <source>Connection status</source>
-        <translation>Stav připojení</translation>
-    </message>
-    <message>
         <source>Alternative speed limits: On</source>
         <translation>Alternativní limity rychlosti: Zapnuto</translation>
     </message>
@@ -570,11 +743,91 @@
     </message>
     <message>
         <source>RSS Reader</source>
-        <translation type="unfinished" />
+        <translation>RSS čtečka</translation>
     </message>
     <message>
         <source>RSS</source>
-        <translation type="unfinished" />
+        <translation>RSS</translation>
+    </message>
+    <message>
+        <source>Filters Sidebar</source>
+        <translation>Filtry boční panel</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Zrušit</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Odebrat</translation>
+    </message>
+    <message>
+        <source>Execution Log</source>
+        <translation>Záznamy programu (Log)</translation>
+    </message>
+    <message>
+        <source>Log</source>
+        <translation>Log</translation>
+    </message>
+    <message>
+        <source>[D: %1, U: %2]</source>
+        <translation>[S: %1, O: %2]</translation>
+    </message>
+    <message>
+        <source>Filter by:</source>
+        <translation>Filtrovat podle:</translation>
+    </message>
+    <message>
+        <source>Save Path</source>
+        <translation>Cesta uložení</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>Zastavit</translation>
+    </message>
+    <message>
+        <source>Use regular expression</source>
+        <translation>Použít regulární výraz</translation>
+    </message>
+    <message>
+        <source>Would you like to start all torrents?</source>
+        <translation>Chcete spustit všechny torrenty?</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation>Spustit</translation>
+    </message>
+    <message>
+        <source>Manage Cookies...</source>
+        <translation>Spravovat cookies...</translation>
+    </message>
+    <message>
+        <source>Unable to export torrent file</source>
+        <translation>Nelze exportovat soubor torrentu</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Název</translation>
+    </message>
+    <message>
+        <source>Would you like to stop all torrents?</source>
+        <translation>Chcete zastavit všechny torrenty?</translation>
+    </message>
+    <message>
+        <source>Start All</source>
+        <translation>Spustit vše</translation>
+    </message>
+    <message>
+        <source>Stop All</source>
+        <translation>Zastavit vše</translation>
+    </message>
+    <message>
+        <source>Torrent Creator</source>
+        <translation>Vytvoření torrentu</translation>
+    </message>
+    <message>
+        <source>Filter feed items...</source>
+        <translation>Filtrovat položky feedu...</translation>
     </message>
 </context>
 <context>
@@ -600,24 +853,12 @@
         <translation>BitTorrent</translation>
     </message>
     <message>
-        <source>Web UI</source>
-        <translation>Web UI</translation>
-    </message>
-    <message>
         <source>Language</source>
         <translation>Jazyk</translation>
     </message>
     <message>
-        <source>User Interface Language:</source>
-        <translation>Jazyk uživatelského rozhraní:</translation>
-    </message>
-    <message>
         <source>Email notification upon download completion</source>
         <translation>Upozornění emailem při dokončení stahování</translation>
-    </message>
-    <message>
-        <source>Run external program on torrent completion</source>
-        <translation>Spustit externí program při dokončení stažení torrentu</translation>
     </message>
     <message>
         <source>IP Filtering</source>
@@ -630,10 +871,6 @@
     <message>
         <source>Torrent Queueing</source>
         <translation>Řazení torrentů do fronty</translation>
-    </message>
-    <message>
-        <source>Automatically add these trackers to new downloads:</source>
-        <translation>Automaticky přidat tyto trackery k novým stahováním:</translation>
     </message>
     <message>
         <source>Web User Interface (Remote control)</source>
@@ -708,10 +945,6 @@
         <translation>Heslo:</translation>
     </message>
     <message>
-        <source>Enabled protocol:</source>
-        <translation>Zapnout protokol:</translation>
-    </message>
-    <message>
         <source>TCP and μTP</source>
         <translation>TCP a μTP</translation>
     </message>
@@ -726,10 +959,6 @@
     <message>
         <source>Use UPnP / NAT-PMP port forwarding from my router</source>
         <translation>Použít přesměrování portů UPnP / NAT-PMP z mého routeru</translation>
-    </message>
-    <message>
-        <source>Use different port on each startup</source>
-        <translation>Při každém spuštění použít náhodné porty</translation>
     </message>
     <message>
         <source>Connections Limits</source>
@@ -760,10 +989,6 @@
         <translation>Typ:</translation>
     </message>
     <message>
-        <source>(None)</source>
-        <translation>(žádný)</translation>
-    </message>
-    <message>
         <source>SOCKS4</source>
         <translation>SOCKS4</translation>
     </message>
@@ -785,11 +1010,7 @@
     </message>
     <message>
         <source>Use proxy for peer connections</source>
-        <translation>Použít proxy pro připojení k protějškům</translation>
-    </message>
-    <message>
-        <source>Use proxy only for torrents</source>
-        <translation>Použít proxy pouze pro torrenty</translation>
+        <translation>Použít proxy pro připojení k peerům</translation>
     </message>
     <message>
         <source>Filter path (.dat, .p2p, .p2b):</source>
@@ -863,15 +1084,15 @@
     </message>
     <message>
         <source>Enable DHT (decentralized network) to find more peers</source>
-        <translation>Zapnout DHT síť (decentralizovaná síť) k nalezení většího počtu protějšků</translation>
+        <translation>Zapnout DHT síť (decentralizovaná síť) k nalezení většího počtu peerů</translation>
     </message>
     <message>
         <source>Enable Peer Exchange (PeX) to find more peers</source>
-        <translation>Zapnout Peer Exchange (PeX) k nalezení většího počtu protějšků</translation>
+        <translation>Zapnout Peer Exchange (PeX) k nalezení většího počtu peerů</translation>
     </message>
     <message>
         <source>Enable Local Peer Discovery to find more peers</source>
-        <translation>Zapnout místní vyhledávání k nalezení většího počtu protějšků</translation>
+        <translation>Zapnout místní vyhledávání k nalezení většího počtu peerů</translation>
     </message>
     <message>
         <source>Encryption mode:</source>
@@ -966,20 +1187,8 @@
         <translation>%T: Současný tracker</translation>
     </message>
     <message>
-        <source>%I: Info hash</source>
-        <translation>%I: Info hash</translation>
-    </message>
-    <message>
         <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., "%N")</source>
         <translation>Tip: Ohraničit parametr uvozovkami, aby nedošlo k odstřižení textu za mezerou (např. "%N")</translation>
-    </message>
-    <message>
-        <source>The Web UI username must be at least 3 characters long.</source>
-        <translation>Uživatelské jméno pro webové rozhraní musí být nejméně 3 znaky dlouhé.</translation>
-    </message>
-    <message>
-        <source>The Web UI password must be at least 6 characters long.</source>
-        <translation>Heslo pro webové rozhraní musí být nejméně 6 znaků dlouhé.</translation>
     </message>
     <message>
         <source>minutes</source>
@@ -1018,16 +1227,8 @@
         <translation>Automatický</translation>
     </message>
     <message>
-        <source>Use alternative Web UI</source>
-        <translation>Použít alternativní Web UI</translation>
-    </message>
-    <message>
         <source>Default Save Path:</source>
         <translation>Výchozí cesta pro uložení:</translation>
-    </message>
-    <message>
-        <source>The alternative Web UI files location cannot be blank.</source>
-        <translation>Umístění souborů Alternativního UI nemůže být prázdné.</translation>
     </message>
     <message>
         <source>Do not start the download automatically</source>
@@ -1047,7 +1248,7 @@
     </message>
     <message>
         <source>Apply rate limit to peers on LAN</source>
-        <translation>Omezit poměr sdílení protějškům na LAN</translation>
+        <translation>Omezit poměr sdílení peerům na LAN</translation>
     </message>
     <message>
         <source>0 means unlimited</source>
@@ -1072,10 +1273,6 @@
     <message>
         <source>When Category Save Path changed:</source>
         <translation>Při změně cesty pro uložení Kategorií:</translation>
-    </message>
-    <message>
-        <source>Create subfolder for torrents with multiple files</source>
-        <translation type="vanished">Vytvořit podadresář pro torrent s více soubory</translation>
     </message>
     <message>
         <source>seconds</source>
@@ -1104,10 +1301,6 @@
     <message>
         <source>When adding a torrent</source>
         <translation>Při přidání torrentu</translation>
-    </message>
-    <message>
-        <source>Info: The password is saved unencrypted</source>
-        <translation>Info: Heslo je uloženo nešifrované</translation>
     </message>
     <message>
         <source>μTP-TCP mixed mode algorithm:</source>
@@ -1142,16 +1335,8 @@
         <translation>Priorita pro začínající a končící leechery</translation>
     </message>
     <message>
-        <source>Enable OS cache:</source>
-        <translation>Zapnout vyrovnávací paměť systému:</translation>
-    </message>
-    <message>
         <source>When ratio reaches</source>
         <translation>Když je dosaženo ratio</translation>
-    </message>
-    <message>
-        <source>When seeding time reaches</source>
-        <translation>Když je dosažena doba odesílání</translation>
     </message>
     <message>
         <source>Allow multiple connections from the same IP address:</source>
@@ -1174,16 +1359,8 @@
         <translation>Port vestavěného trackeru:</translation>
     </message>
     <message>
-        <source>Optional IP Address to bind to (requires restart):</source>
-        <translation type="vanished">Volitelná přidružená  IP adresa (vyžaduje restart):</translation>
-    </message>
-    <message>
         <source>Fastest upload</source>
         <translation>Nejrychlejší upload</translation>
-    </message>
-    <message>
-        <source>Pause torrent</source>
-        <translation>Zastavit torrent</translation>
     </message>
     <message>
         <source>Remove torrent and its files</source>
@@ -1202,18 +1379,6 @@
         <translation>Sekce libtorrentu</translation>
     </message>
     <message>
-        <source>Coalesce reads &amp; writes:</source>
-        <translation type="vanished">Sloučení čtecích &amp; zapisovacích operací</translation>
-    </message>
-    <message>
-        <source>Outgoing ports (Min) [0: Disabled]:</source>
-        <translation>Odchozí porty (Min) [0: Vypnuto]</translation>
-    </message>
-    <message>
-        <source>IP Address to report to trackers (requires restart):</source>
-        <translation>IP adresa hlášená trackerům (vyžaduje restart):</translation>
-    </message>
-    <message>
         <source>Recheck torrents on completion:</source>
         <translation>Při dokončení překontrolovat torrenty:</translation>
     </message>
@@ -1226,10 +1391,6 @@
         <translation>Doporučení pro odeslání částí uploadu:</translation>
     </message>
     <message>
-        <source>Disk cache:</source>
-        <translation type="vanished">Disková cache:</translation>
-    </message>
-    <message>
         <source>Enable embedded tracker:</source>
         <translation>Zapnout vestavěný tracker:</translation>
     </message>
@@ -1238,24 +1399,12 @@
         <translation>Odstranit torrent</translation>
     </message>
     <message>
-        <source>Outgoing ports (Max) [0: Disabled]:</source>
-        <translation>Odchozí porty (Max) [0: Vypnuto]</translation>
-    </message>
-    <message>
         <source>Asynchronous I/O threads:</source>
         <translation>Asynchronní I/O vlákna:</translation>
     </message>
     <message>
-        <source>s</source>
-        <translation>s</translation>
-    </message>
-    <message>
         <source>Send buffer watermark:</source>
         <translation>Odeslat watermark bufferu:</translation>
-    </message>
-    <message>
-        <source>Disk cache expiry interval:</source>
-        <translation type="vanished">Interval vypršení diskové cache:</translation>
     </message>
     <message>
         <source>Peer proportional (throttles TCP)</source>
@@ -1294,10 +1443,6 @@
         <translation>Chování upload slotů:</translation>
     </message>
     <message>
-        <source>Network Interface (requires restart):</source>
-        <translation type="vanished">Síťové rozhraní (vyžaduje restart):</translation>
-    </message>
-    <message>
         <source>MiB</source>
         <translation>MiB</translation>
     </message>
@@ -1326,24 +1471,8 @@
         <translation>ban pro:</translation>
     </message>
     <message>
-        <source>Use piece extent affinity (requires libtorrent &gt;= 1.2.2):</source>
-        <translation>Použijte rozšíření o příbuzné části (vyžaduje libtorrent&gt; = 1.2.2):</translation>
-    </message>
-    <message>
-        <source>Stop tracker timeout:</source>
-        <translation>Stop časový limit  trackeru:</translation>
-    </message>
-    <message>
         <source>Ban client after consecutive failures:</source>
         <translation>Banovat klienta po sousledných selháních:</translation>
-    </message>
-    <message>
-        <source>Enable cookie Secure flag (requires HTTPS)</source>
-        <translation>Povolit příznak zabezpečení souborů cookie (vyžaduje HTTPS)</translation>
-    </message>
-    <message>
-        <source>UPnP lease duration [0: Permanent lease]:</source>
-        <translation>Trvání UPnP pronájmu [0: trvalý pronájem]:</translation>
     </message>
     <message>
         <source>Header: value pairs, one per line</source>
@@ -1355,111 +1484,751 @@
     </message>
     <message>
         <source>Filters:</source>
-        <translation type="unfinished" />
+        <translation>Filtry:</translation>
     </message>
     <message>
         <source>Enable fetching RSS feeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Hashing threads (requires libtorrent &gt;= 2.0):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Coalesce reads &amp; writes (requires libtorrent &lt; 2.0):</source>
-        <translation type="unfinished" />
+        <translation>Povolit načítání RSS feedů</translation>
     </message>
     <message>
         <source>Peer turnover threshold percentage:</source>
-        <translation type="unfinished" />
+        <translation>Procento limitu pro peer turnover:</translation>
     </message>
     <message>
         <source>RSS Torrent Auto Downloader</source>
-        <translation type="unfinished" />
+        <translation>Automatické RSS stahování torrentů</translation>
     </message>
     <message>
         <source>RSS</source>
-        <translation type="unfinished" />
+        <translation>RSS</translation>
     </message>
     <message>
         <source>Network interface:</source>
-        <translation type="unfinished" />
+        <translation>Síťové rozhraní:</translation>
     </message>
     <message>
         <source>RSS Reader</source>
-        <translation type="unfinished" />
+        <translation>RSS čtečka</translation>
     </message>
     <message>
         <source>Edit auto downloading rules...</source>
-        <translation type="unfinished" />
+        <translation>Upravit pravidla automatického stahování...</translation>
     </message>
     <message>
         <source>Download REPACK/PROPER episodes</source>
-        <translation type="unfinished" />
+        <translation>Stáhnout REPACK/PROPER epizody</translation>
     </message>
     <message>
         <source>Feeds refresh interval:</source>
-        <translation type="unfinished" />
+        <translation>Interval obnovení feedů:</translation>
     </message>
     <message>
         <source>Peer turnover disconnect percentage:</source>
-        <translation type="unfinished" />
+        <translation>Procento odpojení při peer turnover:</translation>
     </message>
     <message>
         <source>Maximum number of articles per feed:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Max concurrent HTTP announces (requires libtorrent &gt;= 1.2.7):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Keep top-level folder</source>
-        <translation type="unfinished" />
+        <translation>Maximální počet článků na feed:</translation>
     </message>
     <message>
         <source> min</source>
-        <translation type="unfinished" />
+        <translation>min</translation>
     </message>
     <message>
         <source>Peer turnover disconnect interval:</source>
-        <translation type="unfinished" />
+        <translation>Interval odpojení při peer turnover:</translation>
     </message>
     <message>
         <source>Optional IP address to bind to:</source>
-        <translation type="unfinished" />
+        <translation>Volitelná přidružená IP adresa:</translation>
     </message>
     <message>
         <source>Disallow connection to peers on privileged ports:</source>
-        <translation type="unfinished" />
+        <translation>Nepovolit připojení k peerům na privilegovaných portech:</translation>
     </message>
     <message>
         <source>Enable auto downloading of RSS torrents</source>
-        <translation type="unfinished" />
+        <translation>Zapnout automatické RSS stahování torrentů</translation>
     </message>
     <message>
         <source>RSS Smart Episode Filter</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Disk cache (requires libtorrent &lt; 2.0):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Disk cache expiry interval (requires libtorrent &lt; 2.0):</source>
-        <translation type="unfinished" />
+        <translation>RSS inteligentní filtr epizod</translation>
     </message>
     <message>
         <source>Validate HTTPS tracker certificate:</source>
+        <translation>Ověřovat HTTPS certifikáty trackerů:</translation>
+    </message>
+    <message>
+        <source>Peer connection protocol:</source>
+        <translation>Protokol připojení k peerům:</translation>
+    </message>
+    <message>
+        <source>Torrent content layout:</source>
+        <translation>Rozvržení obsahu torrentu:</translation>
+    </message>
+    <message>
+        <source>Create subfolder</source>
+        <translation>Vytvořit podsložku</translation>
+    </message>
+    <message>
+        <source>Original</source>
+        <translation>Originál</translation>
+    </message>
+    <message>
+        <source>Don't create subfolder</source>
+        <translation>Nevytvářet podsložku</translation>
+    </message>
+    <message>
+        <source>Type of service (ToS) for connections to peers</source>
+        <translation type="vanished">Typ služby (ToS) pro připojování k peerům</translation>
+    </message>
+    <message>
+        <source>Outgoing connections per second:</source>
+        <translation>Odchozích spojení za sekundu:</translation>
+    </message>
+    <message>
+        <source>Random</source>
+        <translation>Náhodný</translation>
+    </message>
+    <message>
+        <source>%K: Torrent ID</source>
+        <translation>%K: Torrent ID</translation>
+    </message>
+    <message>
+        <source>Reannounce to all trackers when IP or port changed:</source>
+        <translation>Znovu oznámit všem trackerům při změne IP nebo portu</translation>
+    </message>
+    <message>
+        <source>Trusted proxies list:</source>
+        <translation>Seznam důvěryhodných proxy:</translation>
+    </message>
+    <message>
+        <source>Enable reverse proxy support</source>
+        <translation>Zapnout podporu reverzní proxy</translation>
+    </message>
+    <message>
+        <source>%J: Info hash v2</source>
+        <translation>%J: Info hash v2</translation>
+    </message>
+    <message>
+        <source>%I: Info hash v1</source>
+        <translation>%I: Info hash v1</translation>
+    </message>
+    <message>
+        <source>IP address reported to trackers (requires restart):</source>
+        <translation>IP adresa hlášená trackerům (vyžaduje restart)</translation>
+    </message>
+    <message>
+        <source>Set to 0 to let your system pick an unused port</source>
+        <translation>Nastav na 0 a systém vybere nevyužitý port</translation>
+    </message>
+    <message>
+        <source>Server-side request forgery (SSRF) mitigation:</source>
+        <translation>Zamezení falšování požadavků na straně serveru (SSRF):</translation>
+    </message>
+    <message>
+        <source>Disk queue size:</source>
+        <translation>Velikost diskové fronty:</translation>
+    </message>
+    <message>
+        <source>Log performance warnings</source>
+        <translation>Log výkonnostních varování</translation>
+    </message>
+    <message>
+        <source>Maximum outstanding requests to a single peer:</source>
+        <translation>Maximum nezpracovaných požadavků na jeden peer:</translation>
+    </message>
+    <message>
+        <source>Max active checking torrents:</source>
+        <translation>Maximum souběžně kontrolovaných torrentů:</translation>
+    </message>
+    <message>
+        <source>Memory mapped files</source>
+        <translation>Soubory mapované v paměti</translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation>Výchozí</translation>
+    </message>
+    <message>
+        <source>POSIX-compliant</source>
+        <translation>POSIX-vyhovující</translation>
+    </message>
+    <message>
+        <source>It controls the internal state update interval which in turn will affect UI updates</source>
+        <translation>Řídí interval aktualizace vnitřního stavu, který zase ovlivní aktualizace uživatelského rozhraní</translation>
+    </message>
+    <message>
+        <source>Disk IO read mode:</source>
+        <translation>Režim IO čtení disku:</translation>
+    </message>
+    <message>
+        <source>Disable OS cache</source>
+        <translation>Vypnout vyrovnávací paměť systému:</translation>
+    </message>
+    <message>
+        <source>Disk IO write mode:</source>
+        <translation>Režim IO zápisu na disk:</translation>
+    </message>
+    <message>
+        <source>Use piece extent affinity:</source>
+        <translation>Rozšíření o příbuzné části:</translation>
+    </message>
+    <message>
+        <source>Max concurrent HTTP announces:</source>
+        <translation>Maximum souběžných HTTP oznámení:</translation>
+    </message>
+    <message>
+        <source>Enable OS cache</source>
+        <translation>Zapnout vyrovnávací paměť systému</translation>
+    </message>
+    <message>
+        <source>Refresh interval:</source>
+        <translation>Interval obnovení:</translation>
+    </message>
+    <message>
+        <source>ms</source>
+        <translation>ms</translation>
+    </message>
+    <message>
+        <source>Excluded file names</source>
+        <translation>Vyloučené názvy souborů</translation>
+    </message>
+    <message>
+        <source>Support internationalized domain name (IDN):</source>
+        <translation>Podporovat domény obsahující speciální znaky (IDN):</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use ';' to split multiple entries. Can use wildcard '*'.</source>
+        <translation>Seznam povolených pro filtrování hodnot HTTP hlaviček hostitele.
+Pro obranu proti DNS rebinding útokům
+best měli vložit doménové názvy použité pro WebUI server.
+
+Použijte ';' pro oddělení více položek. Můžete použít masku '*'.</translation>
+    </message>
+    <message>
+        <source>HTTPS certificate should not be empty</source>
+        <translation>HTTPS certifikát nemá být prázdný</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use ';' to split multiple entries.</source>
+        <translation>Uveďte IP adresy (nebo podsítě, např. 0.0.0.0/24) reverzních proxy pro přeposlání adresy klienta (atribut X-Forwarded-For), použijte ';' pro rozdělení více položek.</translation>
+    </message>
+    <message>
+        <source>HTTPS key should not be empty</source>
+        <translation>HTTPS klíč nemá být prázdný</translation>
+    </message>
+    <message>
+        <source>Run external program</source>
+        <translation>Spustit externí program</translation>
+    </message>
+    <message>
+        <source>Files checked</source>
+        <translation>Soubory zkontrolovány</translation>
+    </message>
+    <message>
+        <source>Enable port forwarding for embedded tracker:</source>
+        <translation>Zapnout přesměrování portu pro vestavěný tracker:</translation>
+    </message>
+    <message>
+        <source>If checked, hostname lookups are done via the proxy.</source>
+        <translation>Pokud je zapnuto, zjištění názvu hostitele probíhá přes proxy server.</translation>
+    </message>
+    <message>
+        <source>Metadata received</source>
+        <translation>Metadata stažena</translation>
+    </message>
+    <message>
+        <source>Torrent stop condition:</source>
+        <translation>Podmínka zastavení torrentu:</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>Žádná</translation>
+    </message>
+    <message>
+        <source>Example: 172.17.32.0/24, fdff:ffff:c8::/40</source>
+        <translation>Příklad: 172.17.32.0/24, fdff:ffff:c8::/40</translation>
+    </message>
+    <message>
+        <source>SQLite database (experimental)</source>
+        <translation>SQLite databáze (experimental)</translation>
+    </message>
+    <message>
+        <source>Resume data storage type (requires restart):</source>
+        <translation>Obnovit typ úložného prostoru (vyžaduje restart):</translation>
+    </message>
+    <message>
+        <source>Fastresume files</source>
+        <translation>Soubory rychlého obnovení</translation>
+    </message>
+    <message>
+        <source>Backup the log file after:</source>
+        <translation>Zálohovat log soubor po:</translation>
+    </message>
+    <message>
+        <source>days</source>
+        <translation>dnů</translation>
+    </message>
+    <message>
+        <source>Behavior</source>
+        <translation>Vlastnosti</translation>
+    </message>
+    <message>
+        <source>Delete backup logs older than:</source>
+        <translation>Smazat log soubor starší než:</translation>
+    </message>
+    <message>
+        <source>Use proxy for BitTorrent purposes</source>
+        <translation>Použít proxy pro účely BitTorrent</translation>
+    </message>
+    <message>
+        <source>years</source>
+        <translation>roky</translation>
+    </message>
+    <message>
+        <source>Save path:</source>
+        <translation>Uložit do:</translation>
+    </message>
+    <message>
+        <source>months</source>
+        <translation>měsíců</translation>
+    </message>
+    <message>
+        <source>Remember Multi-Rename settings</source>
+        <translation>Zapamatovat nastavení hromadného přejmenování</translation>
+    </message>
+    <message>
+        <source>Use proxy for general purposes</source>
+        <translation>Použít proxy pro obecné účely</translation>
+    </message>
+    <message>
+        <source>Use proxy for RSS purposes</source>
+        <translation>Použít proxy pro účely RSS</translation>
+    </message>
+    <message>
+        <source>Socket send buffer size [0: system default]:</source>
+        <translation>Velikost Socket send bufferu [0: výchozí systému]:</translation>
+    </message>
+    <message>
+        <source>Outgoing ports (Max) [0: disabled]:</source>
+        <translation>Odchozí porty (Max) [0: vypnuto]:</translation>
+    </message>
+    <message>
+        <source>Socket receive buffer size [0: system default]:</source>
+        <translation>Velikost socket receive bufferu [0: výchozí systému]:</translation>
+    </message>
+    <message>
+        <source>Use Subcategories</source>
+        <translation type="vanished">Použít podkategorie</translation>
+    </message>
+    <message>
+        <source>Add to top of queue</source>
+        <translation>Přidat na začátek fronty</translation>
+    </message>
+    <message>
+        <source>Stop tracker timeout [0: disabled]:</source>
+        <translation>Stop tracker timeout [0: vypnuto]:</translation>
+    </message>
+    <message>
+        <source>Outgoing ports (Min) [0: disabled]:</source>
+        <translation>Odchozí porty (Min) [0: vypnuto]:</translation>
+    </message>
+    <message>
+        <source>UPnP lease duration [0: permanent lease]:</source>
+        <translation>Doba UPnP propůjčení [0: trvalé propůjčení]:</translation>
+    </message>
+    <message>
+        <source>Bdecode depth limit:</source>
+        <translation>Bdecode limit hloubky:</translation>
+    </message>
+    <message>
+        <source>Bdecode token limit:</source>
+        <translation>Bdecode limit tokenu:</translation>
+    </message>
+    <message>
+        <source>When total seeding time reaches</source>
+        <translation>Když celkový čas seedování dosáhne</translation>
+    </message>
+    <message>
+        <source>(None)</source>
+        <translation>(žádný)</translation>
+    </message>
+    <message>
+        <source>Python executable path (may require restart):</source>
+        <translation>Cesta spustitelného Pythonu (může vyžadovat restart):</translation>
+    </message>
+    <message>
+        <source>Resets to default if empty</source>
+        <translation>Resetuje se na výchozí pokud je prázdné</translation>
+    </message>
+    <message>
+        <source>Perform hostname lookup via proxy</source>
+        <translation>Zjišťovat název hostitele pomocí proxy</translation>
+    </message>
+    <message>
+        <source>If &amp;quot;mixed mode&amp;quot; is enabled, I2P torrents are allowed to also get peers from other sources than the tracker, and connect to regular IPs, not providing any anonymization. This may be useful if the user is not interested in the anonymization of I2P, but still wants to be able to connect to I2P peers.</source>
+        <translation>Pokud je zapnut &amp;quot;smíšený režim&amp;quot;, tak je I2P torrentům povoleno získávat peery také z jiných zdrojů, než je tracker. Mohou se také připojovat k běžným IP adresám, což neposkytuje žádnou anonymizaci. Toto může být užitečné, pokud uživatel nemá zájem o anonymizaci I2P, ale stále chce mít možnost připojit se k I2P peerům.</translation>
+    </message>
+    <message>
+        <source>DHT bootstrap nodes:</source>
+        <translation>DHT bootstrap uzly:</translation>
+    </message>
+    <message>
+        <source>When inactive seeding time reaches</source>
+        <translation>Když čas neaktivního seedování dosáhne</translation>
+    </message>
+    <message>
+        <source>Mixed mode</source>
+        <translation>Smíšený režim</translation>
+    </message>
+    <message>
+        <source>.torrent file size limit:</source>
+        <translation>Limit velikosti .torrent souboru:</translation>
+    </message>
+    <message>
+        <source>(Auto detect if empty)</source>
+        <translation>(Automaticky rozpoznat pokud je prázdné)</translation>
+    </message>
+    <message>
+        <source>Keep unselected files in ".unwanted" folder</source>
+        <translation>Zanechat nevybrané soubory ve složce ".unwanted"</translation>
+    </message>
+    <message>
+        <source>Enable Mark-of-the-Web (MOTW) for downloaded files (require macOS or Windows):</source>
+        <translation>Zapnout Mark-of-the-Web (MOTW) pro stažené soubory (vyžaduje macOS nebo Windows):</translation>
+    </message>
+    <message>
+        <source> sec</source>
+        <translation>sec</translation>
+    </message>
+    <message>
+        <source>I2P outbound quantity:</source>
+        <translation>I2P odchozí množství:</translation>
+    </message>
+    <message>
+        <source>I2P inbound quantity:</source>
+        <translation>I2P příchozí množství:</translation>
+    </message>
+    <message>
+        <source>Hashing threads:</source>
+        <translation>Hashovací vlákna:</translation>
+    </message>
+    <message>
+        <source>Physical memory (RAM) usage limit:</source>
+        <translation>Limit využití fyzické paměti (RAM)</translation>
+    </message>
+    <message>
+        <source>Use alternative WebUI</source>
+        <translation>Použít alternativní WebUI</translation>
+    </message>
+    <message>
+        <source>Disk cache expiry interval:</source>
+        <translation>Interval vypršení diskové cache:</translation>
+    </message>
+    <message>
+        <source>I2P outbound length:</source>
+        <translation>I2P odchozí délka:</translation>
+    </message>
+    <message>
+        <source>I2P (Experimental)</source>
+        <translation>I2P (Experimentální)</translation>
+    </message>
+    <message>
+        <source>Disk IO type (requires restart):</source>
+        <translation>Disk IO typ (vyžaduje restart):</translation>
+    </message>
+    <message>
+        <source>The alternative WebUI files location cannot be blank.</source>
+        <translation>Alternativní cestu umístění souborů WebUI musíte vyplnit.</translation>
+    </message>
+    <message>
+        <source>Disk cache:</source>
+        <translation>Disková cache:</translation>
+    </message>
+    <message>
+        <source>Write-through</source>
+        <translation>Write-through</translation>
+    </message>
+    <message>
+        <source>WebUI</source>
+        <translation>WebUI</translation>
+    </message>
+    <message>
+        <source>The WebUI password must be at least 6 characters long.</source>
+        <translation>Heslo WebUI musí mít délku nejméně 6 znaků.</translation>
+    </message>
+    <message>
+        <source>Coalesce reads &amp;amp; writes:</source>
+        <translation>Sloučení čtení a zápisu:</translation>
+    </message>
+    <message>
+        <source>I2P inbound length:</source>
+        <translation>I2P příchozí délka:</translation>
+    </message>
+    <message>
+        <source>It appends the text to the window title to help distinguish qBittorent instances</source>
+        <translation>Přidává text na konec titulku okna pro odlišení od ostatních instancí qBittorrentu</translation>
+    </message>
+    <message>
+        <source>The WebUI username must be at least 3 characters long.</source>
+        <translation>Uživatelské jméno WebUI musí mít délku nejméně 3 znaky.</translation>
+    </message>
+    <message>
+        <source>Same host request delay:</source>
+        <translation>Prodleva požadavku stejného hosta:</translation>
+    </message>
+    <message>
+        <source>Customize application instance name:</source>
+        <translation>Přizpůsobit název instance aplikace:</translation>
+    </message>
+    <message>
+        <source>Color scheme:</source>
+        <translation>Schéma barev:</translation>
+    </message>
+    <message>
+        <source>Show external IP in status bar</source>
+        <translation>Zobrazit externí IP ve stavovém panelu</translation>
+    </message>
+    <message>
+        <source>Fetched trackers</source>
+        <translation>Získané trackery</translation>
+    </message>
+    <message>
+        <source>Confirm when deleting torrents</source>
+        <translation>Potvrdit smazání torrentu</translation>
+    </message>
+    <message>
+        <source>Ignore SSL errors:</source>
+        <translation>Ignorovat chyby SSL:</translation>
+    </message>
+    <message>
+        <source>Dark</source>
+        <translation>Tmavé</translation>
+    </message>
+    <message>
+        <source>Delete files permanently</source>
+        <translation>Smazat soubory trvale</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation>Auto</translation>
+    </message>
+    <message>
+        <source>Use alternating row colors</source>
+        <translation>Použít střídající se barvu řádků</translation>
+    </message>
+    <message>
+        <source>Display full announce URL in the Tracker column</source>
+        <translation>Zobrazit celou URL announce v kolonce Tracker</translation>
+    </message>
+    <message>
+        <source>URL:</source>
+        <translation>URL:</translation>
+    </message>
+    <message>
+        <source>Transfer list</source>
+        <translation>Seznam přenosů</translation>
+    </message>
+    <message>
+        <source>The announce port must be between 0 and 65535.</source>
+        <translation>Port announce musí být mezi 0 a 65535.</translation>
+    </message>
+    <message>
+        <source>Light</source>
+        <translation>Světlé</translation>
+    </message>
+    <message>
+        <source>Automatically append these trackers to new downloads:</source>
+        <translation>Automaticky přidat tyto trackery k novým torrentům:</translation>
+    </message>
+    <message>
+        <source>Downloading torrents:</source>
+        <translation>Stahování torrentů:</translation>
+    </message>
+    <message>
+        <source>Start / stop torrent</source>
+        <translation>Spustit / zastavit torrent</translation>
+    </message>
+    <message>
+        <source>Send test email</source>
+        <translation>Odeslat testovací e-mail</translation>
+    </message>
+    <message>
+        <source>Completed torrents:</source>
+        <translation>Dokončené torrenty:</translation>
+    </message>
+    <message>
+        <source>Enable cookie Secure flag (requires HTTPS or localhost connection)</source>
+        <translation>Zapnout příznak cookie Secure (vyžaduje HTTPS nebo localhost připojení)</translation>
+    </message>
+    <message>
+        <source>Action on double-click</source>
+        <translation>Akce po dvojkliku</translation>
+    </message>
+    <message>
+        <source>Save statistics interval:</source>
+        <translation>Interval uložení statistik:</translation>
+    </message>
+    <message>
+        <source>Shows a confirmation dialog upon torrent deletion</source>
+        <translation>Zobrazí dialog pro potvrzení po odstranění torrentu</translation>
+    </message>
+    <message>
+        <source>Run on torrent finished:</source>
+        <translation>Spustit po dokončení torrentu:</translation>
+    </message>
+    <message>
+        <source>Attempted to send email. Check your inbox to confirm success</source>
+        <translation>Proveden pokus o odeslání e-mailu. Zkontrolujte svou doručenou poštu</translation>
+    </message>
+    <message>
+        <source>Automatically append trackers from URL to new downloads:</source>
+        <translation>Automaticky přidat trackery z adresy URL do nových stahování:</translation>
+    </message>
+    <message>
+        <source>Torrent content removing mode:</source>
+        <translation>Režim odebrání obsahu torrentu:</translation>
+    </message>
+    <message>
+        <source>Move files to trash (if possible)</source>
+        <translation>Přesunout soubory do koše (pokud možno):</translation>
+    </message>
+    <message>
+        <source>Stop torrent</source>
+        <translation>Zastavit torrent</translation>
+    </message>
+    <message>
+        <source>Use Category paths in Manual Mode</source>
+        <translation>Použít Kategorie cesty v Ručním módu</translation>
+    </message>
+    <message>
+        <source>List of alternative WebUI</source>
+        <translation>Seznam alternativních WebUI</translation>
+    </message>
+    <message>
+        <source>Run on torrent added:</source>
+        <translation>Spustit po přidání torrentu:</translation>
+    </message>
+    <message>
+        <source>Port reported to trackers (requires restart) [0: listening port]:</source>
+        <translation>Port oznamovaný trackerům (vyžaduje restart) [0: port naslouchání]:</translation>
+    </message>
+    <message>
+        <source>User interface language:</source>
+        <translation>Jazyk uživatelského rozhraní:</translation>
+    </message>
+    <message>
+        <source>Merge trackers to existing torrent</source>
+        <translation>Sloučit trackery do stávajícího torrentu</translation>
+    </message>
+    <message>
+        <source>Confirm torrent recheck:</source>
+        <translation>Potvrdit překontrolování torrentu:</translation>
+    </message>
+    <message>
+        <source>Custom WebUI settings</source>
+        <translation>Vlastní nastavení WebUI</translation>
+    </message>
+    <message>
+        <source>Following settings are WebUI only</source>
+        <translation>Následující nastavení je jen pro WebUI</translation>
+    </message>
+    <message>
+        <source>Simple pread/pwrite</source>
+        <translation>Jednoduché pread/pwrite</translation>
+    </message>
+    <message>
+        <source>Resolve relative Save Path against appropriate Category path instead of Default one</source>
+        <translation>Použít relativní cestu pro uložení podle Cesty kategorie namísto Výchozí cesty</translation>
+    </message>
+    <message>
+        <source>No action</source>
+        <translation>Žádná akce</translation>
+    </message>
+    <message>
+        <source>Auto hide zero status filters</source>
+        <translation>Automaticky skrýt filtry s nulovým stavem</translation>
+    </message>
+    <message>
+        <source>Interface</source>
+        <translation>Rozhraní</translation>
+    </message>
+    <message>
+        <source>Log Files</source>
+        <translation>Log soubory</translation>
+    </message>
+    <message>
+        <source>Enable optimized table rendering (experimental)</source>
+        <translation>Zapnout optimalizované vykreslování tabulek (experimentální)</translation>
+    </message>
+    <message>
+        <source>Note: The password is saved unencrypted</source>
+        <translation>Poznámka: Heslo je uloženo nešifrované</translation>
+    </message>
+    <message>
+        <source>Internal hostname resolver cache expiry interval</source>
+        <translation>Interval vypršení platnosti mezipaměti interního překladače názvů hostitelů</translation>
+    </message>
+    <message>
+        <source>sec</source>
+        <translation>sec</translation>
+    </message>
+    <message>
+        <source>Rotate API key</source>
+        <translation>Nahradit API klíč</translation>
+    </message>
+    <message>
+        <source>Generate a key</source>
+        <translation>Vytvořit klíč</translation>
+    </message>
+    <message>
+        <source>When adding a duplicate torrent</source>
+        <translation>Při přidávání duplicitního torrentu</translation>
+    </message>
+    <message>
+        <source>Delete API key</source>
+        <translation>Smazat API klíč</translation>
+    </message>
+    <message>
+        <source>%M: Comment</source>
+        <translation>%M: komentář</translation>
+    </message>
+    <message>
+        <source>Generate API key</source>
+        <translation>Vytvořit API klíč</translation>
+    </message>
+    <message>
+        <source>Copied</source>
+        <translation>Zkopírováno</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation>Uživatel</translation>
+    </message>
+    <message>
+        <source>Reset filter selection</source>
+        <translation>Resetovat výběr filtru</translation>
+    </message>
+    <message>
+        <source>API Key</source>
+        <translation>API klíč</translation>
+    </message>
+    <message>
+        <source>Copy API key</source>
+        <translation>Kopírovat API klíč</translation>
+    </message>
+    <message>
+        <source>Differentiated Services Code Point (DSCP) for connections to peers</source>
         <translation type="unfinished" />
     </message>
 </context>
 <context>
     <name>PeerListWidget</name>
-    <message>
-        <source>IP</source>
-        <translation>IP</translation>
-    </message>
     <message>
         <source>Port</source>
         <translation>Port</translation>
@@ -1514,23 +2283,31 @@
     </message>
     <message>
         <source>Ban peer permanently</source>
-        <translation>Natrvalo zakázat protějšek</translation>
+        <translation>Natrvalo zakázat peer</translation>
     </message>
     <message>
         <source>Are you sure you want to permanently ban the selected peers?</source>
-        <translation>Opravdu chcete natrvalo zakázat označené protějšky?</translation>
+        <translation>Opravdu chcete natrvalo zakázat vybrané peery?</translation>
     </message>
     <message>
         <source>Copy IP:port</source>
         <translation>Kopírovat IP:port</translation>
     </message>
     <message>
-        <source>Add a new peer...</source>
-        <translation>Přidat nový protějšek...</translation>
-    </message>
-    <message>
         <source>Country/Region</source>
         <translation>Země/Oblast</translation>
+    </message>
+    <message>
+        <source>Add peers...</source>
+        <translation>Přidání peerů...</translation>
+    </message>
+    <message>
+        <source>Peer ID Client</source>
+        <translation> Peer ID klienta</translation>
+    </message>
+    <message>
+        <source>IP/Address</source>
+        <translation>IP/Adresa</translation>
     </message>
 </context>
 <context>
@@ -1571,7 +2348,7 @@
     </message>
     <message>
         <source>Peers</source>
-        <translation>Protějšky</translation>
+        <translation>Peery</translation>
     </message>
     <message>
         <source>HTTP Sources</source>
@@ -1619,7 +2396,7 @@
     </message>
     <message>
         <source>Peers:</source>
-        <translation>Protějšky:</translation>
+        <translation>Peery:</translation>
     </message>
     <message>
         <source>Download Limit:</source>
@@ -1682,10 +2459,6 @@
         <translation>Vytvořeno:</translation>
     </message>
     <message>
-        <source>Torrent Hash:</source>
-        <translation>Kontrolní součet:</translation>
-    </message>
-    <message>
         <source>Save Path:</source>
         <translation>Uložit do:</translation>
     </message>
@@ -1718,14 +2491,6 @@
         <translation>%1 (%2 prům.)</translation>
     </message>
     <message>
-        <source>Download limit:</source>
-        <translation>Omezení stahování:</translation>
-    </message>
-    <message>
-        <source>Upload limit:</source>
-        <translation>Omezení odesílání:</translation>
-    </message>
-    <message>
         <source>Priority</source>
         <translation>Priorita</translation>
     </message>
@@ -1736,6 +2501,138 @@
     <message>
         <source>Rename...</source>
         <translation>Přejmenovat...</translation>
+    </message>
+    <message>
+        <source>%1 (seeded for %2)</source>
+        <translation>%1 (sdíleno %2)</translation>
+    </message>
+    <message>
+        <source>Info Hash v2:</source>
+        <translation>Info Hash v2:</translation>
+    </message>
+    <message>
+        <source>Info Hash v1:</source>
+        <translation>Info Hash v1:</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <source>Progress:</source>
+        <translation>Průběh:</translation>
+    </message>
+    <message>
+        <source>Use regular expressions</source>
+        <translation>Použijte regulární výrazy</translation>
+    </message>
+    <message>
+        <source>Filename</source>
+        <translation>Název souboru</translation>
+    </message>
+    <message>
+        <source>Filename + Extension</source>
+        <translation>Název souboru + přípona</translation>
+    </message>
+    <message>
+        <source>Enumerate Files</source>
+        <translation>Očíslovat soubory</translation>
+    </message>
+    <message>
+        <source>Rename failed: file or folder already exists</source>
+        <translation>Přejmenování selhalo: soubor nebo složka již existuje</translation>
+    </message>
+    <message>
+        <source>Toggle Selection</source>
+        <translation>Přepnout výběr</translation>
+    </message>
+    <message>
+        <source>Replacement Input</source>
+        <translation>Nahrazení vstupu</translation>
+    </message>
+    <message>
+        <source>Replace</source>
+        <translation>Nahrazení</translation>
+    </message>
+    <message>
+        <source>Extension</source>
+        <translation>Rozšíření</translation>
+    </message>
+    <message>
+        <source>Replace All</source>
+        <translation>Nahradit vše</translation>
+    </message>
+    <message>
+        <source>Include files</source>
+        <translation>Zahrnout soubory</translation>
+    </message>
+    <message>
+        <source>Include folders</source>
+        <translation>Zahrnout složky</translation>
+    </message>
+    <message>
+        <source>Search Files</source>
+        <translation>Hledat soubory</translation>
+    </message>
+    <message>
+        <source>Case sensitive</source>
+        <translation>Rozlišuje velikost písmen</translation>
+    </message>
+    <message>
+        <source>Match all occurrences</source>
+        <translation>Odpovídat všem výskytům</translation>
+    </message>
+    <message>
+        <source>Copy web seed URL</source>
+        <translation>Kopírovat web seed URL</translation>
+    </message>
+    <message>
+        <source>Replace option</source>
+        <translation>Nahradit volbu</translation>
+    </message>
+    <message>
+        <source>Edit web seed URL...</source>
+        <translation>Upravit web seed URL...</translation>
+    </message>
+    <message>
+        <source>Web seed URL:</source>
+        <translation>URL webového zdroje:</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation>Ano</translation>
+    </message>
+    <message>
+        <source>Ratio / Time Active (in months), indicates how popular the torrent is</source>
+        <translation>Ratio / Aktivní po dobu (v měsících), vyjadřuje úroveň popularity torrentu</translation>
+    </message>
+    <message>
+        <source>Popularity:</source>
+        <translation>Popularita:</translation>
+    </message>
+    <message>
+        <source>Apply to which filename part</source>
+        <translation>Použít do které části názvu souboru</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>Ne</translation>
+    </message>
+    <message>
+        <source>Remove web seed</source>
+        <translation>Odebrat web seed</translation>
+    </message>
+    <message>
+        <source>Web seed editing</source>
+        <translation>Úpravy webového zdroje</translation>
+    </message>
+    <message>
+        <source>Add web seeds...</source>
+        <translation>Přidat web seedy...</translation>
+    </message>
+    <message>
+        <source>Private:</source>
+        <translation>Soukromý:</translation>
     </message>
 </context>
 <context>
@@ -1756,14 +2653,18 @@
         <source>Default save location</source>
         <translation>Výchozí umístění pro uložení:</translation>
     </message>
+    <message>
+        <source>Other...</source>
+        <translation>Jiná...</translation>
+    </message>
+    <message>
+        <source>Type folder here</source>
+        <translation>Zadejte název adresáře</translation>
+    </message>
 </context>
 <context>
     <name>SpeedLimitDialog</name>
-    <message>
-        <source>KiB/s</source>
-        <translation>KiB/s</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>StatsDialog</name>
     <message>
@@ -1858,14 +2759,6 @@
         <translation>Dokončeno (0)</translation>
     </message>
     <message>
-        <source>Resumed (0)</source>
-        <translation>Obnoveno (0)</translation>
-    </message>
-    <message>
-        <source>Paused (0)</source>
-        <translation>Zastaveno (0)</translation>
-    </message>
-    <message>
         <source>Active (0)</source>
         <translation>Aktivní (0)</translation>
     </message>
@@ -1892,14 +2785,6 @@
     <message>
         <source>Completed (%1)</source>
         <translation>Dokončeno (%1)</translation>
-    </message>
-    <message>
-        <source>Paused (%1)</source>
-        <translation>Zastaveno (%1)</translation>
-    </message>
-    <message>
-        <source>Resumed (%1)</source>
-        <translation>Obnoveno (%1)</translation>
     </message>
     <message>
         <source>Active (%1)</source>
@@ -1937,6 +2822,50 @@
         <source>Stalled (%1)</source>
         <translation>Pozastaveno (%1)</translation>
     </message>
+    <message>
+        <source>Checking (%1)</source>
+        <translation>Kontroluji (%1)</translation>
+    </message>
+    <message>
+        <source>Checking (0)</source>
+        <translation>Kontroluji (0)</translation>
+    </message>
+    <message>
+        <source>Moving (%1)</source>
+        <translation>Přesouvání (%1)</translation>
+    </message>
+    <message>
+        <source>Moving (0)</source>
+        <translation>Přesouvání (0)</translation>
+    </message>
+    <message>
+        <source>Running (0)</source>
+        <translation>Běží (0)</translation>
+    </message>
+    <message>
+        <source>Stopped (0)</source>
+        <translation>Zastaveno (0)</translation>
+    </message>
+    <message>
+        <source>Stopped (%1)</source>
+        <translation>Zastaveno (%1)</translation>
+    </message>
+    <message>
+        <source>Running (%1)</source>
+        <translation>Běží (%1)</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation>Odstranit torrenty</translation>
+    </message>
+    <message>
+        <source>Start torrents</source>
+        <translation>Spustit torrenty</translation>
+    </message>
+    <message>
+        <source>Stop torrents</source>
+        <translation>Zastavit torrenty</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContentModel</name>
@@ -1954,11 +2883,6 @@
         <translation>Velikost</translation>
     </message>
     <message>
-        <source>Done</source>
-        <comment>% Done</comment>
-        <translation>Hotovo</translation>
-    </message>
-    <message>
         <source>Status</source>
         <comment>Torrent status (e.g. downloading, seeding, paused)</comment>
         <translation>Stav</translation>
@@ -1971,7 +2895,7 @@
     <message>
         <source>Peers</source>
         <comment>i.e. partial sources (often untranslated)</comment>
-        <translation>Protějšky</translation>
+        <translation>Peery</translation>
     </message>
     <message>
         <source>Down Speed</source>
@@ -2089,28 +3013,52 @@
         <source>Availability</source>
         <translation>Dostupnost</translation>
     </message>
+    <message>
+        <source>Reannounce In</source>
+        <translation>Znovu oznámit za</translation>
+    </message>
+    <message>
+        <source>Private</source>
+        <translation>Soukromý</translation>
+    </message>
+    <message>
+        <source>Progress</source>
+        <translation>Průběh</translation>
+    </message>
+    <message>
+        <source>Info Hash v2</source>
+        <translation>Info Hash v2</translation>
+    </message>
+    <message>
+        <source>Info Hash v1</source>
+        <translation>Info Hash v1</translation>
+    </message>
+    <message>
+        <source>Incomplete Save Path</source>
+        <translation>Cesta uložení nekompletních</translation>
+    </message>
+    <message>
+        <source>Popularity</source>
+        <translation>Popularita</translation>
+    </message>
+    <message>
+        <source>Status Icon</source>
+        <translation>Stavová ikona</translation>
+    </message>
 </context>
 <context>
     <name>TrackerListWidget</name>
-    <message>
-        <source>URL</source>
-        <translation>URL</translation>
-    </message>
     <message>
         <source>Status</source>
         <translation>Stav</translation>
     </message>
     <message>
         <source>Peers</source>
-        <translation>Protějšky</translation>
+        <translation>Peery</translation>
     </message>
     <message>
         <source>Message</source>
         <translation>Zpráva</translation>
-    </message>
-    <message>
-        <source>Downloaded</source>
-        <translation>Staženo</translation>
     </message>
     <message>
         <source>Tracker URL:</source>
@@ -2147,10 +3095,6 @@
     <message>
         <source>Copy tracker URL</source>
         <translation>Kopírovat URL trackeru</translation>
-    </message>
-    <message>
-        <source>Add a new tracker...</source>
-        <translation>Přidat nový tracker...</translation>
     </message>
     <message>
         <source>Edit tracker URL...</source>
@@ -2193,19 +3137,71 @@
         <translation>Průběh</translation>
     </message>
     <message>
-        <source>Size</source>
-        <translation>Velikost</translation>
+        <source>Total Size</source>
+        <translation>Celková velikost</translation>
+    </message>
+    <message>
+        <source>Times Downloaded</source>
+        <translation>Počet Stažení</translation>
+    </message>
+    <message>
+        <source>Add trackers...</source>
+        <translation>Přidat trackery...</translation>
+    </message>
+    <message>
+        <source>Renamed</source>
+        <translation>Přejmenovaný</translation>
+    </message>
+    <message>
+        <source>Original</source>
+        <translation>Originál</translation>
+    </message>
+    <message>
+        <source>URL/Announce Endpoint</source>
+        <translation>Koncový bod URL/Announce</translation>
+    </message>
+    <message>
+        <source>BT Protocol</source>
+        <translation>BT protokol</translation>
+    </message>
+    <message>
+        <source>Next Announce</source>
+        <translation>Další oznámení</translation>
+    </message>
+    <message>
+        <source>Tier:</source>
+        <translation>Třída:</translation>
+    </message>
+    <message>
+        <source>Tracker error</source>
+        <translation>Chyba trackeru</translation>
+    </message>
+    <message>
+        <source>Unreachable</source>
+        <translation>Nedosažitelné</translation>
+    </message>
+    <message>
+        <source>Force reannounce to selected tracker(s)</source>
+        <translation>Vynutit oznámení vybraným trackerům</translation>
+    </message>
+    <message>
+        <source>Min Announce</source>
+        <translation>Min. oznámení</translation>
+    </message>
+    <message>
+        <source>Force reannounce to all trackers</source>
+        <translation>Vynutit oznámení všem trackerům</translation>
     </message>
 </context>
 <context>
     <name>TrackersAdditionDialog</name>
     <message>
-        <source>Trackers addition dialog</source>
-        <translation>Dialog pro přidání trackeru</translation>
-    </message>
-    <message>
         <source>List of trackers to add (one per line):</source>
         <translation>Seznam trackerů pro přidání (jeden na řádek):</translation>
+    </message>
+    <message>
+        <source>Add trackers</source>
+        <translation>Přidat trackery</translation>
     </message>
 </context>
 <context>
@@ -2214,14 +3210,6 @@
         <source>%1 ago</source>
         <comment>e.g.: 1h 20m ago</comment>
         <translation>před %1</translation>
-    </message>
-    <message>
-        <source>Allocating</source>
-        <translation>Přiděluji místo</translation>
-    </message>
-    <message>
-        <source>Paused</source>
-        <translation>Zastaveno</translation>
     </message>
     <message>
         <source>Completed</source>
@@ -2279,6 +3267,22 @@
         <source>Stalled</source>
         <translation>Pozastaveno</translation>
     </message>
+    <message>
+        <source>%1 (seeded for %2)</source>
+        <translation>%1 (sdíleno %2)</translation>
+    </message>
+    <message>
+        <source>[F] Downloading metadata</source>
+        <translation>[F] Stahuji metadata</translation>
+    </message>
+    <message>
+        <source>Stopped</source>
+        <translation>Zastaveno</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Není k dispozici</translation>
+    </message>
 </context>
 <context>
     <name>TransferListFiltersWidget</name>
@@ -2296,7 +3300,15 @@
     </message>
     <message>
         <source>Trackers</source>
-        <translation type="unfinished" />
+        <translation>Trackery</translation>
+    </message>
+    <message>
+        <source>Collapse/expand</source>
+        <translation>Sbalit/rozbalit</translation>
+    </message>
+    <message>
+        <source>Collapse/expand category</source>
+        <translation>Sbalit/rozbalit kategorii</translation>
     </message>
 </context>
 <context>
@@ -2312,26 +3324,6 @@
     <message>
         <source>Rename</source>
         <translation>Přejmenovat</translation>
-    </message>
-    <message>
-        <source>Resume</source>
-        <comment>Resume/start the torrent</comment>
-        <translation>Obnovit</translation>
-    </message>
-    <message>
-        <source>Force Resume</source>
-        <comment>Force Resume/start the torrent</comment>
-        <translation>Vynutit obnovení</translation>
-    </message>
-    <message>
-        <source>Pause</source>
-        <comment>Pause the torrent</comment>
-        <translation>Zastavit</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <comment>Delete the torrent</comment>
-        <translation>Smazat</translation>
     </message>
     <message>
         <source>Limit share ratio...</source>
@@ -2408,20 +3400,8 @@
         <translation>Stahovat postupně</translation>
     </message>
     <message>
-        <source>Force Recheck</source>
-        <translation>Vynutit překontrolování</translation>
-    </message>
-    <message>
         <source>New Category</source>
         <translation>Nová kategorie</translation>
-    </message>
-    <message>
-        <source>Location</source>
-        <translation>Umístění</translation>
-    </message>
-    <message>
-        <source>New name</source>
-        <translation>Nový název</translation>
     </message>
     <message>
         <source>Set location</source>
@@ -2436,16 +3416,8 @@
         <translation>Upravit kategorii</translation>
     </message>
     <message>
-        <source>Save path</source>
-        <translation>Cesta pro uložení</translation>
-    </message>
-    <message>
         <source>Comma-separated tags:</source>
         <translation>Čárkou oddelěné štítky:</translation>
-    </message>
-    <message>
-        <source>Add Tags</source>
-        <translation>Přidat Štítek</translation>
     </message>
     <message>
         <source>Tags</source>
@@ -2454,10 +3426,6 @@
     <message>
         <source>Magnet link</source>
         <translation>Magnet link</translation>
-    </message>
-    <message>
-        <source>Hash</source>
-        <translation>Hash</translation>
     </message>
     <message>
         <source>Remove All</source>
@@ -2478,6 +3446,70 @@
     <message>
         <source>Add...</source>
         <translation>Přidat...</translation>
+    </message>
+    <message>
+        <source>Info hash v1</source>
+        <translation>Info hash v1</translation>
+    </message>
+    <message>
+        <source>Info hash v2</source>
+        <translation>Info hash v2</translation>
+    </message>
+    <message>
+        <source>Torrent ID</source>
+        <translation>Torrent ID</translation>
+    </message>
+    <message>
+        <source>Export .torrent</source>
+        <translation>Exportovat .torrent</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Odebrat</translation>
+    </message>
+    <message>
+        <source>Rename Files...</source>
+        <translation>Přejmenovat soubory...</translation>
+    </message>
+    <message>
+        <source>Renaming</source>
+        <translation>Přejmenování</translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation>Komentář</translation>
+    </message>
+    <message>
+        <source>Force Start</source>
+        <translation>Vynutit spuštění</translation>
+    </message>
+    <message>
+        <source>Location:</source>
+        <translation>Umístění:</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>Zastavit</translation>
+    </message>
+    <message>
+        <source>Automatic mode means that various torrent properties(eg save path) will be decided by the associated category</source>
+        <translation>Automatický režim znamená, že různé vlastnosti torrentu (např. cesta) bude nastavena podle kategorie, do které torrent spadá</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation>Spustit</translation>
+    </message>
+    <message>
+        <source>New name:</source>
+        <translation>Nový název:</translation>
+    </message>
+    <message>
+        <source>Add tags</source>
+        <translation>Přidat štítky</translation>
+    </message>
+    <message>
+        <source>Content Path</source>
+        <translation>Cesta obsahu</translation>
     </message>
 </context>
 <context>
@@ -2503,8 +3535,36 @@
         <translation>ratio</translation>
     </message>
     <message>
-        <source>minutes</source>
-        <translation>minuty</translation>
+        <source>total minutes</source>
+        <translation>minut celkem</translation>
+    </message>
+    <message>
+        <source>inactive minutes</source>
+        <translation>minut neaktivity</translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation>Výchozí</translation>
+    </message>
+    <message>
+        <source>Remove torrent</source>
+        <translation>Odstranit torrent</translation>
+    </message>
+    <message>
+        <source>Remove torrent and its content</source>
+        <translation>Odebrat torrent a jeho obsah</translation>
+    </message>
+    <message>
+        <source>Stop torrent</source>
+        <translation>Zastavit torrent</translation>
+    </message>
+    <message>
+        <source>Enable super seeding for torrent</source>
+        <translation>Zapnout super seeding pro torrent</translation>
+    </message>
+    <message>
+        <source>Action when the limit is reached</source>
+        <translation>Akce při dosažení limitu</translation>
     </message>
 </context>
 <context>
@@ -2513,16 +3573,16 @@
 <context>
     <name>confirmDeletionDlg</name>
     <message>
-        <source>Deletion confirmation</source>
-        <translation>Potvrzení o smazání</translation>
+        <source>Remove torrent(s)</source>
+        <translation>Odstranit torrent(y)</translation>
     </message>
     <message>
-        <source>Also delete the files on the hard disk</source>
-        <translation>Smazat soubory také z pevného disku</translation>
+        <source>Also remove the content files</source>
+        <translation>Také odebrat soubory obsahu</translation>
     </message>
     <message>
-        <source>Deletion confirmation - qBittorrent</source>
-        <translation>Potvrzení o smazání - qBittorrent</translation>
+        <source>Remove tracker</source>
+        <translation>Odstranit tracker</translation>
     </message>
 </context>
 <context>
@@ -2530,14 +3590,6 @@
     <message>
         <source>Download from URLs</source>
         <translation>Stahovat z URL</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Stahovat</translation>
-    </message>
-    <message>
-        <source>Add Torrent Links</source>
-        <translation>Přidat odkazy torrentů</translation>
     </message>
 </context>
 <context>
@@ -2607,6 +3659,10 @@
         <comment>e.g: 10minutes</comment>
         <translation>%1m</translation>
     </message>
+    <message>
+        <source>%1y %2d</source>
+        <translation>%1y %2d</translation>
+    </message>
 </context>
 <context>
     <name>TorrentsController</name>
@@ -2627,7 +3683,7 @@
     </message>
     <message>
         <source>URL or local directory</source>
-        <translation>URL nebo místní složka</translation>
+        <translation>URL nebo místní adresář</translation>
     </message>
     <message>
         <source>Install plugin</source>
@@ -2673,10 +3729,6 @@
         <translation>Hledat v:</translation>
     </message>
     <message>
-        <source>Results (showing</source>
-        <translation>Výsledky (zobrazuji</translation>
-    </message>
-    <message>
         <source>Filter</source>
         <translation>Filtr</translation>
     </message>
@@ -2698,11 +3750,51 @@
     </message>
     <message>
         <source>Warning</source>
-        <translation type="unfinished" />
+        <translation>Varování</translation>
     </message>
     <message>
         <source>Increase window width to display additional filters</source>
-        <translation type="unfinished" />
+        <translation>Rozšířit okno pro zobrazení dalších filtrů</translation>
+    </message>
+    <message>
+        <source>to</source>
+        <translation>do</translation>
+    </message>
+    <message>
+        <source>Results</source>
+        <translation>Výsledky</translation>
+    </message>
+    <message>
+        <source>showing</source>
+        <translation>zobrazeno</translation>
+    </message>
+    <message>
+        <source>Click the "Search plugins..." button at the bottom right of the window to install some.</source>
+        <translation>Klikněte na tlačítko "Vyhledávácí pluginy..." dole vpravo v okně, abyste nějaké nainstalovali.</translation>
+    </message>
+    <message>
+        <source>There aren't any search plugins installed.</source>
+        <translation>Žádné vyhledávací pluginy nejsou instalovány.</translation>
+    </message>
+    <message>
+        <source>Select category</source>
+        <translation>Vybrat kategorii</translation>
+    </message>
+    <message>
+        <source>Min size prefix</source>
+        <translation>Min. velikost předpony</translation>
+    </message>
+    <message>
+        <source>Start a search above.</source>
+        <translation>Začněte hledání výše.</translation>
+    </message>
+    <message>
+        <source>Max size prefix</source>
+        <translation>Max. velikost předpony</translation>
+    </message>
+    <message>
+        <source>Select plugins</source>
+        <translation>Vybrat pluginy</translation>
     </message>
 </context>
 <context>
@@ -2759,12 +3851,20 @@
         <translation>Leecheři</translation>
     </message>
     <message>
-        <source>Search engine</source>
-        <translation>Vyhledávač</translation>
-    </message>
-    <message>
         <source>Seeders</source>
         <translation>Seedeři</translation>
+    </message>
+    <message>
+        <source>Published On</source>
+        <translation>Zveřejněno</translation>
+    </message>
+    <message>
+        <source>Engine URL</source>
+        <translation>URL vyhledávače</translation>
+    </message>
+    <message>
+        <source>Engine</source>
+        <translation>Vyhledávač</translation>
     </message>
 </context>
 <context>
@@ -2802,11 +3902,11 @@
     </message>
     <message>
         <source>Add Peers</source>
-        <translation>Přidání protějšků</translation>
+        <translation>Přidání peerů</translation>
     </message>
     <message>
         <source>List of peers to add (one IP per line):</source>
-        <translation>Seznam protějšků pro přidání (jedna IP na řádek):</translation>
+        <translation>Seznam peerů pro přidání (jedna IP na řádek):</translation>
     </message>
     <message>
         <source>Ok</source>
@@ -2828,20 +3928,8 @@
         <translation>Přidat štítek...</translation>
     </message>
     <message>
-        <source>Delete torrents</source>
-        <translation>Smazat torrenty</translation>
-    </message>
-    <message>
         <source>Tag:</source>
         <translation>Štítek:</translation>
-    </message>
-    <message>
-        <source>Pause torrents</source>
-        <translation>Zastavení torrentů</translation>
-    </message>
-    <message>
-        <source>Resume torrents</source>
-        <translation>Pokračování torrentů</translation>
     </message>
     <message>
         <source>Remove unused tags</source>
@@ -2854,6 +3942,18 @@
     <message>
         <source>Remove tag</source>
         <translation>Odebrat štítek</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation>Odstranit torrenty</translation>
+    </message>
+    <message>
+        <source>Start torrents</source>
+        <translation>Spustit torrenty</translation>
+    </message>
+    <message>
+        <source>Stop torrents</source>
+        <translation>Zastavit torrenty</translation>
     </message>
 </context>
 <context>
@@ -2930,16 +4030,28 @@
         <translation>Národnost:</translation>
     </message>
     <message>
-        <source>Author</source>
-        <translation>Autor</translation>
-    </message>
-    <message>
         <source>Software Used</source>
         <translation>Použitý software</translation>
     </message>
     <message>
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
         <translation>Bezplatná databáze IP to Country Lite od DB-IP se používá k řešení zemí peerů. Databáze je licencována podle mezinárodní licence Creative Commons Attribution 4.0</translation>
+    </message>
+    <message>
+        <source>Authors</source>
+        <translation>Autoři</translation>
+    </message>
+    <message>
+        <source>France</source>
+        <translation>Francie</translation>
+    </message>
+    <message>
+        <source>qBittorrent Mascot</source>
+        <translation>qBittorrent Mascot</translation>
+    </message>
+    <message>
+        <source>qBittorrent icon</source>
+        <translation>ikona qBittorrent</translation>
     </message>
 </context>
 <context>
@@ -2983,6 +4095,34 @@
         <source>Download link</source>
         <translation>Download link</translation>
     </message>
+    <message>
+        <source>Search has finished</source>
+        <translation>Hledání dokončeno</translation>
+    </message>
+    <message>
+        <source>An error occurred during search...</source>
+        <translation>Během hledání nastala chyba...</translation>
+    </message>
+    <message>
+        <source>Close tab</source>
+        <translation>Zavřít kartu</translation>
+    </message>
+    <message>
+        <source>Searching...</source>
+        <translation>Hledání...</translation>
+    </message>
+    <message>
+        <source>Search aborted</source>
+        <translation>Hledání zrušeno</translation>
+    </message>
+    <message>
+        <source>Close all tabs</source>
+        <translation>Zavřít všechny karty</translation>
+    </message>
+    <message>
+        <source>Refresh tab</source>
+        <translation>Obnovit kartu</translation>
+    </message>
 </context>
 <context>
     <name>TorrentContentTreeView</name>
@@ -2999,361 +4139,999 @@
     <name>RSSWidget</name>
     <message>
         <source>Date: </source>
-        <translation type="unfinished" />
+        <translation>Datum:</translation>
     </message>
     <message>
         <source>Please choose a new name for this RSS feed</source>
-        <translation type="unfinished" />
+        <translation>Zvolte název pro tento RSS feed, prosím</translation>
     </message>
     <message>
         <source>Please choose a folder name</source>
-        <translation type="unfinished" />
+        <translation>Vyberte název složky</translation>
     </message>
     <message>
         <source>New feed name:</source>
-        <translation type="unfinished" />
+        <translation>Nový název feedu:</translation>
     </message>
     <message>
         <source>Update all</source>
-        <translation type="unfinished" />
+        <translation>Aktualizovat vše</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished" />
+        <translation>Smazat</translation>
     </message>
     <message>
         <source>RSS Downloader...</source>
-        <translation type="unfinished" />
+        <translation>RSS stahovač...</translation>
     </message>
     <message>
         <source>Mark items read</source>
-        <translation type="unfinished" />
+        <translation>Označ jako přečtené</translation>
     </message>
     <message>
         <source>Update all feeds</source>
-        <translation type="unfinished" />
+        <translation>Aktualizovat všechny feedy</translation>
     </message>
     <message>
         <source>Copy feed URL</source>
-        <translation type="unfinished" />
+        <translation>Kopírovat odkaz feedů</translation>
     </message>
     <message>
         <source>Torrents: (double-click to download)</source>
-        <translation type="unfinished" />
+        <translation>Torrenty: (dvojklik ke stažení)</translation>
     </message>
     <message>
         <source>Open news URL</source>
-        <translation type="unfinished" />
+        <translation>Otevřít odkaz zpráv</translation>
     </message>
     <message>
         <source>Rename...</source>
-        <translation type="unfinished" />
+        <translation>Přejmenovat...</translation>
     </message>
     <message>
         <source>Feed URL:</source>
-        <translation type="unfinished" />
+        <translation>Odkaz feedu</translation>
     </message>
     <message>
         <source>New folder...</source>
-        <translation type="unfinished" />
+        <translation>Nová složka...</translation>
     </message>
     <message>
         <source>New subscription</source>
-        <translation type="unfinished" />
+        <translation>Nový odběr</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="unfinished" />
+        <translation>Aktualizace</translation>
     </message>
     <message>
         <source>Folder name:</source>
-        <translation type="unfinished" />
+        <translation>Název složky:</translation>
     </message>
     <message>
         <source>Please type a RSS feed URL</source>
-        <translation type="unfinished" />
+        <translation>Prosím vložte odkaz RSS feedu</translation>
     </message>
     <message>
         <source>Fetching of RSS feeds is disabled now! You can enable it in application settings.</source>
-        <translation type="unfinished" />
+        <translation>Získávání RSS feedů je nyní vypnuto! Můžete ho zapnout v nastavení aplikace.</translation>
     </message>
     <message>
         <source>Deletion confirmation</source>
-        <translation type="unfinished" />
+        <translation>Potvrzení smazání</translation>
     </message>
     <message>
         <source>Are you sure you want to delete the selected RSS feeds?</source>
-        <translation type="unfinished" />
+        <translation>Určitě chcete smazat vybrané RSS feedy?</translation>
     </message>
     <message>
         <source>New subscription...</source>
-        <translation type="unfinished" />
+        <translation>Nový odběr...</translation>
     </message>
     <message>
         <source>Download torrent</source>
-        <translation type="unfinished" />
+        <translation>Stáhnout torrent</translation>
+    </message>
+    <message>
+        <source>Edit feed URL...</source>
+        <translation>Upravit adresu feedu...</translation>
+    </message>
+    <message>
+        <source>Unable to update URL</source>
+        <translation>Nelze aktualizovat URL</translation>
+    </message>
+    <message>
+        <source>URL is unchanged</source>
+        <translation>URL je nezměněna</translation>
+    </message>
+    <message>
+        <source>URL cannot be empty</source>
+        <translation>URL nemůže být prázdná</translation>
+    </message>
+    <message>
+        <source>Open link</source>
+        <translation>Otevřít odkaz</translation>
+    </message>
+    <message>
+        <source>Author: </source>
+        <translation>Autor</translation>
     </message>
 </context>
 <context>
     <name>AutomatedRssDownloader</name>
     <message>
         <source>Download Rules</source>
-        <translation type="unfinished" />
+        <translation>Pravidla stahování</translation>
     </message>
     <message>
         <source>Matching RSS Articles</source>
-        <translation type="unfinished" />
+        <translation>Odpovídající RSS články</translation>
     </message>
     <message>
         <source>* to match zero or more of any characters</source>
-        <translation type="unfinished" />
+        <translation>* pro shodu se žádným nebo více libovolnými znaky</translation>
     </message>
     <message>
         <source> will match all articles.</source>
-        <translation type="unfinished" />
+        <translation>zahrne všechny položky.</translation>
     </message>
     <message>
         <source>Episode filter rules: </source>
-        <translation type="unfinished" />
+        <translation>Pravidla filtru epizod:</translation>
     </message>
     <message>
         <source>Auto downloading of RSS torrents is disabled now! You can enable it in application settings.</source>
-        <translation type="unfinished" />
+        <translation>Autostahování RSS torrentů je nyní vypnuté! Můžete ho zapnout v nastavení aplikace.</translation>
     </message>
     <message>
         <source>Rule Definition</source>
-        <translation type="unfinished" />
+        <translation>Definice pravidla</translation>
     </message>
     <message>
         <source>Save to:</source>
-        <translation type="unfinished" />
+        <translation>Uložit do:</translation>
     </message>
     <message>
         <source>Use Regular Expressions</source>
-        <translation type="unfinished" />
+        <translation>Použijte regulární výrazy</translation>
     </message>
     <message>
         <source>New rule name</source>
-        <translation type="unfinished" />
+        <translation>Nový název pravidla</translation>
     </message>
     <message>
         <source>Filter must end with semicolon</source>
-        <translation type="unfinished" />
+        <translation>Filtr musí být ukončen středníkem</translation>
     </message>
     <message>
         <source>? to match any single character</source>
-        <translation type="unfinished" />
+        <translation>? pro shodu s libovolným jediným znakem</translation>
     </message>
     <message>
         <source>Matches articles based on episode filter.</source>
-        <translation type="unfinished" />
+        <translation>Články odpovídající filtru epizod.</translation>
     </message>
     <message>
         <source>Assign Category:</source>
-        <translation type="unfinished" />
+        <translation>Přiřadit kategorii:</translation>
     </message>
     <message>
         <source>Regex mode: use Perl-compatible regular expressions</source>
-        <translation type="unfinished" />
+        <translation>Regex mód: použijte regulární výraz komatibilní s Perlem</translation>
     </message>
     <message>
         <source>| is used as OR operator</source>
-        <translation type="unfinished" />
+        <translation>| slouží jako operátor OR</translation>
     </message>
     <message>
         <source>Clear downloaded episodes</source>
-        <translation type="unfinished" />
+        <translation>Odstranit stažené epizody</translation>
     </message>
     <message>
         <source>Whitespaces count as AND operators (all words, any order)</source>
-        <translation type="unfinished" />
+        <translation>Mezera slouží jako operátor AND (všechna slova v jakémkoliv pořadí)</translation>
     </message>
     <message>
         <source>An expression with an empty %1 clause (e.g. %2)</source>
-        <translation type="unfinished" />
+        <translation>Výraz s prázdným %1 obsahem (např. %2)</translation>
     </message>
     <message>
         <source>Example: </source>
-        <translation type="unfinished" />
+        <translation>Příklad:</translation>
     </message>
     <message>
         <source>Add new rule...</source>
-        <translation type="unfinished" />
+        <translation>Přidat nové pravidlo...</translation>
     </message>
     <message>
         <source>Are you sure you want to clear the list of downloaded episodes for the selected rule?</source>
-        <translation type="unfinished" />
+        <translation>Opravdu chcete vymazat seznam stažených epizod pro vybrané pravidlo?</translation>
     </message>
     <message>
         <source>Must Contain:</source>
-        <translation type="unfinished" />
+        <translation>Musí obsahovat:</translation>
     </message>
     <message>
         <source>Infinite range: &lt;b&gt;1x25-;&lt;/b&gt; matches episodes 25 and upward of season one, and all episodes of later seasons</source>
-        <translation type="unfinished" />
+        <translation>Neukončený rozsah: &lt;b&gt;1x25-;&lt;/b&gt; zahrnuje epizody 25 a výše z první sezóny a všechny epizody pozdějších sérií</translation>
     </message>
     <message>
         <source>Save to a Different Directory</source>
-        <translation type="unfinished" />
+        <translation>Uložit do jiného adresáře</translation>
     </message>
     <message>
         <source>Must Not Contain:</source>
-        <translation type="unfinished" />
+        <translation>Nesmí obsahovat:</translation>
     </message>
     <message>
         <source>Single number: &lt;b&gt;1x25;&lt;/b&gt; matches episode 25 of season one</source>
-        <translation type="unfinished" />
+        <translation>Jedno číslo: &lt;b&gt;1x25;&lt;/b&gt; odpovídá epizodě 25 první sezóny</translation>
     </message>
     <message>
         <source>Three range types for episodes are supported: </source>
-        <translation type="unfinished" />
+        <translation>Jsou podporovány tři typy rozsahu pro epizody:</translation>
     </message>
     <message>
         <source>Are you sure you want to remove the selected download rules?</source>
-        <translation type="unfinished" />
+        <translation>Opravdu chcete odstranit vybraná pravidla stahování?</translation>
     </message>
     <message>
         <source>Use global settings</source>
-        <translation type="unfinished" />
+        <translation>Použít globální nastavení</translation>
     </message>
     <message>
         <source>Normal range: &lt;b&gt;1x25-40;&lt;/b&gt; matches episodes 25 through 40 of season one</source>
-        <translation type="unfinished" />
+        <translation>Rozsah: &lt;b&gt;1x25-40;&lt;/b&gt; odpovídá epizodám 25 až 40 první sezóny</translation>
     </message>
     <message>
         <source>Please type the new rule name</source>
-        <translation type="unfinished" />
+        <translation>Napište název nového pravidla, prosím</translation>
     </message>
     <message>
         <source>Rule renaming</source>
-        <translation type="unfinished" />
+        <translation>Přejmenování pravidla</translation>
     </message>
     <message>
         <source>Always</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Smart Episode Filter will check the episode number to prevent downloading of duplicates.
-Supports the formats: S01E01, 1x1, 2017.01.01 and 01.01.2017 (Date formats also support - as a separator)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Create Subfolder:</source>
-        <translation type="unfinished" />
+        <translation>Vždy</translation>
     </message>
     <message>
         <source>Episode number is a mandatory positive value</source>
-        <translation type="unfinished" />
+        <translation>Číslo epizody je povinná kladná hodnota</translation>
     </message>
     <message>
         <source> will match 2, 5, 8 through 15, 30 and onward episodes of season one</source>
-        <translation type="unfinished" />
+        <translation>odpovídá 2, 5, 8 až 15, 30 a dalším epizodám první sezóny</translation>
     </message>
     <message>
         <source>Rule deletion confirmation</source>
-        <translation type="unfinished" />
+        <translation>Potvrzení smazání pravidla</translation>
     </message>
     <message>
         <source>Last Match: %1 days ago</source>
-        <translation type="unfinished" />
+        <translation>Poslední shoda: %1 dny nazpět</translation>
     </message>
     <message>
         <source>Episode Filter:</source>
-        <translation type="unfinished" />
+        <translation>Filtr epizod:</translation>
     </message>
     <message>
         <source>Rss Downloader</source>
-        <translation type="unfinished" />
+        <translation>Stahování RSS </translation>
     </message>
     <message>
         <source>Season number is a mandatory non-zero value</source>
-        <translation type="unfinished" />
+        <translation>Číslo sezóny je povinná nenulová hodnota</translation>
     </message>
     <message>
         <source>Never</source>
-        <translation type="unfinished" />
+        <translation>Nikdy</translation>
     </message>
     <message>
         <source>Apply Rule to Feeds:</source>
-        <translation type="unfinished" />
+        <translation>Použít pravidlo na kanály:</translation>
     </message>
     <message>
         <source> days</source>
-        <translation type="unfinished" />
+        <translation>dnů</translation>
     </message>
     <message>
         <source>Use Smart Episode Filter</source>
-        <translation type="unfinished" />
+        <translation>Použijte inteligentní filtr epizod</translation>
     </message>
     <message>
         <source>If word order is important use * instead of whitespace.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Add Paused:</source>
-        <translation type="unfinished" />
+        <translation>Je-li důležité pořadí slov, použijte * místo mezery.</translation>
     </message>
     <message>
         <source>Please type the name of the new download rule.</source>
-        <translation type="unfinished" />
+        <translation>Napište název nového pravidla stahování.</translation>
     </message>
     <message>
         <source>Wildcard mode: you can use</source>
-        <translation type="unfinished" />
+        <translation>Mód zástupných znaků: můžete použít</translation>
     </message>
     <message>
         <source> will exclude all articles.</source>
-        <translation type="unfinished" />
+        <translation>vyloučí všechny položky.</translation>
     </message>
     <message>
         <source>Delete rule</source>
-        <translation type="unfinished" />
+        <translation>Smazat pravidlo</translation>
     </message>
     <message>
         <source>Ignore Subsequent Matches for (0 to Disable)</source>
-        <translation type="unfinished" />
+        <translation>Ignorovat následné shody po dobu (0 pro vypnutí)</translation>
     </message>
     <message>
         <source>Rename rule...</source>
-        <translation type="unfinished" />
+        <translation>Přejmenovat pravidlo...</translation>
     </message>
     <message>
         <source>Last Match: Unknown</source>
-        <translation type="unfinished" />
+        <translation>Poslední shoda: Neznámá</translation>
     </message>
     <message>
         <source>Clear downloaded episodes...</source>
-        <translation type="unfinished" />
+        <translation>Odstranit stažené epizody...</translation>
+    </message>
+    <message>
+        <source>Smart Episode Filter will check the episode number to prevent downloading of duplicates.
+Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also support - as a separator)</source>
+        <translation>Chytrý Filtr Epizod zkontroluje číslo epizody pro zabránění stahování duplikátů.
+Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (Formáty dat také podporují - jako oddělovač)</translation>
+    </message>
+    <message>
+        <source>Torrent content layout:</source>
+        <translation>Rozvržení obsahu torrentu:</translation>
+    </message>
+    <message>
+        <source>Create subfolder</source>
+        <translation>Vytvořit podsložku</translation>
+    </message>
+    <message>
+        <source>Original</source>
+        <translation>Originál</translation>
+    </message>
+    <message>
+        <source>Don't create subfolder</source>
+        <translation>Nevytvářet podsložku</translation>
+    </message>
+    <message>
+        <source>Add Tags:</source>
+        <translation>Přidat štítky:</translation>
+    </message>
+    <message>
+        <source>Remove rule</source>
+        <translation>Odebrat pravidlo</translation>
+    </message>
+    <message>
+        <source>Add rule</source>
+        <translation>Přidat pravidlo</translation>
+    </message>
+    <message>
+        <source>Add Stopped:</source>
+        <translation>Přidat zastavené:</translation>
     </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
     <message>
-        <source>Delete torrents</source>
-        <translation type="unfinished" />
+        <source>Remove torrents</source>
+        <translation>Odstranit torrenty</translation>
     </message>
     <message>
-        <source>Resume torrents</source>
-        <translation type="unfinished" />
+        <source>All</source>
+        <translation>Vše</translation>
     </message>
     <message>
-        <source>All (%1)</source>
-        <translation type="unfinished" />
+        <source>Trackerless</source>
+        <translation>Bez trackeru</translation>
     </message>
     <message>
-        <source>Trackerless (%1)</source>
-        <translation type="unfinished" />
+        <source>Start torrents</source>
+        <translation>Spustit torrenty</translation>
     </message>
     <message>
-        <source>Pause torrents</source>
-        <translation type="unfinished" />
+        <source>Remove tracker</source>
+        <translation>Odstranit tracker</translation>
+    </message>
+    <message>
+        <source>Stop torrents</source>
+        <translation>Zastavit torrenty</translation>
+    </message>
+    <message>
+        <source>Tracker error</source>
+        <translation>Chyba trackeru</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Varování</translation>
+    </message>
+    <message>
+        <source>Other error</source>
+        <translation>Jiná chyba</translation>
     </message>
 </context>
 <context>
     <name>FeedListWidget</name>
     <message>
         <source>RSS feeds</source>
-        <translation type="unfinished" />
+        <translation>RSS kanály</translation>
+    </message>
+    <message>
+        <source>Unread</source>
+        <translation>Nepřečtené</translation>
+    </message>
+</context>
+<context>
+    <name>ExecutionLogWidget</name>
+    <message>
+        <source>General</source>
+        <translation>Obecné</translation>
+    </message>
+    <message>
+        <source>Blocked</source>
+        <translation>Zablokováno</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Neznámá</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Vše</translation>
+    </message>
+    <message>
+        <source>showing</source>
+        <translation>zobrazeno</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopírovat</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Vybrat vše</translation>
+    </message>
+    <message>
+        <source>ID</source>
+        <translation>ID</translation>
+    </message>
+    <message>
+        <source>Log Type</source>
+        <translation>Typ logu</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Vymazat</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Varování</translation>
+    </message>
+    <message>
+        <source>Information Messages</source>
+        <translation>Informační sdělení</translation>
+    </message>
+    <message>
+        <source>Warning Messages</source>
+        <translation>Varovná sdělení</translation>
+    </message>
+    <message>
+        <source>Filter logs</source>
+        <translation>Filtrování logů</translation>
+    </message>
+    <message>
+        <source>Blocked IPs</source>
+        <translation>Blokované IP</translation>
+    </message>
+    <message>
+        <source>out of</source>
+        <translation>mimo</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Stav</translation>
+    </message>
+    <message>
+        <source>Timestamp</source>
+        <translation>Časové razítko</translation>
+    </message>
+    <message>
+        <source>Clear All</source>
+        <translation>Vyčistit vše</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Zpráva</translation>
+    </message>
+    <message>
+        <source>Log Levels:</source>
+        <translation>Úrovně logu:</translation>
+    </message>
+    <message>
+        <source>Reason</source>
+        <translation>Důvod</translation>
+    </message>
+    <message>
+        <source>item</source>
+        <translation>položka</translation>
+    </message>
+    <message>
+        <source>IP</source>
+        <translation>IP</translation>
+    </message>
+    <message>
+        <source>Banned</source>
+        <translation>Nedovolený</translation>
+    </message>
+    <message>
+        <source>Normal Messages</source>
+        <translation>Normální sdělení</translation>
+    </message>
+    <message>
+        <source>Critical</source>
+        <translation>Kritický</translation>
+    </message>
+    <message>
+        <source>Critical Messages</source>
+        <translation>Kritická sdělení</translation>
+    </message>
+    <message>
+        <source>Normal</source>
+        <translation>Normální</translation>
+    </message>
+    <message>
+        <source>items</source>
+        <translation>položky</translation>
+    </message>
+    <message>
+        <source>Results</source>
+        <translation>Výsledky</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation>Info</translation>
+    </message>
+    <message>
+        <source>Choose a log level...</source>
+        <translation>Vyber úroveň logu:</translation>
+    </message>
+</context>
+<context>
+    <name>TrackersFilterWidget</name>
+    <message>
+        <source>Are you sure you want to remove tracker %1 from all torrents?</source>
+        <translation>Jste si jisti, že chcete odebrat tracker %1 ze všech torrentů?</translation>
+    </message>
+</context>
+<context>
+    <name>Category</name>
+    <message>
+        <source>Unable to edit category</source>
+        <translation>Nelze upravit kategorii</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Unable to create category</source>
+        <translation>Nelze vytvořit kategorii</translation>
+    </message>
+    <message>
+        <source>Unable to set category</source>
+        <translation>Nelze nastavit kategorii</translation>
+    </message>
+    <message>
+        <source>Save path for incomplete torrents:</source>
+        <translation>Cesta pro uložení nedokončených torrentů:</translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation>Výchozí</translation>
+    </message>
+    <message>
+        <source>New Category</source>
+        <translation>Nová kategorie</translation>
+    </message>
+    <message>
+        <source>Save path:</source>
+        <translation>Uložit do:</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation>Ano</translation>
+    </message>
+    <message>
+        <source>Category:</source>
+        <translation>Kategorie:</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>Ne</translation>
+    </message>
+    <message>
+        <source>Path:</source>
+        <translation>Cesta:</translation>
+    </message>
+    <message>
+        <source>Use another path for incomplete torrents:</source>
+        <translation>Použít jinou cestu pro uložení nedokončených torrentů:</translation>
+    </message>
+</context>
+<context>
+    <name>CookiesDialog</name>
+    <message>
+        <source>Domain</source>
+        <translation>Doména</translation>
+    </message>
+    <message>
+        <source>Manage Cookies</source>
+        <translation>Spravovat cookies</translation>
+    </message>
+    <message>
+        <source>Add Cookie</source>
+        <translation>Přidat cookie</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Odebrat</translation>
+    </message>
+    <message>
+        <source>Expiration Date</source>
+        <translation>Expirace</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Hodnota</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Název</translation>
+    </message>
+    <message>
+        <source>Path</source>
+        <translation>Cesta</translation>
+    </message>
+</context>
+<context>
+    <name>confirmAutoTMMDialog</name>
+    <message>
+        <source>Enable automatic torrent management</source>
+        <translation>Zapnout automatickou správu torrentů</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to enable Automatic Torrent Management for the selected torrent(s)? They may be relocated.</source>
+        <translation>Jste si jistí že chcete zapnout Automatickou správu pro vybraný torrent(y)? Jejich data mohou být přemístěna.</translation>
+    </message>
+</context>
+<context>
+    <name>confirmRecheckDialog</name>
+    <message>
+        <source>Are you sure you want to recheck the selected torrent(s)?</source>
+        <translation>Opravdu chcete překontrolovat vybrané torrenty?</translation>
+    </message>
+    <message>
+        <source>Recheck confirmation</source>
+        <translation>Zkontrolovat potvrzení</translation>
+    </message>
+</context>
+<context>
+    <name>SearchWidget</name>
+    <message>
+        <source>Close tab</source>
+        <translation>Zavřít kartu</translation>
+    </message>
+</context>
+<context>
+    <name>Login</name>
+    <message>
+        <source>qBittorrent WebUI</source>
+        <translation>qBittorrent WebUI</translation>
+    </message>
+    <message>
+        <source>Password</source>
+        <translation>Heslo</translation>
+    </message>
+    <message>
+        <source>JavaScript Required! You must enable JavaScript for the WebUI to work properly</source>
+        <translation>JavaScript vyžadován! Musíte zapnout JavaScript, aby WebUI správně fungovalo</translation>
+    </message>
+    <message>
+        <source>Login</source>
+        <translation>Přihlášení</translation>
+    </message>
+    <message>
+        <source>Server response:</source>
+        <translation>Odpověď serveru:</translation>
+    </message>
+    <message>
+        <source>Unable to log in, server is probably unreachable.</source>
+        <translation>Nelze se přihlásit, server je pravděpodobně nedostupný.</translation>
+    </message>
+    <message>
+        <source>Username</source>
+        <translation>Uživatelské jméno</translation>
+    </message>
+    <message>
+        <source>Invalid Username or Password.</source>
+        <translation>Neplatné jméno nebo heslo</translation>
+    </message>
+</context>
+<context>
+    <name>TorrentCreator</name>
+    <message>
+        <source>Private</source>
+        <translation>Soukromý</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation>Zdroj</translation>
+    </message>
+    <message>
+        <source>Queued</source>
+        <translation>Zařazeno do fronty</translation>
+    </message>
+    <message>
+        <source>Unable to create torrent.</source>
+        <translation>Nelze vytvořit torrent.</translation>
+    </message>
+    <message>
+        <source>Private
+                torrent (Won't distribute on DHT network)</source>
+        <translation>Soukromý
+                torrent (Nebude distribuován v síti DHT)</translation>
+    </message>
+    <message>
+        <source>Unable to export torrent file</source>
+        <translation>Nelze exportovat soubor torrentu</translation>
+    </message>
+    <message>
+        <source>Create New Torrent</source>
+        <translation>Vytvořit nový torrent</translation>
+    </message>
+    <message>
+        <source>Comments:</source>
+        <translation>Komentáře:</translation>
+    </message>
+    <message>
+        <source>Download Torrent</source>
+        <translation>Stáhnout torrent</translation>
+    </message>
+    <message>
+        <source>Status Icon</source>
+        <translation>Stavová ikona</translation>
+    </message>
+    <message>
+        <source>Web seed URLs:</source>
+        <translation>URL odkazy pro webseed:</translation>
+    </message>
+    <message>
+        <source>Failed</source>
+        <translation>Selhalo</translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation>Komentář</translation>
+    </message>
+    <message>
+        <source>Finished</source>
+        <translation>Dokončeno</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>Nastavení</translation>
+    </message>
+    <message>
+        <source>Error Message</source>
+        <translation>Chybová zpráva</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Stav</translation>
+    </message>
+    <message>
+        <source>Align to piece boundary for files larger
+                than:</source>
+        <translation>Zarovnání k hranici části u souborů větších
+                než:</translation>
+    </message>
+    <message>
+        <source>Select file/folder to share:</source>
+        <translation>Vyberte soubor/složku ke sdílení:</translation>
+    </message>
+    <message>
+        <source>Piece Size</source>
+        <translation>Velikost části</translation>
+    </message>
+    <message>
+        <source>Progress</source>
+        <translation>Průběh</translation>
+    </message>
+    <message>
+        <source>Completed On</source>
+        <translation>Dokončen</translation>
+    </message>
+    <message>
+        <source>Hybrid</source>
+        <translation>Hybridní</translation>
+    </message>
+    <message>
+        <source>Unable to load torrent creation tasks</source>
+        <translation>Nelze načíst úlohy tvorby torrentu</translation>
+    </message>
+    <message>
+        <source>Optimize
+                    alignment</source>
+        <translation>Optimalizovat
+                    řazení</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Není k dispozici</translation>
+    </message>
+    <message>
+        <source>Tracker URLs:</source>
+        <translation>URL trackeru:</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to delete selected tasks?</source>
+        <translation>Určitě chcete smazat vybrané úlohy?</translation>
+    </message>
+    <message>
+        <source>Path:</source>
+        <translation>Cesta:</translation>
+    </message>
+    <message>
+        <source>Create Torrent</source>
+        <translation>Vytvořit Torrent</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation>Auto</translation>
+    </message>
+    <message>
+        <source>Started On</source>
+        <translation>Spuštěno</translation>
+    </message>
+    <message>
+        <source>Web Seeds</source>
+        <translation>Webové seedy</translation>
+    </message>
+    <message>
+        <source>Start
+                seeding
+                immediately</source>
+        <translation>Spustit
+                seedování
+                okamžitě</translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation>Formát</translation>
+    </message>
+    <message>
+        <source>Torrent format:</source>
+        <translation>Formát torrentu:</translation>
+    </message>
+    <message>
+        <source>Source Path</source>
+        <translation>Zdrojová cesta</translation>
+    </message>
+    <message>
+        <source>Added On</source>
+        <translation>Přidán</translation>
+    </message>
+    <message>
+        <source>Running</source>
+        <translation>Běží</translation>
+    </message>
+    <message>
+        <source>Torrent Creator</source>
+        <translation>Vytvoření torrentu</translation>
+    </message>
+    <message>
+        <source>Source:</source>
+        <translation>Zdroj:</translation>
+    </message>
+    <message>
+        <source>Trackers</source>
+        <translation>Trackery</translation>
+    </message>
+    <message>
+        <source>Piece size:</source>
+        <translation>Velikost části:</translation>
+    </message>
+    <message>
+        <source>Fields</source>
+        <translation>Polia</translation>
+    </message>
+    <message>
+        <source>Remove Task</source>
+        <translation>Odebrat úlohu</translation>
+    </message>
+    <message>
+        <source>Export Torrent</source>
+        <translation>Exportovat torrent</translation>
+    </message>
+</context>
+<context>
+    <name>DownloadFromURLDialog</name>
+    <message>
+        <source>Download</source>
+        <translation>Stahování</translation>
+    </message>
+    <message>
+        <source>Magnet link</source>
+        <translation>Magnet link</translation>
+    </message>
+    <message>
+        <source>Add torrent links</source>
+        <translation>Přidat odkazy torrentů</translation>
+    </message>
+    <message>
+        <source>One link per line (HTTP links, Magnet links and info-hashes are supported)</source>
+        <translation>Jeden odkaz na řádek (jsou podporovány odkazy HTTP, Magnet link odkazy a info-hashe)</translation>
+    </message>
+    <message>
+        <source>URLs</source>
+        <translation>URLs</translation>
+    </message>
+    <message>
+        <source>Add Torrent Links</source>
+        <translation>Přidat odkazy torrentů</translation>
+    </message>
+</context>
+<context>
+    <name>SpeedLimit</name>
+    <message>
+        <source>Limit:</source>
+        <translation>Limit:</translation>
+    </message>
+    <message>
+        <source>Speed limit</source>
+        <translation>Limit rychlosti</translation>
+    </message>
+    <message>
+        <source>Upload limit:</source>
+        <translation>Omezení odesílání:</translation>
+    </message>
+    <message>
+        <source>Download limit:</source>
+        <translation>Omezení stahování:</translation>
+    </message>
+    <message>
+        <source>KiB/s</source>
+        <translation>KiB/s</translation>
+    </message>
+</context>
+<context>
+    <name>ListWidget</name>
+    <message>
+        <source>Resize All</source>
+        <translation>Změnit rozměry všech</translation>
+    </message>
+    <message>
+        <source>Resize</source>
+        <translation>Změnit rozměry</translation>
+    </message>
+</context>
+<context>
+    <name>confirmRotateAPIKeyDialog</name>
+    <message>
+        <source>Generate an API key? This key can be used to interact with qBittorrent's API.</source>
+        <translation>Vytvořit API klíč? Klíč bude možné použít pro komunikaci s qBittorrent's API.</translation>
+    </message>
+    <message>
+        <source>Delete this API key? The current key will immediately stop working.</source>
+        <translation>Smazat tento API klíč? Současný klíč okamžitě přestane fungovat.</translation>
+    </message>
+    <message>
+        <source>Rotate this API key? The current key will immediately stop working and a new key will be generated.</source>
+        <translation>Nahradit tento API klíč? Současný klíč přestane fungovat okamžitě a bude vytvořen nový klíč.</translation>
     </message>
 </context>
 </TS>

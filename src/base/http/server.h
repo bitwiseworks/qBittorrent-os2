@@ -28,12 +28,10 @@
  */
 
 
-#ifndef HTTP_SERVER_H
-#define HTTP_SERVER_H
+#pragma once
 
 #include <QSet>
-#include <QSslCertificate>
-#include <QSslKey>
+#include <QSslConfiguration>
 #include <QTcpServer>
 
 namespace Http
@@ -44,13 +42,14 @@ namespace Http
     class Server final : public QTcpServer
     {
         Q_OBJECT
-        Q_DISABLE_COPY(Server)
+        Q_DISABLE_COPY_MOVE(Server)
 
     public:
         explicit Server(IRequestHandler *requestHandler, QObject *parent = nullptr);
 
         bool setupHttps(const QByteArray &certificates, const QByteArray &privateKey);
         void disableHttps();
+        bool isHttps() const;
 
     private slots:
         void dropTimedOutConnection();
@@ -59,13 +58,10 @@ namespace Http
         void incomingConnection(qintptr socketDescriptor) override;
         void removeConnection(Connection *connection);
 
-        IRequestHandler *m_requestHandler;
+        IRequestHandler *m_requestHandler = nullptr;
         QSet<Connection *> m_connections;  // for tracking persistent connections
 
-        bool m_https;
-        QList<QSslCertificate> m_certificates;
-        QSslKey m_key;
+        bool m_https = false;
+        QSslConfiguration m_sslConfig;
     };
 }
-
-#endif // HTTP_SERVER_H

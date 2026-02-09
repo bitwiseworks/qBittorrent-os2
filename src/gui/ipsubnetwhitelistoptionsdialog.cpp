@@ -1,6 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
- * Copyright (C) 2017  Thomas Piccirello <thomas.piccirello@gmail.com>
+ * Copyright (C) 2017  Thomas Piccirello <thomas@piccirello.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -38,15 +38,19 @@
 #include "ui_ipsubnetwhitelistoptionsdialog.h"
 #include "utils.h"
 
+#define SETTINGS_KEY(name) u"IPSubnetWhitelistOptionsDialog/" name
+
 IPSubnetWhitelistOptionsDialog::IPSubnetWhitelistOptionsDialog(QWidget *parent)
     : QDialog(parent)
     , m_ui(new Ui::IPSubnetWhitelistOptionsDialog)
-    , m_modified(false)
+    , m_storeDialogSize(SETTINGS_KEY(u"Size"_s))
 {
     m_ui->setupUi(this);
 
+    connect(m_ui->buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
+
     QStringList authSubnetWhitelistStringList;
-    for (const Utils::Net::Subnet &subnet : asConst(Preferences::instance()->getWebUiAuthSubnetWhitelist()))
+    for (const Utils::Net::Subnet &subnet : asConst(Preferences::instance()->getWebUIAuthSubnetWhitelist()))
         authSubnetWhitelistStringList << Utils::Net::subnetToString(subnet);
     m_model = new QStringListModel(authSubnetWhitelistStringList, this);
 
@@ -58,41 +62,45 @@ IPSubnetWhitelistOptionsDialog::IPSubnetWhitelistOptionsDialog(QWidget *parent)
     m_ui->whitelistedIPSubnetList->sortByColumn(0, Qt::AscendingOrder);
     m_ui->buttonWhitelistIPSubnet->setEnabled(false);
 
-    Utils::Gui::resize(this);
+    if (const QSize dialogSize = m_storeDialogSize; dialogSize.isValid())
+        resize(dialogSize);
 }
 
 IPSubnetWhitelistOptionsDialog::~IPSubnetWhitelistOptionsDialog()
 {
+    m_storeDialogSize = size();
     delete m_ui;
 }
 
 void IPSubnetWhitelistOptionsDialog::on_buttonBox_accepted()
 {
-    if (m_modified) {
+    if (m_modified)
+    {
         // save to session
         QStringList subnets;
         // Operate on the m_sortFilter to grab the strings in sorted order
         for (int i = 0; i < m_sortFilter->rowCount(); ++i)
             subnets.append(m_sortFilter->index(i, 0).data().toString());
-        Preferences::instance()->setWebUiAuthSubnetWhitelist(subnets);
+        Preferences::instance()->setWebUIAuthSubnetWhitelist(subnets);
         QDialog::accept();
     }
-    else {
+    else
+    {
         QDialog::reject();
     }
 }
 
 void IPSubnetWhitelistOptionsDialog::on_buttonWhitelistIPSubnet_clicked()
 {
-    bool ok = false;
-    const Utils::Net::Subnet subnet = Utils::Net::parseSubnet(m_ui->txtIPSubnet->text(), &ok);
-    if (!ok) {
+    const std::optional<Utils::Net::Subnet> subnet = Utils::Net::parseSubnet(m_ui->txtIPSubnet->text());
+    if (!subnet)
+    {
         QMessageBox::critical(this, tr("Error"), tr("The entered subnet is invalid."));
         return;
     }
 
     m_model->insertRow(m_model->rowCount());
-    m_model->setData(m_model->index(m_model->rowCount() - 1, 0), Utils::Net::subnetToString(subnet));
+    m_model->setData(m_model->index(m_model->rowCount() - 1, 0), Utils::Net::subnetToString(subnet.value()));
     m_ui->txtIPSubnet->clear();
     m_modified = true;
 }
@@ -107,5 +115,5 @@ void IPSubnetWhitelistOptionsDialog::on_buttonDeleteIPSubnet_clicked()
 
 void IPSubnetWhitelistOptionsDialog::on_txtIPSubnet_textChanged(const QString &subnetStr)
 {
-    m_ui->buttonWhitelistIPSubnet->setEnabled(Utils::Net::canParseSubnet(subnetStr));
+    m_ui->buttonWhitelistIPSubnet->setEnabled(Utils::Net::parseSubnet(subnetStr).has_value());
 }

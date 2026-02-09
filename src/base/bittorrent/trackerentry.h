@@ -1,6 +1,7 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
- * Copyright (C) 2015  Vladimir Golovnev <glassez@yandex.ru>
+ * Copyright (C) 2024  Mike Tzou (Chocobo1)
+ * Copyright (C) 2015-2023  Vladimir Golovnev <glassez@yandex.ru>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -26,52 +27,23 @@
  * exception statement from your version.
  */
 
-#ifndef BITTORRENT_TRACKERENTRY_H
-#define BITTORRENT_TRACKERENTRY_H
+#pragma once
 
-#include <libtorrent/announce_entry.hpp>
+#include <QtContainerFwd>
+#include <QString>
 
-#include <QtGlobal>
-
-class QString;
+class QStringView;
 
 namespace BitTorrent
 {
-    class TrackerEntry
+    struct TrackerEntry
     {
-    public:
-        enum Status
-        {
-            NotContacted = 1,
-            Working = 2,
-            Updating = 3,
-            NotWorking = 4
-        };
-
-        TrackerEntry() = default;
-        TrackerEntry(const QString &url);
-        TrackerEntry(const lt::announce_entry &nativeEntry);
-        TrackerEntry(const TrackerEntry &other) = default;
-        TrackerEntry &operator=(const TrackerEntry &other) = default;
-
-        QString url() const;
-        Status status() const;
-
-        int tier() const;
-        void setTier(int value);
-
-        int numSeeds() const;
-        int numLeeches() const;
-        int numDownloaded() const;
-
-        const lt::announce_entry &nativeEntry() const;
-
-    private:
-        lt::announce_entry m_nativeEntry;
+        QString url {};
+        int tier = 0;
     };
 
-    bool operator==(const TrackerEntry &left, const TrackerEntry &right);
-    uint qHash(const TrackerEntry &key, uint seed);
-}
+    QList<TrackerEntry> parseTrackerEntries(QStringView str);
 
-#endif // BITTORRENT_TRACKERENTRY_H
+    bool operator==(const TrackerEntry &left, const TrackerEntry &right);
+    std::size_t qHash(const TrackerEntry &key, std::size_t seed = 0);
+}

@@ -28,13 +28,13 @@
  * exception statement from your version.
  */
 
-#ifndef BITTORRENT_TRACKER_H
-#define BITTORRENT_TRACKER_H
+#pragma once
 
 #include <string>
 
 #include <libtorrent/entry.hpp>
 
+#include <QtTypes>
 #include <QHash>
 #include <QObject>
 #include <QSet>
@@ -64,8 +64,7 @@ namespace BitTorrent
     };
 
     bool operator==(const Peer &left, const Peer &right);
-    bool operator!=(const Peer &left, const Peer &right);
-    uint qHash(const Peer &key, uint seed);
+    std::size_t qHash(const Peer &key, std::size_t seed = 0);
 
     // *Basic* Bittorrent tracker implementation
     // [BEP-3] The BitTorrent Protocol Specification
@@ -73,7 +72,7 @@ namespace BitTorrent
     class Tracker final : public QObject, public Http::IRequestHandler, private Http::ResponseBuilder
     {
         Q_OBJECT
-        Q_DISABLE_COPY(Tracker)
+        Q_DISABLE_COPY_MOVE(Tracker)
 
         struct TrackerAnnounceRequest;
 
@@ -99,12 +98,10 @@ namespace BitTorrent
         void unregisterPeer(const TrackerAnnounceRequest &announceReq);
         void prepareAnnounceResponse(const TrackerAnnounceRequest &announceReq);
 
-        Http::Server *m_server;
+        Http::Server *m_server = nullptr;
         Http::Request m_request;
         Http::Environment m_env;
 
-        QHash<InfoHash, TorrentStats> m_torrents;
+        QHash<TorrentID, TorrentStats> m_torrents;
     };
 }
-
-#endif // BITTORRENT_TRACKER_H

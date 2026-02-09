@@ -30,18 +30,19 @@
 
 #include <QJsonArray>
 #include <QJsonObject>
+#include <QList>
 
 #include "base/global.h"
 #include "base/logger.h"
 #include "base/utils/string.h"
 
-const char KEY_LOG_ID[] = "id";
-const char KEY_LOG_TIMESTAMP[] = "timestamp";
-const char KEY_LOG_MSG_TYPE[] = "type";
-const char KEY_LOG_MSG_MESSAGE[] = "message";
-const char KEY_LOG_PEER_IP[] = "ip";
-const char KEY_LOG_PEER_BLOCKED[] = "blocked";
-const char KEY_LOG_PEER_REASON[] = "reason";
+const QString KEY_LOG_ID = u"id"_s;
+const QString KEY_LOG_TIMESTAMP = u"timestamp"_s;
+const QString KEY_LOG_MSG_TYPE = u"type"_s;
+const QString KEY_LOG_MSG_MESSAGE = u"message"_s;
+const QString KEY_LOG_PEER_IP = u"ip"_s;
+const QString KEY_LOG_PEER_BLOCKED = u"blocked"_s;
+const QString KEY_LOG_PEER_REASON = u"reason"_s;
 
 // Returns the log in JSON format.
 // The return value is an array of dictionaries.
@@ -60,27 +61,29 @@ void LogController::mainAction()
 {
     using Utils::String::parseBool;
 
-    const bool isNormal = parseBool(params()["normal"], true);
-    const bool isInfo = parseBool(params()["info"], true);
-    const bool isWarning = parseBool(params()["warning"], true);
-    const bool isCritical = parseBool(params()["critical"], true);
+    const bool isNormal = parseBool(params()[u"normal"_s]).value_or(true);
+    const bool isInfo = parseBool(params()[u"info"_s]).value_or(true);
+    const bool isWarning = parseBool(params()[u"warning"_s]).value_or(true);
+    const bool isCritical = parseBool(params()[u"critical"_s]).value_or(true);
 
     bool ok = false;
-    int lastKnownId = params()["last_known_id"].toInt(&ok);
+    int lastKnownId = params()[u"last_known_id"_s].toInt(&ok);
     if (!ok)
         lastKnownId = -1;
 
     Logger *const logger = Logger::instance();
     QJsonArray msgList;
 
-    for (const Log::Msg &msg : asConst(logger->getMessages(lastKnownId))) {
-        if (!((msg.type == Log::NORMAL && isNormal)
-              || (msg.type == Log::INFO && isInfo)
-              || (msg.type == Log::WARNING && isWarning)
-              || (msg.type == Log::CRITICAL && isCritical)))
+    for (const Log::Msg &msg : asConst(logger->getMessages(lastKnownId)))
+    {
+        if (!(((msg.type == Log::NORMAL) && isNormal)
+              || ((msg.type == Log::INFO) && isInfo)
+              || ((msg.type == Log::WARNING) && isWarning)
+              || ((msg.type == Log::CRITICAL) && isCritical)))
             continue;
 
-        msgList.append(QJsonObject {
+        msgList.append(QJsonObject
+        {
             {KEY_LOG_ID, msg.id},
             {KEY_LOG_TIMESTAMP, msg.timestamp},
             {KEY_LOG_MSG_TYPE, msg.type},
@@ -103,18 +106,18 @@ void LogController::mainAction()
 //   - last_known_id (int): exclude messages with id <= 'last_known_id' (default -1)
 void LogController::peersAction()
 {
-    int lastKnownId;
-    bool ok;
-
-    lastKnownId = params()["last_known_id"].toInt(&ok);
+    bool ok = false;
+    int lastKnownId = params()[u"last_known_id"_s].toInt(&ok);
     if (!ok)
         lastKnownId = -1;
 
     Logger *const logger = Logger::instance();
     QJsonArray peerList;
 
-    for (const Log::Peer &peer : asConst(logger->getPeers(lastKnownId))) {
-        peerList.append(QJsonObject {
+    for (const Log::Peer &peer : asConst(logger->getPeers(lastKnownId)))
+    {
+        peerList.append(QJsonObject
+        {
             {KEY_LOG_ID, peer.id},
             {KEY_LOG_TIMESTAMP, peer.timestamp},
             {KEY_LOG_PEER_IP, peer.ip},

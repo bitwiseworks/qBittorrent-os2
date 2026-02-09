@@ -26,15 +26,16 @@
  * exception statement from your version.
  */
 
-#ifndef PEERLISTSORTMODEL_H
-#define PEERLISTSORTMODEL_H
+#pragma once
 
 #include <QSortFilterProxyModel>
+
+#include "base/utils/compare.h"
 
 class PeerListSortModel final : public QSortFilterProxyModel
 {
     Q_OBJECT
-    Q_DISABLE_COPY(PeerListSortModel)
+    Q_DISABLE_COPY_MOVE(PeerListSortModel)
 
 public:
     enum
@@ -46,6 +47,6 @@ public:
 
 private:
     bool lessThan(const QModelIndex &left, const QModelIndex &right) const override;
-};
 
-#endif // PEERLISTSORTMODEL_H
+    Utils::Compare::NaturalLessThan<Qt::CaseInsensitive> m_naturalLessThan;
+};

@@ -26,8 +26,7 @@
  * exception statement from your version.
  */
 
-#ifndef STATUSBAR_H
-#define STATUSBAR_H
+#pragma once
 
 #include <QStatusBar>
 
@@ -39,10 +38,10 @@ namespace BitTorrent
     struct SessionStatus;
 }
 
-class StatusBar : public QStatusBar
+class StatusBar final : public QStatusBar
 {
     Q_OBJECT
-    Q_DISABLE_COPY(StatusBar)
+    Q_DISABLE_COPY_MOVE(StatusBar)
 
 public:
     StatusBar(QWidget *parent = nullptr);
@@ -58,19 +57,26 @@ public slots:
 private slots:
     void refresh();
     void updateAltSpeedsBtn(bool alternative);
-    void capDownloadSpeed();
-    void capUploadSpeed();
+    void capSpeed();
+    void optionsSaved();
 
 private:
     void updateConnectionStatus();
     void updateDHTNodesNumber();
+    void updateFreeDiskSpaceLabel(qint64 value);
+    void updateFreeDiskSpaceVisibility();
+    void updateExternalAddressesLabel();
+    void updateExternalAddressesVisibility();
     void updateSpeedLabels();
 
-    QPushButton *m_dlSpeedLbl;
-    QPushButton *m_upSpeedLbl;
-    QLabel *m_DHTLbl;
-    QPushButton *m_connecStatusLblIcon;
-    QPushButton *m_altSpeedsBtn;
+    QPushButton *m_dlSpeedLbl = nullptr;
+    QPushButton *m_upSpeedLbl = nullptr;
+    QLabel *m_freeDiskSpaceLbl = nullptr;
+    QWidget *m_freeDiskSpaceSeparator = nullptr;
+    QLabel *m_lastExternalIPsLbl = nullptr;
+    QWidget *m_lastExternalIPsSeparator = nullptr;
+    QLabel *m_DHTLbl = nullptr;
+    QWidget *m_DHTSeparator = nullptr;
+    QPushButton *m_connecStatusLblIcon = nullptr;
+    QPushButton *m_altSpeedsBtn = nullptr;
 };
-
-#endif // STATUSBAR_H

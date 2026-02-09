@@ -26,16 +26,18 @@
  * exception statement from your version.
  */
 
-#ifndef NET_PORTFORWARDER_H
-#define NET_PORTFORWARDER_H
+#pragma once
 
 #include <QObject>
+#include <QSet>
+
+class QString;
 
 namespace Net
 {
     class PortForwarder : public QObject
     {
-        Q_DISABLE_COPY(PortForwarder)
+        Q_DISABLE_COPY_MOVE(PortForwarder)
 
     public:
         explicit PortForwarder(QObject *parent = nullptr);
@@ -46,12 +48,10 @@ namespace Net
         virtual bool isEnabled() const = 0;
         virtual void setEnabled(bool enabled) = 0;
 
-        virtual void addPort(quint16 port) = 0;
-        virtual void deletePort(quint16 port) = 0;
+        virtual void setPorts(const QString &profile, QSet<quint16> ports) = 0;
+        virtual void removePorts(const QString &profile) = 0;
 
     private:
         static PortForwarder *m_instance;
     };
 }
-
-#endif // NET_PORTFORWARDER_H

@@ -30,8 +30,7 @@
  * This code is based on QxtSmtp from libqxt (http://libqxt.org)
  */
 
-#ifndef SMTP_H
-#define SMTP_H
+#pragma once
 
 #include <QAbstractSocket>
 #include <QByteArray>
@@ -44,13 +43,13 @@ class QSslSocket;
 #else
 class QTcpSocket;
 #endif
-class QTextCodec;
 
 namespace Net
 {
     class Smtp : public QObject
     {
         Q_OBJECT
+        Q_DISABLE_COPY_MOVE(Smtp)
 
     public:
         Smtp(QObject *parent = nullptr);
@@ -89,7 +88,7 @@ namespace Net
             AuthCramMD5
         };
 
-        QByteArray encodeMimeHeader(const QString &key, const QString &value, const QTextCodec *latin1, const QByteArray &prefix = {});
+        QByteArray encodeMimeHeader(const QString &key, const QString &value, const QByteArray &prefix = {});
         void ehlo();
         void helo();
         void parseEhloResponse(const QByteArray &code, bool continued, const QString &line);
@@ -103,21 +102,19 @@ namespace Net
 
         QByteArray m_message;
 #ifndef QT_NO_OPENSSL
-        QSslSocket *m_socket;
+        QSslSocket *m_socket = nullptr;
 #else
-        QTcpSocket *m_socket;
+        QTcpSocket *m_socket = nullptr;
 #endif
         QString m_from;
         QString m_rcpt;
         QString m_response;
-        int m_state;
+        int m_state = Init;
         QHash<QString, QString> m_extensions;
         QByteArray m_buffer;
-        bool m_useSsl;
-        AuthType m_authType;
+        bool m_useSsl = false;
+        AuthType m_authType = AuthPlain;
         QString m_username;
         QString m_password;
     };
 }
-
-#endif // SMTP_H

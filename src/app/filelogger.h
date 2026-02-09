@@ -26,12 +26,13 @@
  * exception statement from your version.
  */
 
-#ifndef FILELOGGER_H
-#define FILELOGGER_H
+#pragma once
 
 #include <QFile>
 #include <QObject>
 #include <QTimer>
+
+#include "base/path.h"
 
 namespace Log
 {
@@ -41,7 +42,7 @@ namespace Log
 class FileLogger : public QObject
 {
     Q_OBJECT
-    Q_DISABLE_COPY(FileLogger)
+    Q_DISABLE_COPY_MOVE(FileLogger)
 
 public:
     enum FileLogAgeType
@@ -51,10 +52,10 @@ public:
         YEARS
     };
 
-    FileLogger(const QString &path, bool backup, int maxSize, bool deleteOld, int age, FileLogAgeType ageType);
+    FileLogger(const Path &path, bool backup, int maxSize, bool deleteOld, int age, FileLogAgeType ageType);
     ~FileLogger();
 
-    void changePath(const QString &newPath);
+    void changePath(const Path &newPath);
     void deleteOld(int age, FileLogAgeType ageType);
     void setBackup(bool value);
     void setMaxSize(int value);
@@ -67,11 +68,9 @@ private:
     void openLogFile();
     void closeLogFile();
 
-    QString m_path;
+    Path m_path;
     bool m_backup;
     int m_maxSize;
     QFile m_logFile;
     QTimer m_flusher;
 };
-
-#endif // FILELOGGER_H

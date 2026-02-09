@@ -1,6 +1,7 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
- * Copyright (C) 2015  Vladimir Golovnev <glassez@yandex.ru>
+ * Copyright (C) 2024  Mike Tzou (Chocobo1)
+ * Copyright (C) 2015-2023  Vladimir Golovnev <glassez@yandex.ru>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -28,100 +29,41 @@
 
 #include "trackerentry.h"
 
-#include <algorithm>
+#include <QHash>
+#include <QList>
+#include <QStringView>
 
-#include <QString>
-#include <QUrl>
-
-using namespace BitTorrent;
-
-TrackerEntry::TrackerEntry(const QString &url)
-    : m_nativeEntry(url.toStdString())
+QList<BitTorrent::TrackerEntry> BitTorrent::parseTrackerEntries(const QStringView str)
 {
-}
+    const QList<QStringView> trackers = str.split(u'\n');  // keep the empty parts to track tracker tier
 
-TrackerEntry::TrackerEntry(const lt::announce_entry &nativeEntry)
-    : m_nativeEntry(nativeEntry)
-{
-}
+    QList<BitTorrent::TrackerEntry> entries;
+    entries.reserve(trackers.size());
 
-QString TrackerEntry::url() const
-{
-    return QString::fromStdString(nativeEntry().url);
-}
-
-int TrackerEntry::tier() const
-{
-    return nativeEntry().tier;
-}
-
-TrackerEntry::Status TrackerEntry::status() const
-{
-    const auto &endpoints = nativeEntry().endpoints;
-
-    const bool allFailed = !endpoints.empty() && std::all_of(endpoints.begin(), endpoints.end()
-        , [](const lt::announce_endpoint &endpoint)
+    int trackerTier = 0;
+    for (QStringView tracker : trackers)
     {
-        return (endpoint.fails > 0);
-    });
-    if (allFailed)
-        return NotWorking;
+        tracker = tracker.trimmed();
 
-    const bool isUpdating = std::any_of(endpoints.begin(), endpoints.end()
-        , [](const lt::announce_endpoint &endpoint)
-    {
-        return endpoint.updating;
-    });
-    if (isUpdating)
-        return Updating;
+        if (tracker.isEmpty())
+        {
+            if (trackerTier < std::numeric_limits<decltype(trackerTier)>::max())  // prevent overflow
+                ++trackerTier;
+            continue;
+        }
 
-    if (!nativeEntry().verified)
-        return NotContacted;
+        entries.append({tracker.toString(), trackerTier});
+    }
 
-    return Working;
-}
-
-void TrackerEntry::setTier(const int value)
-{
-    m_nativeEntry.tier = value;
-}
-
-int TrackerEntry::numSeeds() const
-{
-    int value = -1;
-    for (const lt::announce_endpoint &endpoint : nativeEntry().endpoints)
-        value = std::max(value, endpoint.scrape_complete);
-    return value;
-}
-
-int TrackerEntry::numLeeches() const
-{
-    int value = -1;
-    for (const lt::announce_endpoint &endpoint : nativeEntry().endpoints)
-        value = std::max(value, endpoint.scrape_incomplete);
-    return value;
-}
-
-int TrackerEntry::numDownloaded() const
-{
-    int value = -1;
-    for (const lt::announce_endpoint &endpoint : nativeEntry().endpoints)
-        value = std::max(value, endpoint.scrape_downloaded);
-    return value;
-}
-
-const lt::announce_entry &TrackerEntry::nativeEntry() const
-{
-    return m_nativeEntry;
+    return entries;
 }
 
 bool BitTorrent::operator==(const TrackerEntry &left, const TrackerEntry &right)
 {
-    return ((left.tier() == right.tier())
-        && QUrl(left.url()) == QUrl(right.url()));
+    return (left.url == right.url);
 }
 
-uint BitTorrent::qHash(const TrackerEntry &key, const uint seed)
+std::size_t BitTorrent::qHash(const TrackerEntry &key, const std::size_t seed)
 {
-    return (::qHash(key.url(), seed) ^ ::qHash(key.tier()));
+    return ::qHash(key.url, seed);
 }

@@ -26,8 +26,7 @@
  * exception statement from your version.
  */
 
-#ifndef HIDABLETABWIDGET_H
-#define HIDABLETABWIDGET_H
+#pragma once
 
 #include <QTabWidget>
 
@@ -43,10 +42,9 @@ public:
 private:
     void tabInserted(int index) override;
     void tabRemoved(int index) override;
+    void tabsCountChanged();
 
 #ifdef Q_OS_MACOS
     void paintEvent(QPaintEvent *event) override;
 #endif
 };
-
-#endif // HIDABLETABWIDGET_H

@@ -1,5 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
+ * Copyright (C) 2024  Vladimir Golovnev <glassez@yandex.ru>
  * Copyright (C) 2006  Christophe Dumez <chris@qbittorrent.org>
  *
  * This program is free software; you can redistribute it and/or
@@ -26,11 +27,10 @@
  * exception statement from your version.
  */
 
-#ifndef DOWNLOADEDPIECESBAR_H
-#define DOWNLOADEDPIECESBAR_H
+#pragma once
 
 #include <QBitArray>
-#include <QVector>
+#include <QtContainerFwd>
 
 #include "piecesbar.h"
 
@@ -40,7 +40,7 @@ class DownloadedPiecesBar final : public PiecesBar
 {
     using base = PiecesBar;
     Q_OBJECT
-    Q_DISABLE_COPY(DownloadedPiecesBar)
+    Q_DISABLE_COPY_MOVE(DownloadedPiecesBar)
 
 public:
     DownloadedPiecesBar(QWidget *parent);
@@ -52,16 +52,16 @@ public:
 
 private:
     // scale bitfield vector to float vector
-    QVector<float> bitfieldToFloatVector(const QBitArray &vecin, int reqSize);
-    virtual bool updateImage(QImage &image) override;
+    QList<float> bitfieldToFloatVector(const QBitArray &vecin, int reqSize);
+    QImage renderImage() override;
     QString simpleToolTipText() const override;
+    void updateColors() override;
+    void updateColorsImpl();
 
     // incomplete piece color
-    const QColor m_dlPieceColor;
+    QColor m_dlPieceColor;
     // last used bitfields, uses to better resize redraw
     // TODO: make a diff pieces to new pieces and update only changed pixels, speedup when update > 20x faster
     QBitArray m_pieces;
     QBitArray m_downloadedPieces;
 };
-
-#endif // DOWNLOADEDPIECESBAR_H
