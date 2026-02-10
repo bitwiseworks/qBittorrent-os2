@@ -201,7 +201,7 @@ Path Private::Converter::toPortablePath(const Path &path) const
     if (path.isEmpty())
         return path;
 
-#ifdef Q_OS_WIN
+#if defined(Q_OS_WIN) || defined(Q_OS_OS2)
     if (path.isAbsolute())
     {
         const QChar driveLetter = path.data()[0].toUpper();

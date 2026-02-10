@@ -36,7 +36,7 @@
 #include <csignal>
 #include <tuple>
 
-#ifdef Q_OS_UNIX
+#if defined(Q_OS_UNIX) || defined(Q_OS_OS2)
 #include <unistd.h>
 #elif defined Q_OS_WIN
 #include <io.h>

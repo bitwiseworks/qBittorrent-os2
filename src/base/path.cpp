@@ -41,7 +41,7 @@
 
 #include "base/global.h"
 
-#if defined(Q_OS_WIN)
+#if defined(Q_OS_WIN) || defined(Q_OS_OS2)
 const Qt::CaseSensitivity CASE_SENSITIVITY = Qt::CaseInsensitive;
 #else
 const Qt::CaseSensitivity CASE_SENSITIVITY = Qt::CaseSensitive;
@@ -60,7 +60,7 @@ namespace
         return hasSeparator ? QDir::cleanPath(path) : path;
     }
 
-#ifdef Q_OS_WIN
+#if defined(Q_OS_WIN) || defined(Q_OS_OS2)
     bool hasDriveLetter(const QStringView path)
     {
         const QRegularExpression driveLetterRegex {u"^[A-Za-z]:/"_s};
@@ -87,7 +87,7 @@ bool Path::isValid() const
         return false;
 
     // https://stackoverflow.com/a/31976060
-#if defined(Q_OS_WIN)
+#if defined(Q_OS_WIN) || defined(Q_OS_OS2)
     QStringView view = m_pathStr;
     if (hasDriveLetter(view))
         view = view.mid(3);
@@ -140,7 +140,7 @@ Path Path::rootItem() const
     if (slashIndex == 0) // *nix absolute path
         return createUnchecked(u"/"_s);
 
-#ifdef Q_OS_WIN
+#if defined(Q_OS_WIN) || defined(Q_OS_OS2)
     // should be `c:/` instead of `c:`
     if ((slashIndex == 2) && hasDriveLetter(m_pathStr))
         return createUnchecked(m_pathStr.left(slashIndex + 1));
@@ -159,7 +159,7 @@ Path Path::parentPath() const
     if (slashIndex == 0) // *nix absolute path
         return (m_pathStr.size() == 1) ? Path() : createUnchecked(u"/"_s);
 
-#ifdef Q_OS_WIN
+#if defined(Q_OS_WIN) || defined(Q_OS_OS2)
     // should be `c:/` instead of `c:`
     // Windows "drive letter" is limited to one alphabet
     if ((slashIndex == 2) && hasDriveLetter(m_pathStr))
