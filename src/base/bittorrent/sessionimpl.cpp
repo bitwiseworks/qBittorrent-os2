@@ -1542,8 +1542,10 @@ void SessionImpl::initializeNativeSession()
         sessionParams.disk_io_constructor = customPosixDiskIOConstructor;
         break;
     case DiskIOType::MMap:
+#if TORRENT_HAVE_MMAP || TORRENT_HAVE_MAP_VIEW_OF_FILE
         sessionParams.disk_io_constructor = customMMapDiskIOConstructor;
         break;
+#endif
     default:
         sessionParams.disk_io_constructor = customDiskIOConstructor;
         break;

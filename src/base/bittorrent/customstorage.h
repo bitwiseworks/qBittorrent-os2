@@ -52,8 +52,10 @@ std::unique_ptr<lt::disk_interface> customDiskIOConstructor(
         lt::io_context &ioContext, lt::settings_interface const &settings, lt::counters &counters);
 std::unique_ptr<lt::disk_interface> customPosixDiskIOConstructor(
         lt::io_context &ioContext, lt::settings_interface const &settings, lt::counters &counters);
+#if TORRENT_HAVE_MMAP || TORRENT_HAVE_MAP_VIEW_OF_FILE
 std::unique_ptr<lt::disk_interface> customMMapDiskIOConstructor(
         lt::io_context &ioContext, lt::settings_interface const &settings, lt::counters &counters);
+#endif
 
 class CustomDiskIOThread final : public lt::disk_interface
 {
