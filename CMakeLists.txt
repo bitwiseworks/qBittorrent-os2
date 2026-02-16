@@ -62,6 +62,18 @@ include(CommonConfig)
 # Generate version header
 configure_file("src/base/version.h.in" "${CMAKE_CURRENT_SOURCE_DIR}/src/base/version.h" @ONLY)
 
+if (OS2)
+file(READ "${CMAKE_CURRENT_SOURCE_DIR}/src/base/version.h" verFileContents)
+string(REGEX MATCH "QBT_VERSION_MAJOR ([0-9]+)" _ "${verFileContents}")
+set(QBT_MAJOR ${CMAKE_MATCH_1})
+string(REGEX MATCH "QBT_VERSION_MINOR ([0-9]+)" _ "${verFileContents}")
+set(QBT_MINOR ${CMAKE_MATCH_1})
+string(REGEX MATCH "QBT_VERSION_BUGFIX ([0-9]+)" _ "${verFileContents}")
+set(QBT_BUGFIX ${CMAKE_MATCH_1})
+set(QBT_VERSION ${QBT_MAJOR}.${QBT_MINOR}.${QBT_BUGFIX})
+#message(STATUS "Matched version string: ${QBT_VERSION}")
+endif(OS2)
+
 add_subdirectory(src)
 add_subdirectory(dist)
 

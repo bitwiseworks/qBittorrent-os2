@@ -107,6 +107,18 @@ elseif (CMAKE_SYSTEM_NAME STREQUAL "Windows")
         target_sources(qbt_app PRIVATE ${qBittorrent_SOURCE_DIR}/src/qbittorrent.rc)
     endif()
     target_sources(qbt_app PRIVATE ${qBittorrent_SOURCE_DIR}/src/qbittorrent.exe.manifest)
+elseif (CMAKE_SYSTEM_NAME STREQUAL "OS2")
+    enable_language(RC)
+    set_source_files_properties(${qBittorrent_SOURCE_DIR}/src/qbittorrent_os2.rc PROPERTIES LANGUAGE RC)
+    target_sources(qbt_app PRIVATE
+        ${qBittorrent_SOURCE_DIR}/src/qbittorrent_os2.rc
+    )
+    set_target_properties(qbt_app PROPERTIES
+        OS2_DEF_VENDOR "$ENV{VENDOR}"
+        OS2_DEF_PATCH "${QBT_BUGFIX}"
+        OS2_DEF_VERSION "${QBT_VERSION}"
+        OS2_DEF_EXEType "WINDOWAPI"
+   )
 endif()
 
 # Additional feature dependent configuration
