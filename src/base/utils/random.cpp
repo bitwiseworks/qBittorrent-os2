@@ -41,6 +41,10 @@
 #include <cstring>
 #endif
 
+#ifdef Q_OS_OS2
+#include <QRandomGenerator>
+#endif
+
 #include <QString>
 
 #include "base/global.h"
@@ -85,6 +89,35 @@ namespace
     private:
         using PRTLGENRANDOM = BOOLEAN (WINAPI *)(PVOID, ULONG);
         const PRTLGENRANDOM m_rtlGenRandom;
+    };
+#elif defined(Q_OS_OS2)
+    class RandomLayer
+    {
+    public:
+        using result_type = uint32_t;
+
+        RandomLayer() 
+        {
+        }
+
+        ~RandomLayer() 
+        {
+        }
+
+        result_type operator()() 
+        {
+            return QRandomGenerator::global()->generate();
+        }
+
+        static constexpr result_type min() 
+        {
+            return std::numeric_limits<result_type>::min();
+        }
+
+        static constexpr result_type max() 
+        {
+            return std::numeric_limits<result_type>::max();
+        }
     };
 #else  // Q_OS_WIN
     class RandomLayer
