@@ -29,7 +29,7 @@ install(FILES ${MAN_FILES}
     COMPONENT doc
 )
 
-if (GUI)
+if (GUI AND (NOT OS2))
     install(FILES org.qbittorrent.qBittorrent.desktop
         DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications/
         COMPONENT data
